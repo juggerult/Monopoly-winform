@@ -33,7 +33,6 @@ namespace Monopoly.Main
             InitializeComponent();
             UpdateMoney();
             UpdateChat();
-
             if (player == 4)
             {
                 nameLabel4.Text = players[3].Name.ToString();
@@ -307,19 +306,22 @@ namespace Monopoly.Main
             {
                 players[currentPlayerIndex].IsJail = true;
                 players[currentPlayerIndex].CurrentPosition = 10;
-                
+
                 int randomJailReason = random.Next(1, 4);
                 string jailReason = string.Empty;
-                if(randomJailReason == 1)
+                if (randomJailReason == 1)
                 {
                     jailReason = "за крадіжку державного майна";
-                }else if(randomJailReason == 2)
+                }
+                else if (randomJailReason == 2)
                 {
                     jailReason = " статтею №190.4";
-                }else if(randomJailReason == 3)
+                }
+                else if (randomJailReason == 3)
                 {
                     jailReason = "за проїзд на червоне світло свiтлофора";
-                }else if(randomJailReason == 4)
+                }
+                else if (randomJailReason == 4)
                 {
                     jailReason = "за те, що ви дуже багаті";
                 }
@@ -371,6 +373,28 @@ namespace Monopoly.Main
                 case 6:
                     kub2.Image = Properties.Resources._6; break;
             }
+            if (players[currentPlayerIndex].IsJail)
+            {
+                if (firstDice == secondDice)
+                {
+                    players[currentPlayerIndex].IsJail = false;
+                    MessageBox.Show("Ви знаходились у тюрмi, але випал дубль, i тому вы покинули тюрму");
+                    goto dalshe;
+                }
+                DialogResult jailResult = MessageBox.Show("Ви знаходитеся у тюрмi, ви можете вийти за 5000 або сидiти далi поки не випаде дубль", "Будете платити?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (jailResult == DialogResult.Yes)
+                {
+                    players[currentPlayerIndex].IsJail = false;
+                    players[currentPlayerIndex].Money = players[currentPlayerIndex].Money - 5000;
+                }
+                else
+                {
+                    currentPlayerIndex++;
+                    UpdateChat();
+                    return;
+                }
+            }
+            dalshe:
             MovePlayers(diceResult);
             UpdateMoney();
         }

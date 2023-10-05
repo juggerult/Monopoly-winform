@@ -32,7 +32,6 @@
             label1 = new Label();
             radioButton1 = new RadioButton();
             radioButton2 = new RadioButton();
-            radioButton3 = new RadioButton();
             trackBar1 = new TrackBar();
             label2 = new Label();
             textBox1 = new TextBox();
@@ -77,7 +76,7 @@
             // radioButton2
             // 
             radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(63, 121);
+            radioButton2.Location = new Point(131, 146);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(105, 19);
             radioButton2.TabIndex = 3;
@@ -85,18 +84,6 @@
             radioButton2.Text = "Американская";
             radioButton2.UseVisualStyleBackColor = true;
             radioButton2.CheckedChanged += radioButton2_CheckedChanged;
-            // 
-            // radioButton3
-            // 
-            radioButton3.AutoSize = true;
-            radioButton3.Location = new Point(132, 146);
-            radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(99, 19);
-            radioButton3.TabIndex = 4;
-            radioButton3.TabStop = true;
-            radioButton3.Text = "Африканская";
-            radioButton3.UseVisualStyleBackColor = true;
-            radioButton3.CheckedChanged += radioButton3_CheckedChanged;
             // 
             // trackBar1
             // 
@@ -168,7 +155,6 @@
             Controls.Add(textBox1);
             Controls.Add(label2);
             Controls.Add(trackBar1);
-            Controls.Add(radioButton3);
             Controls.Add(radioButton2);
             Controls.Add(radioButton1);
             Controls.Add(label1);
@@ -187,7 +173,6 @@
         private Label label1;
         private RadioButton radioButton1;
         private RadioButton radioButton2;
-        private RadioButton radioButton3;
         private TrackBar trackBar1;
         private Label label2;
         private TextBox textBox1;
