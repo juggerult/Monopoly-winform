@@ -29,11 +29,10 @@ namespace Monopoly.Main
             thirdPlayer = thirdName;
             fourthPlayer = fourthName;
 
-
             InitializePlayers();
             InitializeComponent();
-            UpdateChat();
             UpdateMoney();
+            UpdateChat();
 
             if (player == 4)
             {
@@ -98,6 +97,7 @@ namespace Monopoly.Main
         private void MovePlayers(int steps)
         {
             animationStep = steps;
+            RollDiceButton.Visible = false;
             timer1.Start();
         }
 
@@ -245,22 +245,26 @@ namespace Monopoly.Main
             bishopImages[3, 32] = greenBishopStep33;
             bishopImages[3, 33] = greenBishopStep34;
 
+            if (players[currentPlayerIndex].CurrentPosition >= 34)
+            {
+                players[currentPlayerIndex].Money += 1000;
+                players[currentPlayerIndex].CurrentPosition = players[currentPlayerIndex].CurrentPosition % 34;
+                UpdateMoney();
+            }
 
-            PictureBox image = bishopImages[currentPlayerIndex, (players[currentPlayerIndex].CurrentPosition) % 34];
+            PictureBox image = bishopImages[currentPlayerIndex, players[currentPlayerIndex].CurrentPosition % 34];
             PictureBox image2 = bishopImages[currentPlayerIndex, (players[currentPlayerIndex].CurrentPosition + 1) % 34];
             image.Visible = false;
             image2.Visible = true;
             players[currentPlayerIndex].CurrentPosition++;
             animationStep--;
 
-            if (players[currentPlayerIndex].CurrentPosition >= 34)
-            {
-                players[currentPlayerIndex].Money += 1000;
-                players[currentPlayerIndex].CurrentPosition = players[currentPlayerIndex].CurrentPosition % 34;
-            }
             if (animationStep < 1)
             {
                 timer1.Stop();
+                RollDiceButton.Visible = true;
+                currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+                UpdateChat();
                 return;
             }
         }
@@ -302,11 +306,8 @@ namespace Monopoly.Main
                 case 6:
                     kub2.Image = Properties.Resources._6; break;
             }
-
             MovePlayers(diceResult);
-            currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
             UpdateMoney();
-            UpdateChat();
         }
 
 

@@ -211,6 +211,7 @@
             blueBishopStep2 = new PictureBox();
             yellowBishopStep2 = new PictureBox();
             greenBishopStep2 = new PictureBox();
+            pictureBox5 = new PictureBox();
             panelStep6 = new Panel();
             redBishopStep6 = new PictureBox();
             blueBishopStep6 = new PictureBox();
@@ -222,7 +223,6 @@
             greenBishopStep8 = new PictureBox();
             yellowBishopStep8 = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
-            pictureBox5 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -394,6 +394,7 @@
             ((System.ComponentModel.ISupportInitialize)blueBishopStep2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)yellowBishopStep2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)greenBishopStep2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panelStep6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)redBishopStep6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)blueBishopStep6).BeginInit();
@@ -404,7 +405,6 @@
             ((System.ComponentModel.ISupportInitialize)blueBishopStep8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)greenBishopStep8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)yellowBishopStep8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -2338,6 +2338,7 @@
             // 
             // panelStep2
             // 
+            panelStep2.BackColor = SystemColors.MenuHighlight;
             panelStep2.Controls.Add(redBishopStep2);
             panelStep2.Controls.Add(blueBishopStep2);
             panelStep2.Controls.Add(yellowBishopStep2);
@@ -2350,6 +2351,7 @@
             // 
             // redBishopStep2
             // 
+            redBishopStep2.BackColor = SystemColors.Control;
             redBishopStep2.Image = (Image)resources.GetObject("redBishopStep2.Image");
             redBishopStep2.Location = new Point(3, 13);
             redBishopStep2.Name = "redBishopStep2";
@@ -2361,6 +2363,7 @@
             // 
             // blueBishopStep2
             // 
+            blueBishopStep2.BackColor = SystemColors.Control;
             blueBishopStep2.Image = (Image)resources.GetObject("blueBishopStep2.Image");
             blueBishopStep2.Location = new Point(51, 13);
             blueBishopStep2.Name = "blueBishopStep2";
@@ -2372,6 +2375,7 @@
             // 
             // yellowBishopStep2
             // 
+            yellowBishopStep2.BackColor = SystemColors.Control;
             yellowBishopStep2.Image = (Image)resources.GetObject("yellowBishopStep2.Image");
             yellowBishopStep2.Location = new Point(3, 50);
             yellowBishopStep2.Name = "yellowBishopStep2";
@@ -2383,6 +2387,7 @@
             // 
             // greenBishopStep2
             // 
+            greenBishopStep2.BackColor = SystemColors.Control;
             greenBishopStep2.Image = (Image)resources.GetObject("greenBishopStep2.Image");
             greenBishopStep2.Location = new Point(51, 50);
             greenBishopStep2.Name = "greenBishopStep2";
@@ -2391,6 +2396,15 @@
             greenBishopStep2.TabIndex = 11;
             greenBishopStep2.TabStop = false;
             greenBishopStep2.Visible = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = SystemColors.Control;
+            pictureBox5.Location = new Point(0, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(100, 97);
+            pictureBox5.TabIndex = 12;
+            pictureBox5.TabStop = false;
             // 
             // panelStep6
             // 
@@ -2506,14 +2520,6 @@
             // 
             timer1.Interval = 350;
             timer1.Tick += timer1_Tick;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Location = new Point(0, 3);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(100, 97);
-            pictureBox5.TabIndex = 12;
-            pictureBox5.TabStop = false;
             // 
             // UkrainianBoard
             // 
@@ -2705,6 +2711,7 @@
             ((System.ComponentModel.ISupportInitialize)blueBishopStep2).EndInit();
             ((System.ComponentModel.ISupportInitialize)yellowBishopStep2).EndInit();
             ((System.ComponentModel.ISupportInitialize)greenBishopStep2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panelStep6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)redBishopStep6).EndInit();
             ((System.ComponentModel.ISupportInitialize)blueBishopStep6).EndInit();
@@ -2715,7 +2722,6 @@
             ((System.ComponentModel.ISupportInitialize)blueBishopStep8).EndInit();
             ((System.ComponentModel.ISupportInitialize)greenBishopStep8).EndInit();
             ((System.ComponentModel.ISupportInitialize)yellowBishopStep8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
