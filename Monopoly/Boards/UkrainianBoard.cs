@@ -76,7 +76,7 @@ namespace Monopoly.Main
 
         private void UpdateChat()
         {
-            chat.Items.Add($"Ход игрока: {players[currentPlayerIndex].Name}");
+            chat.Items.Add($"Ход игрока: {players[currentPlayerIndex].Name} Его позиция: {players[currentPlayerIndex].CurrentPosition}");
         }
         private void UpdateMoney()
         {
@@ -103,7 +103,7 @@ namespace Monopoly.Main
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            PictureBox[,] bishopImages = new PictureBox[4, 34];
+            PictureBox[,] bishopImages = new PictureBox[4, 40];
 
             bishopImages[0, 0] = redBishopStep1;
             bishopImages[0, 1] = redBishopStep2;
@@ -139,6 +139,12 @@ namespace Monopoly.Main
             bishopImages[0, 31] = redBishopStep32;
             bishopImages[0, 32] = redBishopStep33;
             bishopImages[0, 33] = redBishopStep34;
+            bishopImages[0, 34] = redBishopStep35;
+            bishopImages[0, 35] = redBishopStep36;
+            bishopImages[0, 36] = redBishopStep37;
+            bishopImages[0, 37] = redBishopStep38;
+            bishopImages[0, 38] = redBishopStep39;
+            bishopImages[0, 39] = redBishopStep40;
 
             bishopImages[1, 0] = blueBishopStep1;
             bishopImages[1, 1] = blueBishopStep2;
@@ -174,6 +180,12 @@ namespace Monopoly.Main
             bishopImages[1, 31] = blueBishopStep32;
             bishopImages[1, 32] = blueBishopStep33;
             bishopImages[1, 33] = blueBishopStep34;
+            bishopImages[1, 34] = blueBishopStep35;
+            bishopImages[1, 35] = blueBishopStep36;
+            bishopImages[1, 36] = blueBishopStep37;
+            bishopImages[1, 37] = blueBishopStep38;
+            bishopImages[1, 38] = blueBishopStep39;
+            bishopImages[1, 39] = blueBishopStep40;
 
             bishopImages[2, 0] = yellowBishopStep1;
             bishopImages[2, 1] = yellowBishopStep2;
@@ -209,6 +221,12 @@ namespace Monopoly.Main
             bishopImages[2, 31] = yellowBishopStep32;
             bishopImages[2, 32] = yellowBishopStep33;
             bishopImages[2, 33] = yellowBishopStep34;
+            bishopImages[2, 34] = yellowBishopStep35;
+            bishopImages[2, 35] = yellowBishopStep36;
+            bishopImages[2, 36] = yellowBishopStep37;
+            bishopImages[2, 37] = yellowBishopStep38;
+            bishopImages[2, 38] = yellowBishopStep39;
+            bishopImages[2, 39] = yellowBishopStep40;
 
             bishopImages[3, 0] = greenBishopStep1;
             bishopImages[3, 1] = greenBishopStep2;
@@ -244,16 +262,22 @@ namespace Monopoly.Main
             bishopImages[3, 31] = greenBishopStep32;
             bishopImages[3, 32] = greenBishopStep33;
             bishopImages[3, 33] = greenBishopStep34;
+            bishopImages[3, 34] = greenBishopStep35;
+            bishopImages[3, 35] = greenBishopStep36;
+            bishopImages[3, 36] = greenBishopStep37;
+            bishopImages[3, 37] = greenBishopStep38;
+            bishopImages[3, 38] = greenBishopStep39;
+            bishopImages[3, 39] = greenBishopStep40;
 
-            if (players[currentPlayerIndex].CurrentPosition >= 34)
+            if (players[currentPlayerIndex].CurrentPosition >= 40)
             {
                 players[currentPlayerIndex].Money += 1000;
-                players[currentPlayerIndex].CurrentPosition = players[currentPlayerIndex].CurrentPosition % 34;
+                players[currentPlayerIndex].CurrentPosition = players[currentPlayerIndex].CurrentPosition % 40;
                 UpdateMoney();
             }
 
-            PictureBox image = bishopImages[currentPlayerIndex, players[currentPlayerIndex].CurrentPosition % 34];
-            PictureBox image2 = bishopImages[currentPlayerIndex, (players[currentPlayerIndex].CurrentPosition + 1) % 34];
+            PictureBox image = bishopImages[currentPlayerIndex, players[currentPlayerIndex].CurrentPosition % 40];
+            PictureBox image2 = bishopImages[currentPlayerIndex, (players[currentPlayerIndex].CurrentPosition + 1) % 40];
             image.Visible = false;
             image2.Visible = true;
             players[currentPlayerIndex].CurrentPosition++;
@@ -263,11 +287,52 @@ namespace Monopoly.Main
             {
                 timer1.Stop();
                 RollDiceButton.Visible = true;
-                currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+
+                if (CheckJail())
+                {
+                    image2.Visible = false;
+                    image2 = bishopImages[currentPlayerIndex, 10];
+                    image2.Visible = true;
+                }
+
                 UpdateChat();
+                currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
                 return;
             }
         }
+
+        public bool CheckJail()
+        {
+            if (players[currentPlayerIndex].CurrentPosition == 30)
+            {
+                players[currentPlayerIndex].IsJail = true;
+                players[currentPlayerIndex].CurrentPosition = 10;
+                
+                int randomJailReason = random.Next(1, 4);
+                string jailReason = string.Empty;
+                if(randomJailReason == 1)
+                {
+                    jailReason = "за крадіжку державного майна";
+                }else if(randomJailReason == 2)
+                {
+                    jailReason = " статтею №190.4";
+                }else if(randomJailReason == 3)
+                {
+                    jailReason = "за проїзд на червоне світло свiтлофора";
+                }else if(randomJailReason == 4)
+                {
+                    jailReason = "за те, що ви дуже багаті";
+                }
+
+                chat.Items.Add($"Гравець {players[currentPlayerIndex].Name} вирушаєте до в'язницi за {jailReason}");
+                return true;
+
+            }
+            return false;
+        }
+
+
+
 
         private void RollDiceButton_Click(object sender, EventArgs e)
         {
@@ -317,12 +382,16 @@ namespace Monopoly.Main
             public Color Color { get; set; }
             public double Money { get; set; }
             public int CurrentPosition { get; set; }
+            public bool IsJail { get; set; }
+            public bool IsActive { get; set; }
             public Player(string name, Color color, double money, int currentPosition)
             {
                 Name = name;
                 Color = color;
                 Money = money;
                 CurrentPosition = currentPosition;
+                IsJail = false;
+                IsActive = true;
 
             }
         }
