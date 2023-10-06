@@ -37,7 +37,6 @@ namespace Monopoly.Main
             {
                 nameLabel4.Text = players[3].Name.ToString();
                 moneyLabel4.Text = players[3].Money.ToString();
-                panel4.BackColor = players[3].Color;
                 greenBishopStep1.Visible = true;
             }
             else
@@ -83,10 +82,6 @@ namespace Monopoly.Main
             moneyLabel2.Text = players[1].Money.ToString();
             moneyLabel3.Text = players[2].Money.ToString();
 
-            panel1.BackColor = players[0].Color;
-            panel2.BackColor = players[1].Color;
-            panel3.BackColor = players[2].Color;
-
             nameLabel1.Text = players[0].Name.ToString();
             nameLabel2.Text = players[1].Name.ToString();
             nameLabel3.Text = players[2].Name.ToString();
@@ -95,7 +90,6 @@ namespace Monopoly.Main
             {
                 nameLabel4.Text = players[3].Name.ToString();
                 moneyLabel4.Text = players[3].Money.ToString();
-                panel4.BackColor = players[3].Color;
             }
         }
 

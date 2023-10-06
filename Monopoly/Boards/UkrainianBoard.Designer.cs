@@ -467,6 +467,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackgroundImage = (global::Monopoly.Properties.Resources._1p);
             this.panel1.Controls.Add(this.nameLabel1);
             this.panel1.Controls.Add(this.moneyLabel1);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -477,12 +478,12 @@
             // 
             // nameLabel1
             // 
-            this.nameLabel1.AutoSize = (true);
-            this.nameLabel1.Location = (new global::System.Drawing.Point(84, 92));
+            this.nameLabel1.Location = (new global::System.Drawing.Point(39, 92));
             this.nameLabel1.Name = ("nameLabel1");
-            this.nameLabel1.Size = (new global::System.Drawing.Size(44, 15));
+            this.nameLabel1.Size = (new global::System.Drawing.Size(139, 15));
             this.nameLabel1.TabIndex = (2);
             this.nameLabel1.Text = ("Money");
+            this.nameLabel1.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
             // 
             // moneyLabel1
             // 
@@ -504,6 +505,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackgroundImage = (global::Monopoly.Properties.Resources._2p);
             this.panel2.Controls.Add(this.nameLabel2);
             this.panel2.Controls.Add(this.moneyLabel2);
             this.panel2.Controls.Add(this.pictureBox2);
@@ -514,17 +516,17 @@
             // 
             // nameLabel2
             // 
-            this.nameLabel2.AutoSize = (true);
-            this.nameLabel2.Location = (new global::System.Drawing.Point(83, 92));
+            this.nameLabel2.Location = (new global::System.Drawing.Point(39, 92));
             this.nameLabel2.Name = ("nameLabel2");
-            this.nameLabel2.Size = (new global::System.Drawing.Size(44, 15));
+            this.nameLabel2.Size = (new global::System.Drawing.Size(139, 15));
             this.nameLabel2.TabIndex = (3);
             this.nameLabel2.Text = ("Money");
+            this.nameLabel2.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
             // 
             // moneyLabel2
             // 
             this.moneyLabel2.AutoSize = (true);
-            this.moneyLabel2.Location = (new global::System.Drawing.Point(83, 107));
+            this.moneyLabel2.Location = (new global::System.Drawing.Point(84, 111));
             this.moneyLabel2.Name = ("moneyLabel2");
             this.moneyLabel2.Size = (new global::System.Drawing.Size(44, 15));
             this.moneyLabel2.TabIndex = (2);
@@ -541,6 +543,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackgroundImage = (global::Monopoly.Properties.Resources._3p);
             this.panel3.Controls.Add(this.nameLabel3);
             this.panel3.Controls.Add(this.moneyLabel3);
             this.panel3.Controls.Add(this.pictureBox3);
@@ -551,17 +554,17 @@
             // 
             // nameLabel3
             // 
-            this.nameLabel3.AutoSize = (true);
-            this.nameLabel3.Location = (new global::System.Drawing.Point(83, 89));
+            this.nameLabel3.Location = (new global::System.Drawing.Point(39, 89));
             this.nameLabel3.Name = ("nameLabel3");
-            this.nameLabel3.Size = (new global::System.Drawing.Size(44, 15));
+            this.nameLabel3.Size = (new global::System.Drawing.Size(139, 15));
             this.nameLabel3.TabIndex = (4);
             this.nameLabel3.Text = ("Money");
+            this.nameLabel3.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
             // 
             // moneyLabel3
             // 
             this.moneyLabel3.AutoSize = (true);
-            this.moneyLabel3.Location = (new global::System.Drawing.Point(83, 104));
+            this.moneyLabel3.Location = (new global::System.Drawing.Point(84, 111));
             this.moneyLabel3.Name = ("moneyLabel3");
             this.moneyLabel3.Size = (new global::System.Drawing.Size(44, 15));
             this.moneyLabel3.TabIndex = (3);
@@ -578,6 +581,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackgroundImage = (global::Monopoly.Properties.Resources._4p);
             this.panel4.Controls.Add(this.nameLabel4);
             this.panel4.Controls.Add(this.moneyLabel4);
             this.panel4.Controls.Add(this.pictureBox4);
@@ -588,17 +592,17 @@
             // 
             // nameLabel4
             // 
-            this.nameLabel4.AutoSize = (true);
-            this.nameLabel4.Location = (new global::System.Drawing.Point(84, 92));
+            this.nameLabel4.Location = (new global::System.Drawing.Point(39, 92));
             this.nameLabel4.Name = ("nameLabel4");
-            this.nameLabel4.Size = (new global::System.Drawing.Size(44, 15));
+            this.nameLabel4.Size = (new global::System.Drawing.Size(139, 15));
             this.nameLabel4.TabIndex = (5);
             this.nameLabel4.Text = ("Money");
+            this.nameLabel4.TextAlign = (global::System.Drawing.ContentAlignment.MiddleCenter);
             // 
             // moneyLabel4
             // 
             this.moneyLabel4.AutoSize = (true);
-            this.moneyLabel4.Location = (new global::System.Drawing.Point(84, 107));
+            this.moneyLabel4.Location = (new global::System.Drawing.Point(84, 111));
             this.moneyLabel4.Name = ("moneyLabel4");
             this.moneyLabel4.Size = (new global::System.Drawing.Size(44, 15));
             this.moneyLabel4.TabIndex = (4);
