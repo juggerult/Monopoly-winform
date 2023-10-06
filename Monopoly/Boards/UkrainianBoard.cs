@@ -91,7 +91,7 @@ namespace Monopoly.Main
             nameLabel2.Text = players[1].Name.ToString();
             nameLabel3.Text = players[2].Name.ToString();
 
-            if(numberOfPlayers == 4)
+            if (numberOfPlayers == 4)
             {
                 nameLabel4.Text = players[3].Name.ToString();
                 moneyLabel4.Text = players[3].Money.ToString();
@@ -306,7 +306,7 @@ namespace Monopoly.Main
                 if (players[currentPlayerIndex].IsDouble)
                 {
                     countOfDouble++;
-                    if(countOfDouble == 3)
+                    if (countOfDouble == 3)
                     {
                         players[currentPlayerIndex].IsJail = true;
                         players[currentPlayerIndex].CurrentPosition = 10;
@@ -373,7 +373,7 @@ namespace Monopoly.Main
             int firstDice = random.Next(1, 6);
             int secondDice = random.Next(1, 6);
             int diceResult = firstDice + secondDice;
-            if(firstDice == secondDice)
+            if (firstDice == secondDice)
             {
                 players[currentPlayerIndex].IsDouble = true;
             }
@@ -408,7 +408,7 @@ namespace Monopoly.Main
                 case 6:
                     kub2.Image = Properties.Resources._6; break;
             }
-            
+
             if (players[currentPlayerIndex].IsJail)
             {
                 if (firstDice == secondDice)
@@ -431,7 +431,7 @@ namespace Monopoly.Main
                     return;
                 }
             }
-            dalshe:
+        dalshe:
             MovePlayers(diceResult);
             UpdateMoney();
         }
