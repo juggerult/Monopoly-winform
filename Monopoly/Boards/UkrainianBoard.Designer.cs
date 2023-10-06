@@ -67,7 +67,6 @@
             this.redBishopStep29 = (new global::System.Windows.Forms.PictureBox());
             this.greenBishopStep29 = (new global::System.Windows.Forms.PictureBox());
             this.blueBishopStep29 = (new global::System.Windows.Forms.PictureBox());
-            this.panel12 = (new global::System.Windows.Forms.Panel());
             this.panel7 = (new global::System.Windows.Forms.Panel());
             this.greenBishopStep20 = (new global::System.Windows.Forms.PictureBox());
             this.redBishopStep20 = (new global::System.Windows.Forms.PictureBox());
@@ -238,10 +237,10 @@
             this.blueBishopStep1 = (new global::System.Windows.Forms.PictureBox());
             this.redBishopStep1 = (new global::System.Windows.Forms.PictureBox());
             this.panelStep2 = (new global::System.Windows.Forms.Panel());
-            this.redBishopStep2 = (new global::System.Windows.Forms.PictureBox());
-            this.blueBishopStep2 = (new global::System.Windows.Forms.PictureBox());
-            this.yellowBishopStep2 = (new global::System.Windows.Forms.PictureBox());
             this.greenBishopStep2 = (new global::System.Windows.Forms.PictureBox());
+            this.yellowBishopStep2 = (new global::System.Windows.Forms.PictureBox());
+            this.blueBishopStep2 = (new global::System.Windows.Forms.PictureBox());
+            this.redBishopStep2 = (new global::System.Windows.Forms.PictureBox());
             this.panelStep6 = (new global::System.Windows.Forms.Panel());
             this.redBishopStep6 = (new global::System.Windows.Forms.PictureBox());
             this.blueBishopStep6 = (new global::System.Windows.Forms.PictureBox());
@@ -450,10 +449,10 @@
             ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep1)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.redBishopStep1)).BeginInit();
             this.panelStep2.SuspendLayout();
-            ((global::System.ComponentModel.ISupportInitialize)(this.redBishopStep2)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep2)).BeginInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.yellowBishopStep2)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.greenBishopStep2)).BeginInit();
+            ((global::System.ComponentModel.ISupportInitialize)(this.yellowBishopStep2)).BeginInit();
+            ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep2)).BeginInit();
+            ((global::System.ComponentModel.ISupportInitialize)(this.redBishopStep2)).BeginInit();
             this.panelStep6.SuspendLayout();
             ((global::System.ComponentModel.ISupportInitialize)(this.redBishopStep6)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep6)).BeginInit();
@@ -664,6 +663,7 @@
             // 
             // panel11
             // 
+            this.panel11.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel11.Controls.Add(this.redBishopStep40);
             this.panel11.Controls.Add(this.yellowBishopStep40);
             this.panel11.Controls.Add(this.greenBishopStep40);
@@ -719,6 +719,7 @@
             // 
             // panel10
             // 
+            this.panel10.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel10.Controls.Add(this.redBishopStep39);
             this.panel10.Controls.Add(this.yellowBishopStep39);
             this.panel10.Controls.Add(this.greenBishopStep39);
@@ -774,6 +775,7 @@
             // 
             // panel9
             // 
+            this.panel9.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel9.Controls.Add(this.yellowBishopStep30);
             this.panel9.Controls.Add(this.redBishopStep30);
             this.panel9.Controls.Add(this.greenBishopStep30);
@@ -829,6 +831,7 @@
             // 
             // panel8
             // 
+            this.panel8.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel8.Controls.Add(this.yellowBishopStep29);
             this.panel8.Controls.Add(this.redBishopStep29);
             this.panel8.Controls.Add(this.greenBishopStep29);
@@ -882,18 +885,9 @@
             this.blueBishopStep29.TabStop = (false);
             this.blueBishopStep29.Visible = (false);
             // 
-            // panel12
-            // 
-            this.panel12.BackColor = (global::System.Drawing.Color.Transparent);
-            this.panel12.BackgroundImage = ((global::System.Drawing.Image)(resources.GetObject("panel12.BackgroundImage")));
-            this.panel12.BackgroundImageLayout = (global::System.Windows.Forms.ImageLayout.Zoom);
-            this.panel12.Location = (new global::System.Drawing.Point(0, 0));
-            this.panel12.Name = ("panel12");
-            this.panel12.Size = (new global::System.Drawing.Size(99, 92));
-            this.panel12.TabIndex = (12);
-            // 
             // panel7
             // 
+            this.panel7.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel7.Controls.Add(this.greenBishopStep20);
             this.panel7.Controls.Add(this.redBishopStep20);
             this.panel7.Controls.Add(this.yellowBishopStep20);
@@ -949,6 +943,7 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel5.Controls.Add(this.greenBishopStep18);
             this.panel5.Controls.Add(this.blueBishopStep18);
             this.panel5.Controls.Add(this.yellowBishopStep18);
@@ -1041,6 +1036,7 @@
             // 
             // panel34
             // 
+            this.panel34.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel34.Controls.Add(this.redBishopStep17);
             this.panel34.Controls.Add(this.blueBishopStep17);
             this.panel34.Controls.Add(this.yellowBishopStep17);
@@ -1096,6 +1092,7 @@
             // 
             // panel35
             // 
+            this.panel35.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel35.Controls.Add(this.redBishopStep16);
             this.panel35.Controls.Add(this.yellowBishopStep16);
             this.panel35.Controls.Add(this.greenBishopStep16);
@@ -1151,6 +1148,7 @@
             // 
             // panel36
             // 
+            this.panel36.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel36.Controls.Add(this.redBishopStep15);
             this.panel36.Controls.Add(this.yellowBishopStep15);
             this.panel36.Controls.Add(this.greenBishopStep15);
@@ -1206,6 +1204,7 @@
             // 
             // panel37
             // 
+            this.panel37.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel37.Controls.Add(this.redBishopStep14);
             this.panel37.Controls.Add(this.yellowBishopStep14);
             this.panel37.Controls.Add(this.blueBishopStep14);
@@ -1261,6 +1260,7 @@
             // 
             // panel40
             // 
+            this.panel40.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel40.Controls.Add(this.greenBishopStep10);
             this.panel40.Controls.Add(this.blueBishopStep10);
             this.panel40.Controls.Add(this.redBishopStep10);
@@ -1316,6 +1316,7 @@
             // 
             // panel38
             // 
+            this.panel38.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel38.Controls.Add(this.redBishopStep13);
             this.panel38.Controls.Add(this.yellowBishopStep13);
             this.panel38.Controls.Add(this.blueBishopStep13);
@@ -1371,6 +1372,7 @@
             // 
             // panel39
             // 
+            this.panel39.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel39.Controls.Add(this.redBishopStep12);
             this.panel39.Controls.Add(this.yellowBishopStep12);
             this.panel39.Controls.Add(this.blueBishopStep12);
@@ -1426,6 +1428,7 @@
             // 
             // panel33
             // 
+            this.panel33.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel33.Controls.Add(this.redBishopStep38);
             this.panel33.Controls.Add(this.yellowBishopStep38);
             this.panel33.Controls.Add(this.greenBishopStep38);
@@ -1481,6 +1484,7 @@
             // 
             // panel32
             // 
+            this.panel32.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel32.Controls.Add(this.redBishopStep35);
             this.panel32.Controls.Add(this.yellowBishopStep35);
             this.panel32.Controls.Add(this.greenBishopStep35);
@@ -1536,6 +1540,7 @@
             // 
             // panel31
             // 
+            this.panel31.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel31.Controls.Add(this.redBishopStep36);
             this.panel31.Controls.Add(this.yellowBishopStep36);
             this.panel31.Controls.Add(this.greenBishopStep36);
@@ -1591,6 +1596,7 @@
             // 
             // panel30
             // 
+            this.panel30.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel30.Controls.Add(this.redBishopStep37);
             this.panel30.Controls.Add(this.yellowBishopStep37);
             this.panel30.Controls.Add(this.blueBishopStep37);
@@ -1646,6 +1652,7 @@
             // 
             // panel29
             // 
+            this.panel29.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel29.Controls.Add(this.redBishopStep32);
             this.panel29.Controls.Add(this.yellowBishopStep32);
             this.panel29.Controls.Add(this.greenBishopStep32);
@@ -1701,6 +1708,7 @@
             // 
             // panel28
             // 
+            this.panel28.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel28.Controls.Add(this.redBishopStep33);
             this.panel28.Controls.Add(this.yellowBishopStep33);
             this.panel28.Controls.Add(this.greenBishopStep33);
@@ -1756,6 +1764,7 @@
             // 
             // panel27
             // 
+            this.panel27.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel27.Controls.Add(this.redBishopStep34);
             this.panel27.Controls.Add(this.yellowBishopStep34);
             this.panel27.Controls.Add(this.greenBishopStep34);
@@ -1867,6 +1876,7 @@
             // 
             // panel25
             // 
+            this.panel25.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel25.Controls.Add(this.redBishopStep26);
             this.panel25.Controls.Add(this.yellowBishopStep26);
             this.panel25.Controls.Add(this.blueBishopStep26);
@@ -1922,6 +1932,7 @@
             // 
             // panel24
             // 
+            this.panel24.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel24.Controls.Add(this.redBishopStep25);
             this.panel24.Controls.Add(this.blueBishopStep25);
             this.panel24.Controls.Add(this.greenBishopStep25);
@@ -1977,6 +1988,7 @@
             // 
             // panel23
             // 
+            this.panel23.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel23.Controls.Add(this.redBishopStep24);
             this.panel23.Controls.Add(this.blueBishopStep24);
             this.panel23.Controls.Add(this.greenBishopStep24);
@@ -2032,6 +2044,7 @@
             // 
             // panel22
             // 
+            this.panel22.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel22.Controls.Add(this.redBishopStep23);
             this.panel22.Controls.Add(this.blueBishopStep23);
             this.panel22.Controls.Add(this.greenBishopStep23);
@@ -2087,6 +2100,7 @@
             // 
             // panel21
             // 
+            this.panel21.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel21.Controls.Add(this.redBishopStep22);
             this.panel21.Controls.Add(this.blueBishopStep22);
             this.panel21.Controls.Add(this.greenBishopStep22);
@@ -2142,6 +2156,7 @@
             // 
             // panel20
             // 
+            this.panel20.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel20.Controls.Add(this.yellowBishopStep27);
             this.panel20.Controls.Add(this.greenBishopStep27);
             this.panel20.Controls.Add(this.redBishopStep27);
@@ -2197,6 +2212,7 @@
             // 
             // panel19
             // 
+            this.panel19.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel19.Controls.Add(this.greenBishopStep28);
             this.panel19.Controls.Add(this.yellowBishopStep28);
             this.panel19.Controls.Add(this.redBishopStep28);
@@ -2252,6 +2268,7 @@
             // 
             // panel18
             // 
+            this.panel18.BackColor = (global::System.Drawing.Color.LightGray);
             this.panel18.Controls.Add(this.redBishopStep19);
             this.panel18.Controls.Add(this.blueBishopStep19);
             this.panel18.Controls.Add(this.greenBishopStep19);
@@ -2417,6 +2434,7 @@
             // 
             // panelStep9
             // 
+            this.panelStep9.BackColor = (global::System.Drawing.Color.LightGray);
             this.panelStep9.Controls.Add(this.redBishopStep9);
             this.panelStep9.Controls.Add(this.blueBishopStep9);
             this.panelStep9.Controls.Add(this.greenBishopStep9);
@@ -2472,6 +2490,7 @@
             // 
             // panelStep7
             // 
+            this.panelStep7.BackColor = (global::System.Drawing.Color.LightGray);
             this.panelStep7.Controls.Add(this.redBishopStep7);
             this.panelStep7.Controls.Add(this.blueBishopStep7);
             this.panelStep7.Controls.Add(this.greenBishopStep7);
@@ -2527,6 +2546,7 @@
             // 
             // panelStep5
             // 
+            this.panelStep5.BackColor = (global::System.Drawing.Color.LightGray);
             this.panelStep5.Controls.Add(this.redBishopStep5);
             this.panelStep5.Controls.Add(this.blueBishopStep5);
             this.panelStep5.Controls.Add(this.greenBishopStep5);
@@ -2582,6 +2602,7 @@
             // 
             // panelStep4
             // 
+            this.panelStep4.BackColor = (global::System.Drawing.Color.LightGray);
             this.panelStep4.Controls.Add(this.redBishopStep4);
             this.panelStep4.Controls.Add(this.blueBishopStep4);
             this.panelStep4.Controls.Add(this.greenBishopStep4);
@@ -2637,6 +2658,7 @@
             // 
             // panelStep3
             // 
+            this.panelStep3.BackColor = (global::System.Drawing.Color.LightGray);
             this.panelStep3.Controls.Add(this.redBishopStep3);
             this.panelStep3.Controls.Add(this.blueBishopStep3);
             this.panelStep3.Controls.Add(this.greenBishopStep3);
@@ -2744,52 +2766,15 @@
             // 
             // panelStep2
             // 
-            this.panelStep2.BackColor = (global::System.Drawing.SystemColors.MenuHighlight);
+            this.panelStep2.BackColor = (global::System.Drawing.Color.LightGray);
             this.panelStep2.Controls.Add(this.greenBishopStep2);
             this.panelStep2.Controls.Add(this.yellowBishopStep2);
             this.panelStep2.Controls.Add(this.blueBishopStep2);
             this.panelStep2.Controls.Add(this.redBishopStep2);
-            this.panelStep2.Controls.Add(this.panel12);
             this.panelStep2.Location = (new global::System.Drawing.Point(427, 12));
             this.panelStep2.Name = ("panelStep2");
             this.panelStep2.Size = (new global::System.Drawing.Size(99, 129));
             this.panelStep2.TabIndex = (1);
-            // 
-            // redBishopStep2
-            // 
-            this.redBishopStep2.BackColor = (global::System.Drawing.Color.Transparent);
-            this.redBishopStep2.Image = ((global::System.Drawing.Image)(resources.GetObject("redBishopStep2.Image")));
-            this.redBishopStep2.Location = (new global::System.Drawing.Point(3, 13));
-            this.redBishopStep2.Name = ("redBishopStep2");
-            this.redBishopStep2.Size = (new global::System.Drawing.Size(45, 31));
-            this.redBishopStep2.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.redBishopStep2.TabIndex = (11);
-            this.redBishopStep2.TabStop = (false);
-            this.redBishopStep2.Visible = (false);
-            // 
-            // blueBishopStep2
-            // 
-            this.blueBishopStep2.BackColor = (global::System.Drawing.Color.Transparent);
-            this.blueBishopStep2.Image = ((global::System.Drawing.Image)(resources.GetObject("blueBishopStep2.Image")));
-            this.blueBishopStep2.Location = (new global::System.Drawing.Point(51, 13));
-            this.blueBishopStep2.Name = ("blueBishopStep2");
-            this.blueBishopStep2.Size = (new global::System.Drawing.Size(45, 31));
-            this.blueBishopStep2.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.blueBishopStep2.TabIndex = (11);
-            this.blueBishopStep2.TabStop = (false);
-            this.blueBishopStep2.Visible = (false);
-            // 
-            // yellowBishopStep2
-            // 
-            this.yellowBishopStep2.BackColor = (global::System.Drawing.Color.Transparent);
-            this.yellowBishopStep2.Image = (global::Monopoly.Properties.Resources.yellowBishop);
-            this.yellowBishopStep2.Location = (new global::System.Drawing.Point(3, 50));
-            this.yellowBishopStep2.Name = ("yellowBishopStep2");
-            this.yellowBishopStep2.Size = (new global::System.Drawing.Size(45, 31));
-            this.yellowBishopStep2.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
-            this.yellowBishopStep2.TabIndex = (11);
-            this.yellowBishopStep2.TabStop = (false);
-            this.yellowBishopStep2.Visible = (false);
             // 
             // greenBishopStep2
             // 
@@ -2804,8 +2789,45 @@
             this.greenBishopStep2.TabStop = (false);
             this.greenBishopStep2.Visible = (false);
             // 
+            // yellowBishopStep2
+            // 
+            this.yellowBishopStep2.BackColor = (global::System.Drawing.Color.Transparent);
+            this.yellowBishopStep2.Image = (global::Monopoly.Properties.Resources.yellowBishop);
+            this.yellowBishopStep2.Location = (new global::System.Drawing.Point(3, 50));
+            this.yellowBishopStep2.Name = ("yellowBishopStep2");
+            this.yellowBishopStep2.Size = (new global::System.Drawing.Size(45, 31));
+            this.yellowBishopStep2.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
+            this.yellowBishopStep2.TabIndex = (11);
+            this.yellowBishopStep2.TabStop = (false);
+            this.yellowBishopStep2.Visible = (false);
+            // 
+            // blueBishopStep2
+            // 
+            this.blueBishopStep2.BackColor = (global::System.Drawing.Color.Transparent);
+            this.blueBishopStep2.Image = ((global::System.Drawing.Image)(resources.GetObject("blueBishopStep2.Image")));
+            this.blueBishopStep2.Location = (new global::System.Drawing.Point(51, 13));
+            this.blueBishopStep2.Name = ("blueBishopStep2");
+            this.blueBishopStep2.Size = (new global::System.Drawing.Size(45, 31));
+            this.blueBishopStep2.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
+            this.blueBishopStep2.TabIndex = (11);
+            this.blueBishopStep2.TabStop = (false);
+            this.blueBishopStep2.Visible = (false);
+            // 
+            // redBishopStep2
+            // 
+            this.redBishopStep2.BackColor = (global::System.Drawing.Color.Transparent);
+            this.redBishopStep2.Image = ((global::System.Drawing.Image)(resources.GetObject("redBishopStep2.Image")));
+            this.redBishopStep2.Location = (new global::System.Drawing.Point(3, 13));
+            this.redBishopStep2.Name = ("redBishopStep2");
+            this.redBishopStep2.Size = (new global::System.Drawing.Size(45, 31));
+            this.redBishopStep2.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
+            this.redBishopStep2.TabIndex = (11);
+            this.redBishopStep2.TabStop = (false);
+            this.redBishopStep2.Visible = (false);
+            // 
             // panelStep6
             // 
+            this.panelStep6.BackColor = (global::System.Drawing.Color.LightGray);
             this.panelStep6.Controls.Add(this.redBishopStep6);
             this.panelStep6.Controls.Add(this.blueBishopStep6);
             this.panelStep6.Controls.Add(this.greenBishopStep6);
@@ -2861,6 +2883,7 @@
             // 
             // panelStep8
             // 
+            this.panelStep8.BackColor = (global::System.Drawing.Color.LightGray);
             this.panelStep8.Controls.Add(this.redBishopStep8);
             this.panelStep8.Controls.Add(this.blueBishopStep8);
             this.panelStep8.Controls.Add(this.greenBishopStep8);
@@ -3135,10 +3158,10 @@
             ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep1)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.redBishopStep1)).EndInit();
             this.panelStep2.ResumeLayout(false);
-            ((global::System.ComponentModel.ISupportInitialize)(this.redBishopStep2)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep2)).EndInit();
-            ((global::System.ComponentModel.ISupportInitialize)(this.yellowBishopStep2)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.greenBishopStep2)).EndInit();
+            ((global::System.ComponentModel.ISupportInitialize)(this.yellowBishopStep2)).EndInit();
+            ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep2)).EndInit();
+            ((global::System.ComponentModel.ISupportInitialize)(this.redBishopStep2)).EndInit();
             this.panelStep6.ResumeLayout(false);
             ((global::System.ComponentModel.ISupportInitialize)(this.redBishopStep6)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep6)).EndInit();
@@ -3376,6 +3399,5 @@
         private PictureBox yellowBishopStep37;
         private PictureBox blueBishopStep37;
         private PictureBox greenBishopStep37;
-        private global::System.Windows.Forms.Panel panel12;
     }
 }
