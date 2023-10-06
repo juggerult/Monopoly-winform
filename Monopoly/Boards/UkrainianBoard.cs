@@ -38,11 +38,11 @@ namespace Monopoly.Main
                 nameLabel4.Text = players[3].Name.ToString();
                 moneyLabel4.Text = players[3].Money.ToString();
                 panel4.BackColor = players[3].Color;
+                greenBishopStep1.Visible = true;
             }
             else
             {
                 panel4.Visible = false;
-
             }
         }
 
@@ -90,9 +90,17 @@ namespace Monopoly.Main
             nameLabel1.Text = players[0].Name.ToString();
             nameLabel2.Text = players[1].Name.ToString();
             nameLabel3.Text = players[2].Name.ToString();
+
+            if(numberOfPlayers == 4)
+            {
+                nameLabel4.Text = players[3].Name.ToString();
+                moneyLabel4.Text = players[3].Money.ToString();
+                panel4.BackColor = players[3].Color;
+            }
         }
 
         private int animationStep = 0;
+        private int countOfDouble = 0;
         private void MovePlayers(int steps)
         {
             animationStep = steps;
@@ -292,10 +300,34 @@ namespace Monopoly.Main
                     image2.Visible = false;
                     image2 = bishopImages[currentPlayerIndex, 10];
                     image2.Visible = true;
+                    players[currentPlayerIndex].IsDouble = false;
                 }
 
-                UpdateChat();
+                if (players[currentPlayerIndex].IsDouble)
+                {
+                    countOfDouble++;
+                    if(countOfDouble == 3)
+                    {
+                        players[currentPlayerIndex].IsJail = true;
+                        players[currentPlayerIndex].CurrentPosition = 10;
+                        image2.Visible = false;
+                        image2 = bishopImages[currentPlayerIndex, 10];
+                        image2.Visible = true;
+                        chat.Items.Add($"Гравець {players[currentPlayerIndex].Name} вирушаєте до в'язницi за випадiння трьох дублiв вряд");
+                        countOfDouble = 0;
+                        currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+                        return;
+                    }
+                    chat.Items.Add($"Гравцю{players[currentPlayerIndex].Name} випав дубль, i тому вiн может зробити ще один хiд");
+                    players[currentPlayerIndex].IsDouble = false;
+                    RollDiceButton_Click(sender, e);
+                    return;
+                }
+
+                countOfDouble = 0;
                 currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+                UpdateChat();
+                UpdateMoney();
                 return;
             }
         }
@@ -341,7 +373,10 @@ namespace Monopoly.Main
             int firstDice = random.Next(1, 6);
             int secondDice = random.Next(1, 6);
             int diceResult = firstDice + secondDice;
-
+            if(firstDice == secondDice)
+            {
+                players[currentPlayerIndex].IsDouble = true;
+            }
             chat.Items.Add($"Выпало: {diceResult}");
             switch (firstDice)
             {
@@ -373,12 +408,14 @@ namespace Monopoly.Main
                 case 6:
                     kub2.Image = Properties.Resources._6; break;
             }
+            
             if (players[currentPlayerIndex].IsJail)
             {
                 if (firstDice == secondDice)
                 {
                     players[currentPlayerIndex].IsJail = false;
                     MessageBox.Show("Ви знаходились у тюрмi, але випал дубль, i тому вы покинули тюрму");
+                    players[currentPlayerIndex].IsDouble = false;
                     goto dalshe;
                 }
                 DialogResult jailResult = MessageBox.Show("Ви знаходитеся у тюрмi, ви можете вийти за 5000 або сидiти далi поки не випаде дубль", "Будете платити?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -389,7 +426,7 @@ namespace Monopoly.Main
                 }
                 else
                 {
-                    currentPlayerIndex++;
+                    currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
                     UpdateChat();
                     return;
                 }
@@ -406,6 +443,7 @@ namespace Monopoly.Main
             public Color Color { get; set; }
             public double Money { get; set; }
             public int CurrentPosition { get; set; }
+            public bool IsDouble { get; set; }
             public bool IsJail { get; set; }
             public bool IsActive { get; set; }
             public Player(string name, Color color, double money, int currentPosition)
@@ -414,6 +452,7 @@ namespace Monopoly.Main
                 Color = color;
                 Money = money;
                 CurrentPosition = currentPosition;
+                IsDouble = false;
                 IsJail = false;
                 IsActive = true;
 
