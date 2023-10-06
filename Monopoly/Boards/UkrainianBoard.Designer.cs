@@ -478,6 +478,7 @@
             // 
             // nameLabel1
             // 
+            this.nameLabel1.BackColor = (global::System.Drawing.Color.Transparent);
             this.nameLabel1.Location = (new global::System.Drawing.Point(39, 92));
             this.nameLabel1.Name = ("nameLabel1");
             this.nameLabel1.Size = (new global::System.Drawing.Size(139, 15));
@@ -488,6 +489,7 @@
             // moneyLabel1
             // 
             this.moneyLabel1.AutoSize = (true);
+            this.moneyLabel1.BackColor = (global::System.Drawing.Color.Transparent);
             this.moneyLabel1.Location = (new global::System.Drawing.Point(84, 111));
             this.moneyLabel1.Name = ("moneyLabel1");
             this.moneyLabel1.Size = (new global::System.Drawing.Size(44, 15));
@@ -516,6 +518,7 @@
             // 
             // nameLabel2
             // 
+            this.nameLabel2.BackColor = (global::System.Drawing.Color.Transparent);
             this.nameLabel2.Location = (new global::System.Drawing.Point(39, 92));
             this.nameLabel2.Name = ("nameLabel2");
             this.nameLabel2.Size = (new global::System.Drawing.Size(139, 15));
@@ -526,6 +529,7 @@
             // moneyLabel2
             // 
             this.moneyLabel2.AutoSize = (true);
+            this.moneyLabel2.BackColor = (global::System.Drawing.Color.Transparent);
             this.moneyLabel2.Location = (new global::System.Drawing.Point(84, 111));
             this.moneyLabel2.Name = ("moneyLabel2");
             this.moneyLabel2.Size = (new global::System.Drawing.Size(44, 15));
@@ -554,7 +558,8 @@
             // 
             // nameLabel3
             // 
-            this.nameLabel3.Location = (new global::System.Drawing.Point(39, 89));
+            this.nameLabel3.BackColor = (global::System.Drawing.Color.Transparent);
+            this.nameLabel3.Location = (new global::System.Drawing.Point(39, 92));
             this.nameLabel3.Name = ("nameLabel3");
             this.nameLabel3.Size = (new global::System.Drawing.Size(139, 15));
             this.nameLabel3.TabIndex = (4);
@@ -564,6 +569,7 @@
             // moneyLabel3
             // 
             this.moneyLabel3.AutoSize = (true);
+            this.moneyLabel3.BackColor = (global::System.Drawing.Color.Transparent);
             this.moneyLabel3.Location = (new global::System.Drawing.Point(84, 111));
             this.moneyLabel3.Name = ("moneyLabel3");
             this.moneyLabel3.Size = (new global::System.Drawing.Size(44, 15));
@@ -572,7 +578,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = (new global::System.Drawing.Point(39, 0));
+            this.pictureBox3.Location = (new global::System.Drawing.Point(39, 3));
             this.pictureBox3.Name = ("pictureBox3");
             this.pictureBox3.Size = (new global::System.Drawing.Size(139, 86));
             this.pictureBox3.SizeMode = (global::System.Windows.Forms.PictureBoxSizeMode.Zoom);
@@ -592,6 +598,7 @@
             // 
             // nameLabel4
             // 
+            this.nameLabel4.BackColor = (global::System.Drawing.Color.Transparent);
             this.nameLabel4.Location = (new global::System.Drawing.Point(39, 92));
             this.nameLabel4.Name = ("nameLabel4");
             this.nameLabel4.Size = (new global::System.Drawing.Size(139, 15));
@@ -602,6 +609,7 @@
             // moneyLabel4
             // 
             this.moneyLabel4.AutoSize = (true);
+            this.moneyLabel4.BackColor = (global::System.Drawing.Color.Transparent);
             this.moneyLabel4.Location = (new global::System.Drawing.Point(84, 111));
             this.moneyLabel4.Name = ("moneyLabel4");
             this.moneyLabel4.Size = (new global::System.Drawing.Size(44, 15));
