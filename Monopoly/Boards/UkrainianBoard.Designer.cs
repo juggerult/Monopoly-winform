@@ -3095,7 +3095,7 @@
             // timer2
             // 
             this.timer2.Enabled = (true);
-            this.timer2.Interval = (1000);
+            this.timer2.Interval = (300);
             this.timer2.Tick += (this.timer2_Tick);
             // 
             // timer3

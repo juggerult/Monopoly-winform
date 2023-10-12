@@ -135,7 +135,7 @@ namespace Monopoly.Main
             timer1.Start();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private async void timer1_Tick(object sender, EventArgs e)
         {
             PictureBox[,] bishopImages = new PictureBox[4, 40];
 
@@ -329,9 +329,17 @@ namespace Monopoly.Main
                     players[currentPlayerIndex].IsDouble = false;
                     currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
                     UpdateChat();
+                    return;
                 }
 
                 BusinessActivity();
+                await Task.Run(async () =>
+                {
+                    while (timer3.Enabled)
+                    {
+                        await Task.Delay(1000);
+                    }
+                });
                 if (players[currentPlayerIndex].IsDouble)
                 {
                     countOfDouble++;
@@ -352,7 +360,8 @@ namespace Monopoly.Main
                     RollDiceButton_Click(sender, e);
                     return;
                 }
-
+                currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+                UpdateChat();
                 countOfDouble = 0; ;
                 return;
             }
@@ -366,10 +375,18 @@ namespace Monopoly.Main
                 Teleportation();
                 return;
             }
-            else if (currentPosition == 4 || currentPosition == 8)
+            else if (currentPosition == 4)
             {
-                players[currentPlayerIndex].Money -= 100000000;
+                moneyRent = 100000000;
+                payButton.Visible = true;
+                button2.Visible = true;
+                RollDiceButton.Visible = false;
+                timer3.Start();
                 return;
+            }else if(currentPosition == 8)
+            {
+                players[currentPlayerIndex].Money += 200000000;
+                chat.Items.Add("НАБУ видав премiю за сдачу корупцiонера");
             }
 
 
@@ -405,22 +422,14 @@ namespace Monopoly.Main
                 RollDiceButton.Visible = false;
                 timer3.Start();
 
-                await Task.Run(async () =>
-                {
-                    while (timer3.Enabled)
-                    {
-                        await Task.Delay(1000);
-                    }
-                });
+
             }
-            currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
-            UpdateChat();
 
         }
 
         public void Teleportation()
         {
-            int stepMove = random.Next(1, 8);
+            int stepMove = random.Next(1, 6);
             chat.Items.Add($"Игрок {players[currentPlayerIndex].Name} попал на поле путешествие, и он передвигается на {stepMove} шагов вперед");
             MovePlayers(stepMove);
             return;
@@ -576,27 +585,27 @@ namespace Monopoly.Main
                 label1.Text = board.GetBusiness(1).Rent.ToString();
                 panelStep2.BackColor = board.GetBusiness(1).Owner.Color;
             }
-            else if (board.GetBusiness(3).Owner != null)
+            if (board.GetBusiness(3).Owner != null)
             {
                 label2.Text = board.GetBusiness(3).Rent.ToString();
                 panelStep4.BackColor = board.GetBusiness(3).Owner.Color;
             }
-            else if (board.GetBusiness(5).Owner != null)
+            if (board.GetBusiness(5).Owner != null)
             {
                 label3.Text = board.GetBusiness(5).Rent.ToString();
                 panelStep6.BackColor = board.GetBusiness(5).Owner.Color;
             }
-            else if (board.GetBusiness(6).Owner != null)
+            if (board.GetBusiness(6).Owner != null)
             {
                 label4.Text = board.GetBusiness(6).Rent.ToString();
                 panelStep7.BackColor = board.GetBusiness(6).Owner.Color;
             }
-            else if (board.GetBusiness(7).Owner != null)
+            if (board.GetBusiness(7).Owner != null)
             {
                 label5.Text = board.GetBusiness(7).Rent.ToString();
                 panelStep8.BackColor = board.GetBusiness(7).Owner.Color;
             }
-            else if (board.GetBusiness(9).Owner != null)
+            if (board.GetBusiness(9).Owner != null)
             {
                 label5.Text = board.GetBusiness(9).Rent.ToString();
                 panelStep10.BackColor = board.GetBusiness(9).Owner.Color;
