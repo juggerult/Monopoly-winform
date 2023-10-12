@@ -62,16 +62,16 @@ namespace Monopoly.Main
                 {
                     case 0:
                         name = firstPlayer;
-                        color = Color.Red; break;
+                        color = Color.FromArgb(240, 110, 110); break;
                     case 1:
                         name = secondPlayer;
-                        color = Color.Blue; break;
+                        color = Color.FromArgb(82, 100, 242); break;
                     case 2:
                         name = thirdPlayer;
-                        color = Color.Yellow; break;
+                        color = Color.FromArgb(236, 244, 108); break;
                     case 3:
                         name = fourthPlayer;
-                        color = Color.Green; break;
+                        color = Color.FromArgb(130, 255, 127); break;
 
                 }
                 players[i] = new Player(name, color, 1500000000, 0);
@@ -383,7 +383,8 @@ namespace Monopoly.Main
                 RollDiceButton.Visible = false;
                 timer3.Start();
                 return;
-            }else if(currentPosition == 8)
+            }
+            else if (currentPosition == 8)
             {
                 players[currentPlayerIndex].Money += 200000000;
                 chat.Items.Add("НАБУ видав премiю за сдачу корупцiонера");
