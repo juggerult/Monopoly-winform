@@ -5,9 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Numerics;
+using System.Security.Policy;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Monopoly.Main.UkrainianBoard;
 
 namespace Monopoly.Main
 {
@@ -15,6 +18,8 @@ namespace Monopoly.Main
     {
         private int currentPlayerIndex = 0;
         private Player[] players;
+        private Business[] businesses;
+        private Board board;
         private int numberOfPlayers = 3;
         private Random random = new Random();
         private string firstPlayer = string.Empty;
@@ -28,6 +33,8 @@ namespace Monopoly.Main
             secondPlayer = secondName;
             thirdPlayer = thirdName;
             fourthPlayer = fourthName;
+
+            board = new Board();
 
             InitializePlayers();
             InitializeComponent();
@@ -44,7 +51,6 @@ namespace Monopoly.Main
                 panel4.Visible = false;
             }
         }
-
         private void InitializePlayers()
         {
             players = new Player[numberOfPlayers];
@@ -68,7 +74,34 @@ namespace Monopoly.Main
                         color = Color.Green; break;
 
                 }
-                players[i] = new Player(name, color, 10000, 0);
+                players[i] = new Player(name, color, 1500000000, 0);
+            }
+        }
+        public class Board
+        {
+            private Business[] businesses;
+
+            public Board()
+            {
+                InitializeBusinesses();
+            }
+
+            private void InitializeBusinesses()
+            {
+                businesses = new Business[40];
+                // Здесь инициализируйте все бизнесы на игровой доске
+                businesses[1] = new Business("Staff", 60000000, 2000000);
+                businesses[3] = new Business("VOVK", 85000000, 4000000);
+                businesses[5] = new Business("ЧАЗ", 20000000, 40000000);
+                businesses[6] = new Business("АТБ", 100000000, 6000000);
+                businesses[7] = new Business("Варус", 110000000, 6000000);
+                businesses[9] = new Business("Сiльпо", 120000000, 8000000);
+                // Добавьте остальные бизнесы
+            }
+
+            public Business GetBusiness(int position)
+            {
+                return businesses[position];
             }
         }
 
@@ -288,15 +321,17 @@ namespace Monopoly.Main
             {
                 timer1.Stop();
                 RollDiceButton.Visible = true;
-
                 if (CheckJail())
                 {
                     image2.Visible = false;
                     image2 = bishopImages[currentPlayerIndex, 10];
                     image2.Visible = true;
                     players[currentPlayerIndex].IsDouble = false;
+                    currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+                    UpdateChat();
                 }
 
+                BusinessActivity();
                 if (players[currentPlayerIndex].IsDouble)
                 {
                     countOfDouble++;
@@ -318,12 +353,77 @@ namespace Monopoly.Main
                     return;
                 }
 
-                countOfDouble = 0;
-                currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
-                UpdateChat();
-                UpdateMoney();
+                countOfDouble = 0; ;
                 return;
             }
+        }
+        private double moneyRent = 0;
+        public async void BusinessActivity()
+        {
+            int currentPosition = players[currentPlayerIndex].CurrentPosition;
+            if (currentPosition == 2 || currentPosition == 31)
+            {
+                Teleportation();
+                return;
+            }
+            else if (currentPosition == 4 || currentPosition == 8)
+            {
+                players[currentPlayerIndex].Money -= 100000000;
+                return;
+            }
+
+
+            Business currentBusiness = board.GetBusiness(currentPosition);
+            moneyRent = currentBusiness.Rent;
+
+            if (currentBusiness.Owner == null)
+            {
+                DialogResult result = MessageBox.Show($"Хотите купить {currentBusiness.Name} за {currentBusiness.PurchasePrice}?", "Покупка бизнеса", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    // Покупка бизнеса
+                    if (players[currentPlayerIndex].Money >= currentBusiness.PurchasePrice)
+                    {
+                        players[currentPlayerIndex].Money -= currentBusiness.PurchasePrice;
+                        currentBusiness.Owner = players[currentPlayerIndex];
+                        UpdateMoney();
+                        MessageBox.Show($"Вы купили {currentBusiness.Name}");
+                    }
+                    else
+                    {
+                        MessageBox.Show("У вас недостаточно денег для покупки этого бизнеса.");
+                    }
+                }
+            }
+            else if (currentBusiness.Owner != players[currentPlayerIndex])
+            {
+                // Этот бизнес принадлежит другому игроку, соберите аренду
+                chat.Items.Add($"Вы стали на бизнес {currentBusiness.Owner.Name}, и вам нужно заплатить {currentBusiness.Rent}");
+                currentBusiness.Owner.Money += moneyRent;
+                payButton.Visible = true;
+                button2.Visible = true;
+                RollDiceButton.Visible = false;
+                timer3.Start();
+
+                await Task.Run(async () =>
+                {
+                    while (timer3.Enabled)
+                    {
+                        await Task.Delay(1000);
+                    }
+                });
+            }
+            currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+            UpdateChat();
+
+        }
+
+        public void Teleportation()
+        {
+            int stepMove = random.Next(1, 8);
+            chat.Items.Add($"Игрок {players[currentPlayerIndex].Name} попал на поле путешествие, и он передвигается на {stepMove} шагов вперед");
+            MovePlayers(stepMove);
+            return;
         }
 
         public bool CheckJail()
@@ -452,6 +552,71 @@ namespace Monopoly.Main
 
             }
         }
+        public class Business
+        {
+            public string Name { get; set; }
+            public double PurchasePrice { get; set; }
+            public double Rent { get; set; }
+            public Player Owner { get; set; }
 
+            public Business(string name, double purchasePrice, double rent)
+            {
+                Name = name;
+                PurchasePrice = purchasePrice;
+                Rent = rent;
+                Owner = null;
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            UpdateMoney();
+            if (board.GetBusiness(1).Owner != null)
+            {
+                label1.Text = board.GetBusiness(1).Rent.ToString();
+                panelStep2.BackColor = board.GetBusiness(1).Owner.Color;
+            }
+            else if (board.GetBusiness(3).Owner != null)
+            {
+                label2.Text = board.GetBusiness(3).Rent.ToString();
+                panelStep4.BackColor = board.GetBusiness(3).Owner.Color;
+            }
+            else if (board.GetBusiness(5).Owner != null)
+            {
+                label3.Text = board.GetBusiness(5).Rent.ToString();
+                panelStep6.BackColor = board.GetBusiness(5).Owner.Color;
+            }
+            else if (board.GetBusiness(6).Owner != null)
+            {
+                label4.Text = board.GetBusiness(6).Rent.ToString();
+                panelStep7.BackColor = board.GetBusiness(6).Owner.Color;
+            }
+            else if (board.GetBusiness(7).Owner != null)
+            {
+                label5.Text = board.GetBusiness(7).Rent.ToString();
+                panelStep8.BackColor = board.GetBusiness(7).Owner.Color;
+            }
+            else if (board.GetBusiness(9).Owner != null)
+            {
+                label5.Text = board.GetBusiness(9).Rent.ToString();
+                panelStep10.BackColor = board.GetBusiness(9).Owner.Color;
+            }
+        }
+        private void payButton_Click(object sender, EventArgs e)
+        {
+            players[currentPlayerIndex].Money = players[currentPlayerIndex].Money - moneyRent;
+            payButton.Visible = false; // Скрыть кнопку после оплаты аренды
+            button2.Visible = false; // Скрыть вторую кнопку
+            RollDiceButton.Visible = true; // Показать кнопку для броска костей
+
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            if (RollDiceButton.Visible == true)
+            {
+                timer3.Stop();
+            }
+        }
     }
 }
