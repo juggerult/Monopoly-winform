@@ -737,7 +737,7 @@ namespace Monopoly.Main
             }
             if (board.GetBusiness(34).Owner != null)
             {
-                label23.Text = board.GetBusiness(34).Rent.ToString();
+                label24.Text = board.GetBusiness(34).Rent.ToString();
                 panelStep35.BackColor = board.GetBusiness(34).Owner.Color;
             }
             if (board.GetBusiness(35).Owner != null)
