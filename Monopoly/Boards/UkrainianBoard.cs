@@ -341,6 +341,7 @@ namespace Monopoly.Main
 
             if (animationStep < 1)
             {
+                RollDiceButton.Visible = true;
                 timer1.Stop();
                 if (CheckJail())
                 {
