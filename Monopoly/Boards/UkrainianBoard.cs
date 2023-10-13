@@ -342,7 +342,6 @@ namespace Monopoly.Main
             if (animationStep < 1)
             {
                 timer1.Stop();
-                RollDiceButton.Visible = true;
                 if (CheckJail())
                 {
                     image2.Visible = false;
@@ -353,8 +352,14 @@ namespace Monopoly.Main
                     UpdateChat();
                     return;
                 }
+                if (players[currentPlayerIndex].CurrentPosition == 2 || players[currentPlayerIndex].CurrentPosition == 32)
+                {
+                    Teleportation();
+                    return;
+                }
 
                 BusinessActivity();
+
                 await Task.Run(async () =>
                 {
                     while (timer3.Enabled)
@@ -392,12 +397,7 @@ namespace Monopoly.Main
         public async void BusinessActivity()
         {
             int currentPosition = players[currentPlayerIndex].CurrentPosition;
-            if (currentPosition == 2 || currentPosition == 32)
-            {
-                Teleportation();
-                return;
-            }
-            else if (currentPosition == 4 || currentPosition == 28)
+            if (currentPosition == 4 || currentPosition == 28)
             {
                 moneyRent = 100000000;
                 payButton.Visible = true;
