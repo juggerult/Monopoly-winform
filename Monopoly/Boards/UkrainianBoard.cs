@@ -74,7 +74,7 @@ namespace Monopoly.Main
                         color = Color.FromArgb(130, 255, 127); break;
 
                 }
-                players[i] = new Player(name, color, 1500000000, 0);
+                players[i] = new Player(name, color, 1500000, 0);
             }
         }
         public class Board
