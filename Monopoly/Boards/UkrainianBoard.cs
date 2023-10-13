@@ -90,27 +90,35 @@ namespace Monopoly.Main
             {
                 businesses = new Business[40];
                 // Здесь инициализируйте все бизнесы на игровой доске
-                businesses[1] = new Business("Staff", 60000000, 2000000, "Active", new double[] { 2000000, 10000000, 30000000, 90000000, 160000000, 250000000 }, 50000000, 30000000);
-                businesses[3] = new Business("VOVK", 85000000, 4000000, "Active", new double[] { 4000000, 20000000, 60000000, 90000000, 180000000, 450000000 }, 50000000, 42500000);
+                businesses[1] = new Business("Staff", 60000000, 2000000, "Active", new double[] { 2000000, 10000000, 30000000, 90000000, 160000000, 250000000 }, 50000000, 30000000, 0);
+                businesses[3] = new Business("VOVK", 85000000, 4000000, "Active", new double[] { 4000000, 20000000, 60000000, 90000000, 180000000, 450000000 }, 50000000, 42500000, 0);
+                businesses[5] = new Business("ЧАЗ", 20000000, 40000000, "Passive", new double[] { 40000000, 80000000, 160000000, 200000000 }, 0, 100000000, 0);
+                businesses[6] = new Business("АТБ", 100000000, 6000000, "Active", new double[] { 6000000, 30000000, 90000000, 270000000, 400000000, 550000000 }, 60000000, 50000000, 0);
+                businesses[7] = new Business("Варус", 110000000, 6000000, "Active", new double[] { 6000000, 35000000, 100000000, 280000000, 410000000, 570000000 }, 60000000, 60000000, 0);
+                businesses[9] = new Business("Сiльпо", 120000000, 8000000, "Active", new double[] { 8000000, 40000000, 100000000, 300000000, 450000000, 60000000 }, 60000000, 60000000, 0);
+                businesses[11] = new Business("Roshen", 150000000, 10000000, "Active", new double[] { 1000000, 50000000, 150000000, 450000000, 625000000, 75000000 }, 75000000, 75000000, 0);
+                businesses[13] = new Business("Lucas", 150000000, 10000000, "Active", new double[] { 1000000, 50000000, 150000000, 450000000, 625000000, 75000000 }, 75000000, 75000000, 0);
+                businesses[14] = new Business("АВК", 160000000, 12000000, "Active", new double[] { 12000000, 60000000, 180000000, 500000000, 700000000, 90000000 }, 75000000, 80000000, 0);
+                businesses[15] = new Business("Богдан", 20000000, 40000000, "Passive", new double[] { 40000000, 80000000, 160000000, 200000000 }, 0, 100000000, 0);
+                businesses[16] = new Business("Челентано", 180000000, 14000000, "Active", new double[] { 14000000, 70000000, 200000000, 550000000, 750000000, 95000000 }, 100000000, 90000000, 0);
+                businesses[17] = new Business("МсФокси", 180000000, 14000000, "Active", new double[] { 14000000, 70000000, 200000000, 550000000, 750000000, 95000000 }, 100000000, 90000000, 0);
+                businesses[18] = new Business("4A Games", 200000000, 10000000, "UltraPassive", new double[] { 10000000, 25000000 }, 0, 100000000, 0);
+                businesses[19] = new Business("ПузатаХата", 200000000, 16000000, "Active", new double[] { 16000000, 80000000, 220000000, 600000000, 800000000, 100000000 }, 100000000, 100000000, 0);
+                businesses[21] = new Business("Vodafone", 220000000, 18000000, "Active", new double[] { 18000000, 90000000, 250000000, 700000000, 875000000, 1050000000 }, 125000000, 110000000, 0);
+                businesses[23] = new Business("Lifecell", 220000000, 18000000, "Active", new double[] { 18000000, 90000000, 250000000, 700000000, 875000000, 1050000000 }, 125000000, 110000000, 0);
+                businesses[24] = new Business("Kiyvstart", 240000000, 20000000, "Active", new double[] { 20000000, 100000000, 300000000, 750000000, 925000000, 1100000000 }, 125000000, 120000000, 0);
+                businesses[25] = new Business("ЗАЗ", 20000000, 40000000, "Passive", new double[] { 40000000, 80000000, 160000000, 200000000 }, 0, 100000000, 0);
+                businesses[26] = new Business("Hotel LVIV", 260000000, 22000000, "Active", new double[] { 22000000, 110000000, 330000000, 800000000, 975000000, 1150000000 }, 150000000, 130000000, 0);
+                businesses[27] = new Business("Ibis", 260000000, 22000000, "Active", new double[] { 22000000, 110000000, 330000000, 800000000, 975000000, 1150000000 }, 150000000, 130000000, 0);
+                businesses[29] = new Business("Senator", 280000000, 24000000, "Active", new double[] { 24000000, 120000000, 360000000, 850000000, 1025000000, 1200000000 }, 150000000, 140000000, 0);
+                businesses[31] = new Business("SkyUp", 300000000, 26000000, "Active", new double[] { 26000000, 130000000, 390000000, 900000000, 1100000000, 1275000000 }, 175000000, 150000000, 0);
+                businesses[33] = new Business("UIA", 300000000, 26000000, "Active", new double[] { 26000000, 130000000, 390000000, 900000000, 1100000000, 1275000000 }, 175000000, 150000000, 0);
+                businesses[34] = new Business("WindRise", 320000000, 28000000, "Active", new double[] { 28000000, 150000000, 450000000, 1000000000, 1200000000, 1400000000 }, 175000000, 160000000, 0);
+                businesses[35] = new Business("КРАЗ", 20000000, 40000000, "Passive", new double[] { 40000000, 80000000, 160000000, 200000000 }, 0, 100000000, 0);
+                businesses[37] = new Business("МоноБанк", 350000000, 35000000, "Active", new double[] { 35000000, 175000000, 500000000, 1100000000, 1300000000, 1500000000 }, 200000000, 175000000, 0);
+                businesses[38] = new Business("GSC", 200000000, 10000000, "UltraPassive", new double[] { 10000000, 25000000 }, 0, 100000000, 0);
+                businesses[39] = new Business("ПриватБанк", 400000000, 50000000, "Active", new double[] { 50000000, 200000000, 600000000, 1400000000, 1700000000, 2000000000 }, 200000000, 200000000, 0);
 
-                businesses[5] = new Business("ЧАЗ", 20000000, 40000000, "Passive", new double[] { 40000000, 80000000, 160000000, 200000000 }, 0, 100000000);
-
-                businesses[6] = new Business("АТБ", 100000000, 6000000, "Active", new double[] { 6000000, 30000000, 90000000, 270000000, 400000000, 550000000 }, 60000000, 50000000);
-                businesses[7] = new Business("Варус", 110000000, 6000000, "Active", new double[] { 6000000, 35000000, 100000000, 280000000, 410000000, 570000000 }, 60000000, 60000000);
-                businesses[9] = new Business("Сiльпо", 120000000, 8000000, "Active", new double[] { 8000000, 40000000, 100000000, 300000000, 450000000, 60000000 }, 60000000, 60000000);
-
-                businesses[11] = new Business("Roshen", 150000000, 10000000, "Active", new double[] { 1000000, 50000000, 150000000, 450000000, 625000000, 75000000 }, 75000000, 75000000);
-                businesses[13] = new Business("Lucas", 150000000, 10000000, "Active", new double[] { 1000000, 50000000, 150000000, 450000000, 625000000, 75000000 }, 75000000, 75000000);
-                businesses[14] = new Business("АВК", 160000000, 12000000, "Active", new double[] { 12000000, 60000000, 180000000, 500000000, 700000000, 90000000 }, 75000000, 80000000);
-
-                businesses[15] = new Business("Богдан", 20000000, 40000000, "Passive", new double[] { 40000000, 80000000, 160000000, 200000000 }, 0, 100000000);
-
-                businesses[16] = new Business("Челентано", 180000000, 14000000, "Active", new double[] { 14000000, 70000000, 200000000, 550000000, 750000000, 95000000 }, 100000000, 90000000);
-                businesses[17] = new Business("МсФокси", 180000000, 14000000, "Active", new double[] { 14000000, 70000000, 200000000, 550000000, 750000000, 95000000 }, 100000000, 90000000);
-
-                businesses[18] = new Business("4A Games", 200000000, 10000000, "UltraPassive", new double[] { 10000000, 25000000 }, 0, 100000000);
-
-                businesses[19] = new Business("ПузатаХата", 200000000, 16000000, "Active", new double[] { 16000000, 80000000, 220000000, 600000000, 800000000, 100000000 }, 100000000, 100000000);
             }
 
             public Business GetBusiness(int position)
@@ -320,7 +328,7 @@ namespace Monopoly.Main
             if (players[currentPlayerIndex].CurrentPosition >= 40)
             {
                 players[currentPlayerIndex].Money += 1000;
-                players[currentPlayerIndex].CurrentPosition = players[currentPlayerIndex].CurrentPosition % 40;
+                players[currentPlayerIndex].CurrentPosition = players[currentPlayerIndex].CurrentPosition - 40;
                 UpdateMoney();
             }
 
@@ -384,12 +392,12 @@ namespace Monopoly.Main
         public async void BusinessActivity()
         {
             int currentPosition = players[currentPlayerIndex].CurrentPosition;
-            if (currentPosition == 2 || currentPosition == 31)
+            if (currentPosition == 2 || currentPosition == 32)
             {
                 Teleportation();
                 return;
             }
-            else if (currentPosition == 4)
+            else if (currentPosition == 4 || currentPosition == 28)
             {
                 moneyRent = 100000000;
                 payButton.Visible = true;
@@ -398,14 +406,14 @@ namespace Monopoly.Main
                 timer3.Start();
                 return;
             }
-            else if (currentPosition == 12 || currentPosition == 8) //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\
+            else if (currentPosition == 12 || currentPosition == 8 || currentPosition == 22 || currentPosition == 36) //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\
             {
                 players[currentPlayerIndex].Money += 200000000;
                 chat.Items.Add("НАБУ видав премiю за сдачу корупцiонера");
                 return;
             }
 
-            if(currentPosition == 10)
+            if (currentPosition == 10 || currentPosition == 20) //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\\
             {
                 return;
             }
@@ -592,7 +600,8 @@ namespace Monopoly.Main
             public double UpgradePrice { get; set; }
             public double SellPrice { get; set; }
 
-            public Business(string name, double purchasePrice, double rent, string type, double[] levels, double upgradePrice, double sellPrice)
+            public int CurrentLevel { get; set; }
+            public Business(string name, double purchasePrice, double rent, string type, double[] levels, double upgradePrice, double sellPrice, int currentLevel)
             {
                 Name = name;
                 PurchasePrice = purchasePrice;
@@ -602,6 +611,8 @@ namespace Monopoly.Main
                 Levels = levels;
                 UpgradePrice = upgradePrice;
                 SellPrice = sellPrice;
+                CurrentLevel = currentLevel;
+                CurrentLevel = currentLevel;
             }
         }
 
@@ -635,10 +646,10 @@ namespace Monopoly.Main
             }
             if (board.GetBusiness(9).Owner != null)
             {
-                label5.Text = board.GetBusiness(9).Rent.ToString();
+                label6.Text = board.GetBusiness(9).Rent.ToString();
                 panelStep10.BackColor = board.GetBusiness(9).Owner.Color;
             }
-            
+
             if (board.GetBusiness(11).Owner != null)
             {
                 label7.Text = board.GetBusiness(11).Rent.ToString();
@@ -678,6 +689,76 @@ namespace Monopoly.Main
             {
                 label14.Text = board.GetBusiness(19).Rent.ToString();
                 panelStep20.BackColor = board.GetBusiness(19).Owner.Color;
+            }
+            if (board.GetBusiness(21).Owner != null)
+            {
+                label15.Text = board.GetBusiness(21).Rent.ToString();
+                panelStep22.BackColor = board.GetBusiness(21).Owner.Color;
+            }
+            if (board.GetBusiness(23).Owner != null)
+            {
+                label16.Text = board.GetBusiness(23).Rent.ToString();
+                panelStep24.BackColor = board.GetBusiness(23).Owner.Color;
+            }
+            if (board.GetBusiness(24).Owner != null)
+            {
+                label17.Text = board.GetBusiness(24).Rent.ToString();
+                panelStep25.BackColor = board.GetBusiness(24).Owner.Color;
+            }
+            if (board.GetBusiness(25).Owner != null)
+            {
+                label18.Text = board.GetBusiness(25).Rent.ToString();
+                panelStep26.BackColor = board.GetBusiness(25).Owner.Color;
+            }
+            if (board.GetBusiness(26).Owner != null)
+            {
+                label19.Text = board.GetBusiness(26).Rent.ToString();
+                panelStep27.BackColor = board.GetBusiness(26).Owner.Color;
+            }
+            if (board.GetBusiness(27).Owner != null)
+            {
+                label20.Text = board.GetBusiness(27).Rent.ToString();
+                panelStep28.BackColor = board.GetBusiness(27).Owner.Color;
+            }
+            if (board.GetBusiness(29).Owner != null)
+            {
+                label21.Text = board.GetBusiness(29).Rent.ToString();
+                panelStep30.BackColor = board.GetBusiness(29).Owner.Color;
+            }
+            if (board.GetBusiness(31).Owner != null)
+            {
+                label22.Text = board.GetBusiness(31).Rent.ToString();
+                panelStep32.BackColor = board.GetBusiness(31).Owner.Color;
+            }
+            if (board.GetBusiness(33).Owner != null)
+            {
+                label23.Text = board.GetBusiness(33).Rent.ToString();
+                panelStep34.BackColor = board.GetBusiness(33).Owner.Color;
+            }
+            if (board.GetBusiness(34).Owner != null)
+            {
+                label23.Text = board.GetBusiness(34).Rent.ToString();
+                panelStep35.BackColor = board.GetBusiness(34).Owner.Color;
+            }
+            if (board.GetBusiness(35).Owner != null)
+            {
+                label25.Text = board.GetBusiness(35).Rent.ToString();
+                panelStep36.BackColor = board.GetBusiness(35).Owner.Color;
+            }
+            if (board.GetBusiness(37).Owner != null)
+            {
+                label26.Text = board.GetBusiness(37).Rent.ToString();
+                panelStep38.BackColor = board.GetBusiness(37).Owner.Color;
+            }
+            if (board.GetBusiness(38).Owner != null)
+            {
+                label27.Text = board.GetBusiness(38).Rent.ToString();
+                panelStep39.BackColor = board.GetBusiness(38).Owner.Color;
+            }
+            if (board.GetBusiness(39).Owner != null)
+            {
+                label28.Text = board.GetBusiness(39).Rent.ToString();
+                panelStep40.BackColor = board.GetBusiness(39).Owner.Color;
             }
         }
         private void payButton_Click(object sender, EventArgs e)
