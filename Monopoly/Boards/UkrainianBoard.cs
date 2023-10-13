@@ -414,7 +414,7 @@ namespace Monopoly.Main
                 return;
             }
 
-            if (currentPosition == 10 || currentPosition == 20) //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\\
+            if (currentPosition == 10 || currentPosition == 20 || currentPosition == 0) //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\\
             {
                 return;
             }
