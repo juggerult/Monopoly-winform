@@ -130,6 +130,7 @@ namespace Monopoly.Main
         private void UpdateChat()
         {
             chat.Items.Add($"Ход игрока: {players[currentPlayerIndex].Name} Его позиция: {players[currentPlayerIndex].CurrentPosition}");
+            RollDiceButton.Visible = true;
         }
         private void UpdateMoney()
         {
@@ -150,6 +151,7 @@ namespace Monopoly.Main
 
         private int animationStep = 0;
         private int countOfDouble = 0;
+        private int countOfStep = 0;
         private void MovePlayers(int steps)
         {
             animationStep = steps;
@@ -325,12 +327,6 @@ namespace Monopoly.Main
             bishopImages[3, 38] = greenBishopStep39;
             bishopImages[3, 39] = greenBishopStep40;
 
-            if (players[currentPlayerIndex].CurrentPosition >= 40)
-            {
-                players[currentPlayerIndex].Money += 200000;
-                players[currentPlayerIndex].CurrentPosition = players[currentPlayerIndex].CurrentPosition - 40;
-                UpdateMoney();
-            }
 
             PictureBox image = bishopImages[currentPlayerIndex, players[currentPlayerIndex].CurrentPosition % 40];
             PictureBox image2 = bishopImages[currentPlayerIndex, (players[currentPlayerIndex].CurrentPosition + 1) % 40];
@@ -339,9 +335,16 @@ namespace Monopoly.Main
             players[currentPlayerIndex].CurrentPosition++;
             animationStep--;
 
+            if (players[currentPlayerIndex].CurrentPosition == 40)
+            {
+                players[currentPlayerIndex].Money += 200000;
+                players[currentPlayerIndex].CurrentPosition = players[currentPlayerIndex].CurrentPosition - 40;
+                UpdateMoney();
+            }
+            countOfStep++;
+
             if (animationStep < 1)
             {
-                RollDiceButton.Visible = true;
                 timer1.Stop();
                 if (CheckJail())
                 {
@@ -359,7 +362,7 @@ namespace Monopoly.Main
                     return;
                 }
 
-                BusinessActivity();
+                BusinessActivity(countOfStep);
 
                 await Task.Run(async () =>
                 {
@@ -390,12 +393,13 @@ namespace Monopoly.Main
                 }
                 currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
                 UpdateChat();
-                countOfDouble = 0; ;
+                countOfDouble = 0;
+                countOfStep = 0;
                 return;
             }
         }
         private double moneyRent = 0;
-        public async void BusinessActivity()
+        public async void BusinessActivity(int coutLastSteps)
         {
             int currentPosition = players[currentPlayerIndex].CurrentPosition;
             if (currentPosition == 4 || currentPosition == 28)
@@ -432,19 +436,26 @@ namespace Monopoly.Main
                     {
                         players[currentPlayerIndex].Money -= currentBusiness.PurchasePrice;
                         currentBusiness.Owner = players[currentPlayerIndex];
+                        players[currentPlayerIndex].OwnedBusinesses.Add(currentBusiness);
                         UpdateMoney();
                         MessageBox.Show($"Вы купили {currentBusiness.Name}");
+                        return;
                     }
                     else
                     {
                         MessageBox.Show("У вас недостаточно денег для покупки этого бизнеса.");
+                        return;
                     }
                 }
             }
             else if (currentBusiness.Owner != players[currentPlayerIndex])
             {
                 // Этот бизнес принадлежит другому игроку, соберите аренду
-                chat.Items.Add($"Вы стали на бизнес {currentBusiness.Owner.Name}, и вам нужно заплатить {currentBusiness.Rent}");
+                if (currentPosition == 38 || currentPosition == 18)
+                {
+                    moneyRent = countOfStep * currentBusiness.Rent;
+                }
+                chat.Items.Add($"Вы стали на бизнес {currentBusiness.Owner.Name}, и вам нужно заплатить {moneyRent}");
                 currentBusiness.Owner.Money += moneyRent;
                 payButton.Visible = true;
                 button2.Visible = true;
@@ -578,6 +589,7 @@ namespace Monopoly.Main
             public bool IsDouble { get; set; }
             public bool IsJail { get; set; }
             public bool IsActive { get; set; }
+            public List<Business> OwnedBusinesses { get; set; }
             public Player(string name, Color color, double money, int currentPosition)
             {
                 Name = name;
@@ -587,6 +599,7 @@ namespace Monopoly.Main
                 IsDouble = false;
                 IsJail = false;
                 IsActive = true;
+                OwnedBusinesses = new List<Business>();
 
             }
         }
@@ -613,13 +626,22 @@ namespace Monopoly.Main
                 UpgradePrice = upgradePrice;
                 SellPrice = sellPrice;
                 CurrentLevel = currentLevel;
-                CurrentLevel = currentLevel;
             }
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
             UpdateMoney();
+            if(((board.GetBusiness(18).Owner == board.GetBusiness(38).Owner) && (board.GetBusiness(38).Owner != null && board.GetBusiness(18).Owner != null) && (board.GetBusiness(38).CurrentLevel != 1 || board.GetBusiness(18).CurrentLevel != 1)))
+            {
+                board.GetBusiness(18).CurrentLevel++;
+                board.GetBusiness(18).Rent = board.GetBusiness(18).Levels[board.GetBusiness(18).CurrentLevel];
+                board.GetBusiness(38).CurrentLevel++;
+                board.GetBusiness(38).Rent = board.GetBusiness(18).Levels[board.GetBusiness(38).CurrentLevel];
+            }
+
+
+
             if (board.GetBusiness(1).Owner != null)
             {
                 label1.Text = board.GetBusiness(1).Rent.ToString();
