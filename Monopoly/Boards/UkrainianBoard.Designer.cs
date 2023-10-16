@@ -284,6 +284,22 @@
             this.timer1 = (new global::System.Windows.Forms.Timer(this.components));
             this.timer2 = (new global::System.Windows.Forms.Timer(this.components));
             this.timer3 = (new global::System.Windows.Forms.Timer(this.components));
+            this.panel5 = (new global::System.Windows.Forms.Panel());
+            this.buttonSell = (new global::System.Windows.Forms.Button());
+            this.buttonUpgrade = (new global::System.Windows.Forms.Button());
+            this.labelInfoFillial = (new global::System.Windows.Forms.Label());
+            this.labelInfoSellPrice = (new global::System.Windows.Forms.Label());
+            this.labelInfoPrice = (new global::System.Windows.Forms.Label());
+            this.labelInfo5 = (new global::System.Windows.Forms.Label());
+            this.labelInfo4 = (new global::System.Windows.Forms.Label());
+            this.labelInfo3 = (new global::System.Windows.Forms.Label());
+            this.labelInfo2 = (new global::System.Windows.Forms.Label());
+            this.labelInfo1 = (new global::System.Windows.Forms.Label());
+            this.labelInfoBase = (new global::System.Windows.Forms.Label());
+            this.panel7 = (new global::System.Windows.Forms.Panel());
+            this.labelInfoLevel = (new global::System.Windows.Forms.Label());
+            this.labelInfoType = (new global::System.Windows.Forms.Label());
+            this.labelNameInfo = (new global::System.Windows.Forms.Label());
             this.panel1.SuspendLayout();
             ((global::System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -495,6 +511,8 @@
             ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep8)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.greenBishopStep8)).BeginInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.yellowBishopStep8)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -742,6 +760,7 @@
             this.panelStep4.Name = ("panelStep4");
             this.panelStep4.Size = (new global::System.Drawing.Size(99, 129));
             this.panelStep4.TabIndex = (2);
+            this.panelStep4.MouseEnter += (this.panelStep4_MouseEnter);
             // 
             // label2
             // 
@@ -1564,6 +1583,7 @@
             this.panelStep10.Name = ("panelStep10");
             this.panelStep10.Size = (new global::System.Drawing.Size(99, 129));
             this.panelStep10.TabIndex = (7);
+            this.panelStep10.MouseEnter += (this.panelStep10_MouseEnter);
             // 
             // label6
             // 
@@ -3050,6 +3070,7 @@
             this.panelStep7.Name = ("panelStep7");
             this.panelStep7.Size = (new global::System.Drawing.Size(99, 129));
             this.panelStep7.TabIndex = (2);
+            this.panelStep7.MouseEnter += (this.panelStep7_MouseEnter);
             // 
             // label4
             // 
@@ -3295,6 +3316,7 @@
             this.panelStep2.Name = ("panelStep2");
             this.panelStep2.Size = (new global::System.Drawing.Size(99, 129));
             this.panelStep2.TabIndex = (1);
+            this.panelStep2.MouseEnter += (this.panelStep2_MouseEnter);
             // 
             // label1
             // 
@@ -3368,6 +3390,7 @@
             this.panelStep6.Name = ("panelStep6");
             this.panelStep6.Size = (new global::System.Drawing.Size(99, 129));
             this.panelStep6.TabIndex = (2);
+            this.panelStep6.MouseEnter += (this.panelStep6_MouseEnter);
             // 
             // label3
             // 
@@ -3440,6 +3463,7 @@
             this.panelStep8.Name = ("panelStep8");
             this.panelStep8.Size = (new global::System.Drawing.Size(99, 129));
             this.panelStep8.TabIndex = (2);
+            this.panelStep8.MouseEnter += (this.panelStep8_MouseEnter);
             // 
             // label5
             // 
@@ -3512,11 +3536,176 @@
             // 
             this.timer3.Tick += (this.timer3_Tick);
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = (global::System.Drawing.Color.LightGray);
+            this.panel5.Controls.Add(this.buttonSell);
+            this.panel5.Controls.Add(this.buttonUpgrade);
+            this.panel5.Controls.Add(this.labelInfoFillial);
+            this.panel5.Controls.Add(this.labelInfoSellPrice);
+            this.panel5.Controls.Add(this.labelInfoPrice);
+            this.panel5.Controls.Add(this.labelInfo5);
+            this.panel5.Controls.Add(this.labelInfo4);
+            this.panel5.Controls.Add(this.labelInfo3);
+            this.panel5.Controls.Add(this.labelInfo2);
+            this.panel5.Controls.Add(this.labelInfo1);
+            this.panel5.Controls.Add(this.labelInfoBase);
+            this.panel5.Controls.Add(this.panel7);
+            this.panel5.Location = (new global::System.Drawing.Point(1637, 147));
+            this.panel5.Name = ("panel5");
+            this.panel5.Size = (new global::System.Drawing.Size(209, 289));
+            this.panel5.TabIndex = (4);
+            // 
+            // buttonSell
+            // 
+            this.buttonSell.Location = (new global::System.Drawing.Point(104, 57));
+            this.buttonSell.Name = ("buttonSell");
+            this.buttonSell.Size = (new global::System.Drawing.Size(75, 23));
+            this.buttonSell.TabIndex = (12);
+            this.buttonSell.Text = ("button3");
+            this.buttonSell.UseVisualStyleBackColor = (true);
+            this.buttonSell.Visible = (false);
+            // 
+            // buttonUpgrade
+            // 
+            this.buttonUpgrade.Location = (new global::System.Drawing.Point(13, 57));
+            this.buttonUpgrade.Name = ("buttonUpgrade");
+            this.buttonUpgrade.Size = (new global::System.Drawing.Size(75, 23));
+            this.buttonUpgrade.TabIndex = (11);
+            this.buttonUpgrade.Text = ("button1");
+            this.buttonUpgrade.UseVisualStyleBackColor = (true);
+            this.buttonUpgrade.Visible = (false);
+            // 
+            // labelInfoFillial
+            // 
+            this.labelInfoFillial.AutoSize = (true);
+            this.labelInfoFillial.Location = (new global::System.Drawing.Point(16, 258));
+            this.labelInfoFillial.Name = ("labelInfoFillial");
+            this.labelInfoFillial.Size = (new global::System.Drawing.Size(106, 15));
+            this.labelInfoFillial.TabIndex = (10);
+            this.labelInfoFillial.Text = ("Покупка филиала");
+            // 
+            // labelInfoSellPrice
+            // 
+            this.labelInfoSellPrice.AutoSize = (true);
+            this.labelInfoSellPrice.Location = (new global::System.Drawing.Point(16, 236));
+            this.labelInfoSellPrice.Name = ("labelInfoSellPrice");
+            this.labelInfoSellPrice.Size = (new global::System.Drawing.Size(72, 15));
+            this.labelInfoSellPrice.TabIndex = (9);
+            this.labelInfoSellPrice.Text = ("Залог поля:");
+            // 
+            // labelInfoPrice
+            // 
+            this.labelInfoPrice.AutoSize = (true);
+            this.labelInfoPrice.Location = (new global::System.Drawing.Point(16, 216));
+            this.labelInfoPrice.Name = ("labelInfoPrice");
+            this.labelInfoPrice.Size = (new global::System.Drawing.Size(100, 15));
+            this.labelInfoPrice.TabIndex = (8);
+            this.labelInfoPrice.Text = ("Стоимость поля:");
+            // 
+            // labelInfo5
+            // 
+            this.labelInfo5.AutoSize = (true);
+            this.labelInfo5.Font = (new global::System.Drawing.Font("Segoe UI", 9F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.labelInfo5.Location = (new global::System.Drawing.Point(16, 192));
+            this.labelInfo5.Name = ("labelInfo5");
+            this.labelInfo5.Size = (new global::System.Drawing.Size(44, 15));
+            this.labelInfo5.TabIndex = (7);
+            this.labelInfo5.Text = ("* * * * *");
+            // 
+            // labelInfo4
+            // 
+            this.labelInfo4.AutoSize = (true);
+            this.labelInfo4.Font = (new global::System.Drawing.Font("Segoe UI", 9F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.labelInfo4.Location = (new global::System.Drawing.Point(16, 173));
+            this.labelInfo4.Name = ("labelInfo4");
+            this.labelInfo4.Size = (new global::System.Drawing.Size(36, 15));
+            this.labelInfo4.TabIndex = (6);
+            this.labelInfo4.Text = ("* * * *");
+            // 
+            // labelInfo3
+            // 
+            this.labelInfo3.AutoSize = (true);
+            this.labelInfo3.Font = (new global::System.Drawing.Font("Segoe UI", 9F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.labelInfo3.Location = (new global::System.Drawing.Point(16, 157));
+            this.labelInfo3.Name = ("labelInfo3");
+            this.labelInfo3.Size = (new global::System.Drawing.Size(28, 15));
+            this.labelInfo3.TabIndex = (5);
+            this.labelInfo3.Text = ("* * *");
+            // 
+            // labelInfo2
+            // 
+            this.labelInfo2.AutoSize = (true);
+            this.labelInfo2.Font = (new global::System.Drawing.Font("Segoe UI", 9F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.labelInfo2.Location = (new global::System.Drawing.Point(16, 142));
+            this.labelInfo2.Name = ("labelInfo2");
+            this.labelInfo2.Size = (new global::System.Drawing.Size(20, 15));
+            this.labelInfo2.TabIndex = (4);
+            this.labelInfo2.Text = ("* *");
+            // 
+            // labelInfo1
+            // 
+            this.labelInfo1.AutoSize = (true);
+            this.labelInfo1.Font = (new global::System.Drawing.Font("Segoe UI", 9F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.labelInfo1.Location = (new global::System.Drawing.Point(16, 127));
+            this.labelInfo1.Name = ("labelInfo1");
+            this.labelInfo1.Size = (new global::System.Drawing.Size(12, 15));
+            this.labelInfo1.TabIndex = (3);
+            this.labelInfo1.Text = ("*");
+            // 
+            // labelInfoBase
+            // 
+            this.labelInfoBase.AutoSize = (true);
+            this.labelInfoBase.Location = (new global::System.Drawing.Point(16, 104));
+            this.labelInfoBase.Name = ("labelInfoBase");
+            this.labelInfoBase.Size = (new global::System.Drawing.Size(87, 15));
+            this.labelInfoBase.TabIndex = (2);
+            this.labelInfoBase.Text = ("Базовая рента:");
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.labelInfoLevel);
+            this.panel7.Controls.Add(this.labelInfoType);
+            this.panel7.Controls.Add(this.labelNameInfo);
+            this.panel7.Location = (new global::System.Drawing.Point(0, 0));
+            this.panel7.Name = ("panel7");
+            this.panel7.Size = (new global::System.Drawing.Size(209, 51));
+            this.panel7.TabIndex = (1);
+            // 
+            // labelInfoLevel
+            // 
+            this.labelInfoLevel.AutoSize = (true);
+            this.labelInfoLevel.Location = (new global::System.Drawing.Point(78, 32));
+            this.labelInfoLevel.Name = ("labelInfoLevel");
+            this.labelInfoLevel.Size = (new global::System.Drawing.Size(31, 15));
+            this.labelInfoLevel.TabIndex = (2);
+            this.labelInfoLevel.Text = ("base");
+            // 
+            // labelInfoType
+            // 
+            this.labelInfoType.AutoSize = (true);
+            this.labelInfoType.Font = (new global::System.Drawing.Font("Segoe UI", 6.75F, global::System.Drawing.FontStyle.Regular, global::System.Drawing.GraphicsUnit.Point));
+            this.labelInfoType.Location = (new global::System.Drawing.Point(78, 19));
+            this.labelInfoType.Name = ("labelInfoType");
+            this.labelInfoType.Size = (new global::System.Drawing.Size(25, 12));
+            this.labelInfoType.TabIndex = (1);
+            this.labelInfoType.Text = ("TYPE");
+            // 
+            // labelNameInfo
+            // 
+            this.labelNameInfo.AutoSize = (true);
+            this.labelNameInfo.Location = (new global::System.Drawing.Point(75, 4));
+            this.labelNameInfo.Name = ("labelNameInfo");
+            this.labelNameInfo.Size = (new global::System.Drawing.Size(41, 15));
+            this.labelNameInfo.TabIndex = (0);
+            this.labelNameInfo.Text = ("NAME");
+            // 
             // UkrainianBoard
             // 
             this.AutoScaleDimensions = (new global::System.Drawing.SizeF(7F, 15F));
             this.AutoScaleMode = (global::System.Windows.Forms.AutoScaleMode.Font);
-            this.ClientSize = (new global::System.Drawing.Size(1591, 984));
+            this.ClientSize = (new global::System.Drawing.Size(1958, 984));
+            this.Controls.Add(this.panel5);
             this.Controls.Add(this.panelStep8);
             this.Controls.Add(this.panelStep6);
             this.Controls.Add(this.panelStep2);
@@ -3770,6 +3959,10 @@
             ((global::System.ComponentModel.ISupportInitialize)(this.blueBishopStep8)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.greenBishopStep8)).EndInit();
             ((global::System.ComponentModel.ISupportInitialize)(this.yellowBishopStep8)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
         }
 
@@ -4030,5 +4223,21 @@
         private Label label22;
         private Label label23;
         private Label label24;
+        private global::System.Windows.Forms.Panel panel5;
+        private global::System.Windows.Forms.Button buttonSell;
+        private global::System.Windows.Forms.Button buttonUpgrade;
+        private global::System.Windows.Forms.Label labelInfoFillial;
+        private global::System.Windows.Forms.Label labelInfoSellPrice;
+        private global::System.Windows.Forms.Label labelInfoPrice;
+        private global::System.Windows.Forms.Label labelInfo5;
+        private global::System.Windows.Forms.Label labelInfo4;
+        private global::System.Windows.Forms.Label labelInfo3;
+        private global::System.Windows.Forms.Label labelInfo2;
+        private global::System.Windows.Forms.Label labelInfo1;
+        private global::System.Windows.Forms.Label labelInfoBase;
+        private global::System.Windows.Forms.Panel panel7;
+        private global::System.Windows.Forms.Label labelInfoLevel;
+        private global::System.Windows.Forms.Label labelInfoType;
+        private global::System.Windows.Forms.Label labelNameInfo;
     }
 }

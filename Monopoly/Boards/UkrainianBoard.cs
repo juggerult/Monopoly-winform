@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+using Monopoly.Boards;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -92,34 +94,34 @@ namespace Monopoly.Main
             {
                 businesses = new Business[40];
                 // Здесь инициализируйте все бизнесы на игровой доске
-                businesses[1] = new Business("Staff", 60000, 2000, "Active", new double[] { 2000, 10000, 30000, 90000, 160000, 250000 }, 50000, 30000, 0);
-                businesses[3] = new Business("VOVK", 85000, 4000, "Active", new double[] { 4000, 20000, 60000, 180000, 320000, 450000 }, 50000, 42500, 0);
-                businesses[5] = new Business("ЧАЗ", 200000, 40000, "Passive", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[6] = new Business("АТБ", 100000, 6000, "Active", new double[] { 6000, 30000, 90000, 270000, 400000, 550000 }, 60000, 50000, 0);
-                businesses[7] = new Business("Варус", 110000, 6000, "Active", new double[] { 6000, 35000, 100000, 280000, 410000, 570000 }, 60000, 60000, 0);
-                businesses[9] = new Business("Сiльпо", 120000, 8000, "Active", new double[] { 8000, 40000, 100000, 300000, 450000, 600000 }, 60000, 60000, 0);
-                businesses[11] = new Business("Roshen", 150000, 10000, "Active", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
-                businesses[13] = new Business("Lucas", 150000, 10000, "Active", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
-                businesses[14] = new Business("АВК", 160000, 12000, "Active", new double[] { 12000, 60000, 180000, 500000, 700000, 900000 }, 75000, 80000, 0);
-                businesses[15] = new Business("Богдан", 200000, 40000, "Passive", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[16] = new Business("Челентано", 180000, 14000, "Active", new double[] { 14000, 70000, 200000, 550000, 750000, 950000 }, 100000, 90000, 0);
-                businesses[17] = new Business("МсФокси", 180000, 14000, "Active", new double[] { 14000, 70000, 200000, 550000, 750000, 950000 }, 100000, 90000, 0);
-                businesses[18] = new Business("4A Games", 175000, 10000, "UltraPassive", new double[] { 10000, 25000 }, 0, 100000, 0);
-                businesses[19] = new Business("ПузатаХата", 200000, 16000, "Active", new double[] { 16000, 80000, 220000, 600000, 800000, 1000000 }, 100000, 100000, 0);
-                businesses[21] = new Business("Vodafone", 220000, 18000, "Active", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000000, 110000000, 0);
-                businesses[23] = new Business("Lifecell", 220000, 18000, "Active", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000, 110000, 0);
-                businesses[24] = new Business("Kiyvstart", 240000, 20000, "Active", new double[] { 20000, 100000, 300000, 750000, 925000, 1100000 }, 125000, 120000, 0);
-                businesses[25] = new Business("ЗАЗ", 200000, 40000, "Passive", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[26] = new Business("Hotel LVIV", 260000, 22000, "Active", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
-                businesses[27] = new Business("Ibis", 260000, 22000, "Active", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
-                businesses[29] = new Business("Senator", 280000, 24000, "Active", new double[] { 24000, 120000, 360000, 850000, 1025000, 1200000 }, 150000, 140000, 0);
-                businesses[31] = new Business("SkyUp", 300000, 26000, "Active", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
-                businesses[33] = new Business("UIA", 300000, 26000, "Active", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
-                businesses[34] = new Business("WindRise", 320000, 28000, "Active", new double[] { 28000, 150000, 450000, 1000000, 1200000, 1400000 }, 175000, 160000, 0);
-                businesses[35] = new Business("КРАЗ", 200000, 40000, "Passive", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[37] = new Business("МоноБанк", 350000, 35000, "Active", new double[] { 35000, 175000, 500000, 1100000, 1300000, 1500000 }, 200000, 175000, 0);
-                businesses[38] = new Business("GSC", 175000, 10000, "UltraPassive", new double[] { 10000, 25000 }, 0, 100000, 0);
-                businesses[39] = new Business("ПриватБанк", 400000, 50000, "Active", new double[] { 50000, 200000, 600000, 1400000, 1700000, 2000000 }, 200000, 200000, 0);
+                businesses[1] = new Business("Staff", 60000, 2000, "Одежда", new double[] { 2000, 10000, 30000, 90000, 160000, 250000 }, 50000, 30000, 0);
+                businesses[3] = new Business("VOVK", 85000, 4000, "Одежда", new double[] { 4000, 20000, 60000, 180000, 320000, 450000 }, 50000, 42500, 0);
+                businesses[5] = new Business("ЧАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
+                businesses[6] = new Business("АТБ", 100000, 6000, "Продуктовый", new double[] { 6000, 30000, 90000, 270000, 400000, 550000 }, 60000, 50000, 0);
+                businesses[7] = new Business("Варус", 110000, 6000, "Продуктовый", new double[] { 6000, 35000, 100000, 280000, 410000, 570000 }, 60000, 60000, 0);
+                businesses[9] = new Business("Сiльпо", 120000, 8000, "Продуктовый", new double[] { 8000, 40000, 100000, 300000, 450000, 600000 }, 60000, 60000, 0);
+                businesses[11] = new Business("Roshen", 150000, 10000, "Кондитерская", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
+                businesses[13] = new Business("Lucas", 150000, 10000, "Кондитерская", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
+                businesses[14] = new Business("АВК", 160000, 12000, "Кондитерская", new double[] { 12000, 60000, 180000, 500000, 700000, 900000 }, 75000, 80000, 0);
+                businesses[15] = new Business("Богдан", 200000, 40000, "Автосалоны", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
+                businesses[16] = new Business("Челентано", 180000, 14000, "Ресторан", new double[] { 14000, 70000, 200000, 550000, 750000, 950000 }, 100000, 90000, 0);
+                businesses[17] = new Business("МсФокси", 180000, 14000, "Ресторан", new double[] { 14000, 70000, 200000, 550000, 750000, 950000 }, 100000, 90000, 0);
+                businesses[18] = new Business("4A Games", 175000, 10000, "Игры", new double[] { 10000, 25000 }, 0, 100000, 0);
+                businesses[19] = new Business("ПузатаХата", 200000, 16000, "Ресторан", new double[] { 16000, 80000, 220000, 600000, 800000, 1000000 }, 100000, 100000, 0);
+                businesses[21] = new Business("Vodafone", 220000, 18000, "Мобильный оператор", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000000, 110000000, 0);
+                businesses[23] = new Business("Lifecell", 220000, 18000, "Мобильный оператор", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000, 110000, 0);
+                businesses[24] = new Business("Kiyvstart", 240000, 20000, "Мобильный оператор", new double[] { 20000, 100000, 300000, 750000, 925000, 1100000 }, 125000, 120000, 0);
+                businesses[25] = new Business("ЗАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
+                businesses[26] = new Business("Hotel LVIV", 260000, 22000, "Отель", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
+                businesses[27] = new Business("Ibis", 260000, 22000, "Отель", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
+                businesses[29] = new Business("Senator", 280000, 24000, "Отель", new double[] { 24000, 120000, 360000, 850000, 1025000, 1200000 }, 150000, 140000, 0);
+                businesses[31] = new Business("SkyUp", 300000, 26000, "Авиалинии", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
+                businesses[33] = new Business("UIA", 300000, 26000, "Авиалинии", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
+                businesses[34] = new Business("WindRise", 320000, 28000, "Авиалинии", new double[] { 28000, 150000, 450000, 1000000, 1200000, 1400000 }, 175000, 160000, 0);
+                businesses[35] = new Business("КРАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
+                businesses[37] = new Business("МоноБанк", 350000, 35000, "Банк", new double[] { 35000, 175000, 500000, 1100000, 1300000, 1500000 }, 200000, 175000, 0);
+                businesses[38] = new Business("GSC", 175000, 10000, "Игры", new double[] { 10000, 25000 }, 0, 100000, 0);
+                businesses[39] = new Business("ПриватБанк", 400000, 50000, "Банк", new double[] { 50000, 200000, 600000, 1400000, 1700000, 2000000 }, 200000, 200000, 0);
             }
 
             public Business GetBusiness(int position)
@@ -420,10 +422,26 @@ namespace Monopoly.Main
                 return;
             }
 
-            if (currentPosition == 10 || currentPosition == 20 || currentPosition == 0) //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\\
+            if (currentPosition == 10 || currentPosition == 0) //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\\
             {
                 return;
             }
+            if(currentPosition == 20)
+            {
+                DialogResult result = MessageBox.Show($"Вы стали на поле казино, будете ли играть ?", "Приглашение в казино", MessageBoxButtons.YesNo);
+                if (result == DialogResult.Yes)
+                {
+                    UkraineCasino ukraineCasino = new UkraineCasino();
+                    ukraineCasino.Show();
+                    return;
+                }
+                else
+                {
+                    chat.Items.Add($"Игрко {players[currentPlayerIndex].Name} отказался играть в казино");
+                    return;
+                }
+            }
+
 
             Business currentBusiness = board.GetBusiness(currentPosition);
             moneyRent = currentBusiness.Rent;
@@ -821,5 +839,175 @@ namespace Monopoly.Main
                 timer3.Stop();
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+        private void panelStep2_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(1);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+
+
+
+        }
+
+        private void panelStep4_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(3);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+        } /// Бизнесы обычные
+
+        private void panelStep7_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(6);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep8_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(7);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+        }
+
+
+        private void panelStep10_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(9);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep6_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(5);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = " ";
+            labelInfo5.Text = " ";
+
+            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Цена филиала: Этот бизнес пасивный, не требует прокачки";
+        }  ///Машины
+
+        /// Для игр не сделал еще
+        /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
     }
 }
