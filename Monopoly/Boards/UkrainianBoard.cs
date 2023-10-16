@@ -50,6 +50,7 @@ namespace Monopoly.Main
             {
                 panel4.Visible = false;
             }
+            timer2.Start();
         }
         private void InitializePlayers()
         {
@@ -84,6 +85,7 @@ namespace Monopoly.Main
             public Board()
             {
                 InitializeBusinesses();
+
             }
 
             private void InitializeBusinesses()
@@ -118,7 +120,6 @@ namespace Monopoly.Main
                 businesses[37] = new Business("МоноБанк", 350000, 35000, "Active", new double[] { 35000, 175000, 500000, 1100000, 1300000, 1500000 }, 200000, 175000, 0);
                 businesses[38] = new Business("GSC", 175000, 10000, "UltraPassive", new double[] { 10000, 25000 }, 0, 100000, 0);
                 businesses[39] = new Business("ПриватБанк", 400000, 50000, "Active", new double[] { 50000, 200000, 600000, 1400000, 1700000, 2000000 }, 200000, 200000, 0);
-
             }
 
             public Business GetBusiness(int position)
@@ -384,6 +385,7 @@ namespace Monopoly.Main
                         chat.Items.Add($"Гравець {players[currentPlayerIndex].Name} вирушаєте до в'язницi за випадiння трьох дублiв вряд");
                         countOfDouble = 0;
                         currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+                        UpdateChat();
                         return;
                     }
                     chat.Items.Add($"Гравцю{players[currentPlayerIndex].Name} випав дубль, i тому вiн может зробити ще один хiд");
@@ -513,6 +515,7 @@ namespace Monopoly.Main
 
         private void RollDiceButton_Click(object sender, EventArgs e)
         {
+
             int firstDice = random.Next(1, 6);
             int secondDice = random.Next(1, 6);
             int diceResult = firstDice + secondDice;
@@ -632,7 +635,7 @@ namespace Monopoly.Main
         private void timer2_Tick(object sender, EventArgs e)
         {
             UpdateMoney();
-            if(((board.GetBusiness(18).Owner == board.GetBusiness(38).Owner) && (board.GetBusiness(38).Owner != null && board.GetBusiness(18).Owner != null) && (board.GetBusiness(38).CurrentLevel != 1 || board.GetBusiness(18).CurrentLevel != 1)))
+            if (((board.GetBusiness(18).Owner == board.GetBusiness(38).Owner) && (board.GetBusiness(38).Owner != null && board.GetBusiness(18).Owner != null) && (board.GetBusiness(38).CurrentLevel != 1 || board.GetBusiness(18).CurrentLevel != 1)))
             {
                 board.GetBusiness(18).CurrentLevel++;
                 board.GetBusiness(18).Rent = board.GetBusiness(18).Levels[board.GetBusiness(18).CurrentLevel];
@@ -640,6 +643,24 @@ namespace Monopoly.Main
                 board.GetBusiness(38).Rent = board.GetBusiness(18).Levels[board.GetBusiness(38).CurrentLevel];
             }
 
+            int countOfPassiveBusinesses = 0;
+            for (int i = 5; i < 36; i += 10)
+            {
+                if ((board.GetBusiness(i).Owner != null) && (board.GetBusiness(i).Owner.Name == players[currentPlayerIndex].Name))
+                {
+                    countOfPassiveBusinesses++;
+                }
+            }
+
+            foreach (int businessNumber in new int[] { 5, 15, 25, 35 })
+            {
+                Business business = board.GetBusiness(businessNumber);
+                if (business.Owner != null && business.Owner.Name == players[currentPlayerIndex].Name)
+                {
+                    business.CurrentLevel = countOfPassiveBusinesses - 1;
+                    business.Rent = business.Levels[business.CurrentLevel];
+                }
+            }
 
 
             if (board.GetBusiness(1).Owner != null)
