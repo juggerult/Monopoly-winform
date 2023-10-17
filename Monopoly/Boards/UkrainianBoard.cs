@@ -94,33 +94,33 @@ namespace Monopoly.Main
             {
                 businesses = new Business[40];
                 // Здесь инициализируйте все бизнесы на игровой доске
-                businesses[1] = new Business("Staff", 60000, 2000, "Одежда", new double[] { 2000, 10000, 30000, 90000, 160000, 250000 }, 50000, 30000, 0);
-                businesses[3] = new Business("VOVK", 85000, 4000, "Одежда", new double[] { 4000, 20000, 60000, 180000, 320000, 450000 }, 50000, 42500, 0);
+                businesses[1] = new Business("Staff", 60000, 2000, "Одяг", new double[] { 2000, 10000, 30000, 90000, 160000, 250000 }, 50000, 30000, 0);
+                businesses[3] = new Business("VOVK", 85000, 4000, "Одяг", new double[] { 4000, 20000, 60000, 180000, 320000, 450000 }, 50000, 42500, 0);
                 businesses[5] = new Business("ЧАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[6] = new Business("АТБ", 100000, 6000, "Продуктовый", new double[] { 6000, 30000, 90000, 270000, 400000, 550000 }, 60000, 50000, 0);
-                businesses[7] = new Business("Варус", 110000, 6000, "Продуктовый", new double[] { 6000, 35000, 100000, 280000, 410000, 570000 }, 60000, 60000, 0);
-                businesses[9] = new Business("Сiльпо", 120000, 8000, "Продуктовый", new double[] { 8000, 40000, 100000, 300000, 450000, 600000 }, 60000, 60000, 0);
-                businesses[11] = new Business("Roshen", 150000, 10000, "Кондитерская", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
-                businesses[13] = new Business("Lucas", 150000, 10000, "Кондитерская", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
-                businesses[14] = new Business("АВК", 160000, 12000, "Кондитерская", new double[] { 12000, 60000, 180000, 500000, 700000, 900000 }, 75000, 80000, 0);
+                businesses[6] = new Business("АТБ", 100000, 6000, "Продуктовий магазин", new double[] { 6000, 30000, 90000, 270000, 400000, 550000 }, 60000, 50000, 0);
+                businesses[7] = new Business("Варус", 110000, 6000, "Продуктовий магазин", new double[] { 6000, 35000, 100000, 280000, 410000, 570000 }, 60000, 60000, 0);
+                businesses[9] = new Business("Сiльпо", 120000, 8000, "Продуктовий магазин", new double[] { 8000, 40000, 100000, 300000, 450000, 600000 }, 60000, 60000, 0);
+                businesses[11] = new Business("Roshen", 150000, 10000, "Кондитерська", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
+                businesses[13] = new Business("Lucas", 150000, 10000, "Кондитерська", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
+                businesses[14] = new Business("АВК", 160000, 12000, "Кондитерська", new double[] { 12000, 60000, 180000, 500000, 700000, 900000 }, 75000, 80000, 0);
                 businesses[15] = new Business("Богдан", 200000, 40000, "Автосалоны", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
                 businesses[16] = new Business("Челентано", 180000, 14000, "Ресторан", new double[] { 14000, 70000, 200000, 550000, 750000, 950000 }, 100000, 90000, 0);
                 businesses[17] = new Business("МсФокси", 180000, 14000, "Ресторан", new double[] { 14000, 70000, 200000, 550000, 750000, 950000 }, 100000, 90000, 0);
-                businesses[18] = new Business("4A Games", 175000, 10000, "Игры", new double[] { 10000, 25000 }, 0, 100000, 0);
+                businesses[18] = new Business("4A Games", 175000, 10000, "Ігри", new double[] { 10000, 25000 }, 0, 100000, 0);
                 businesses[19] = new Business("ПузатаХата", 200000, 16000, "Ресторан", new double[] { 16000, 80000, 220000, 600000, 800000, 1000000 }, 100000, 100000, 0);
                 businesses[21] = new Business("Vodafone", 220000, 18000, "Мобильный оператор", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000000, 110000000, 0);
                 businesses[23] = new Business("Lifecell", 220000, 18000, "Мобильный оператор", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000, 110000, 0);
                 businesses[24] = new Business("Kiyvstart", 240000, 20000, "Мобильный оператор", new double[] { 20000, 100000, 300000, 750000, 925000, 1100000 }, 125000, 120000, 0);
                 businesses[25] = new Business("ЗАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[26] = new Business("Hotel LVIV", 260000, 22000, "Отель", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
-                businesses[27] = new Business("Ibis", 260000, 22000, "Отель", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
-                businesses[29] = new Business("Senator", 280000, 24000, "Отель", new double[] { 24000, 120000, 360000, 850000, 1025000, 1200000 }, 150000, 140000, 0);
-                businesses[31] = new Business("SkyUp", 300000, 26000, "Авиалинии", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
-                businesses[33] = new Business("UIA", 300000, 26000, "Авиалинии", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
-                businesses[34] = new Business("WindRise", 320000, 28000, "Авиалинии", new double[] { 28000, 150000, 450000, 1000000, 1200000, 1400000 }, 175000, 160000, 0);
+                businesses[26] = new Business("Hotel LVIV", 260000, 22000, "Готель", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
+                businesses[27] = new Business("Ibis", 260000, 22000, "Готель", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
+                businesses[29] = new Business("Senator", 280000, 24000, "Готель", new double[] { 24000, 120000, 360000, 850000, 1025000, 1200000 }, 150000, 140000, 0);
+                businesses[31] = new Business("SkyUp", 300000, 26000, "Авіалінії", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
+                businesses[33] = new Business("UIA", 300000, 26000, "Авіалінії", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
+                businesses[34] = new Business("WindRise", 320000, 28000, "Авіалінії", new double[] { 28000, 150000, 450000, 1000000, 1200000, 1400000 }, 175000, 160000, 0);
                 businesses[35] = new Business("КРАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
                 businesses[37] = new Business("МоноБанк", 350000, 35000, "Банк", new double[] { 35000, 175000, 500000, 1100000, 1300000, 1500000 }, 200000, 175000, 0);
-                businesses[38] = new Business("GSC", 175000, 10000, "Игры", new double[] { 10000, 25000 }, 0, 100000, 0);
+                businesses[38] = new Business("GSC", 175000, 10000, "Ігри", new double[] { 10000, 25000 }, 0, 100000, 0);
                 businesses[39] = new Business("ПриватБанк", 400000, 50000, "Банк", new double[] { 50000, 200000, 600000, 1400000, 1700000, 2000000 }, 200000, 200000, 0);
             }
 
@@ -132,7 +132,7 @@ namespace Monopoly.Main
 
         private void UpdateChat()
         {
-            chat.Items.Add($"Ход игрока: {players[currentPlayerIndex].Name} Его позиция: {players[currentPlayerIndex].CurrentPosition}");
+            chat.Items.Add($"Хід гравця: {players[currentPlayerIndex].Name} Його позиція: {players[currentPlayerIndex].CurrentPosition}");
             RollDiceButton.Visible = true;
         }
         private void UpdateMoney()
@@ -390,7 +390,7 @@ namespace Monopoly.Main
                         UpdateChat();
                         return;
                     }
-                    chat.Items.Add($"Гравцю{players[currentPlayerIndex].Name} випав дубль, i тому вiн может зробити ще один хiд");
+                    chat.Items.Add($"Гравцю {players[currentPlayerIndex].Name} випав дубль, i тому вiн может зробити ще один хiд");
                     players[currentPlayerIndex].IsDouble = false;
                     RollDiceButton_Click(sender, e);
                     return;
@@ -426,9 +426,9 @@ namespace Monopoly.Main
             {
                 return;
             }
-            if(currentPosition == 20)
+            if (currentPosition == 20)
             {
-                DialogResult result = MessageBox.Show($"Вы стали на поле казино, будете ли играть ?", "Приглашение в казино", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show($"Ви стали на поле казино, чи будете грати? ", "Запрошення в казино", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     UkraineCasino ukraineCasino = new UkraineCasino();
@@ -437,7 +437,7 @@ namespace Monopoly.Main
                 }
                 else
                 {
-                    chat.Items.Add($"Игрко {players[currentPlayerIndex].Name} отказался играть в казино");
+                    chat.Items.Add($"Гравець {players[currentPlayerIndex].Name} відмовився грати в казино");
                     return;
                 }
             }
@@ -448,7 +448,7 @@ namespace Monopoly.Main
 
             if (currentBusiness.Owner == null)
             {
-                DialogResult result = MessageBox.Show($"Хотите купить {currentBusiness.Name} за {currentBusiness.PurchasePrice}?", "Покупка бизнеса", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show($"Хочете купити {currentBusiness.Name} за {currentBusiness.PurchasePrice}?", "Купівля бізнесу", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     // Покупка бизнеса
@@ -458,12 +458,12 @@ namespace Monopoly.Main
                         currentBusiness.Owner = players[currentPlayerIndex];
                         players[currentPlayerIndex].OwnedBusinesses.Add(currentBusiness);
                         UpdateMoney();
-                        MessageBox.Show($"Вы купили {currentBusiness.Name}");
+                        MessageBox.Show($"Ви купили {currentBusiness.Name}");
                         return;
                     }
                     else
                     {
-                        MessageBox.Show("У вас недостаточно денег для покупки этого бизнеса.");
+                        MessageBox.Show("У вас недостатньо грошей для купівлі цього бізнесу.");
                         return;
                     }
                 }
@@ -475,7 +475,7 @@ namespace Monopoly.Main
                 {
                     moneyRent = countOfStep * currentBusiness.Rent;
                 }
-                chat.Items.Add($"Вы стали на бизнес {currentBusiness.Owner.Name}, и вам нужно заплатить {moneyRent}");
+                chat.Items.Add($"Ви стали на бізнес {currentBusiness.Owner.Name}, і вам потрібно заплатити {moneyRent}");
                 currentBusiness.Owner.Money += moneyRent;
                 payButton.Visible = true;
                 button2.Visible = true;
@@ -490,7 +490,7 @@ namespace Monopoly.Main
         public void Teleportation()
         {
             int stepMove = random.Next(1, 6);
-            chat.Items.Add($"Игрок {players[currentPlayerIndex].Name} попал на поле путешествие, и он передвигается на {stepMove} шагов вперед");
+            chat.Items.Add($"Гравець {players[currentPlayerIndex].Name} потрапив на поле подорож, і він пересувається на {stepMove} кроків вперед");
             MovePlayers(stepMove);
             return;
         }
@@ -541,7 +541,7 @@ namespace Monopoly.Main
             {
                 players[currentPlayerIndex].IsDouble = true;
             }
-            chat.Items.Add($"Выпало: {diceResult}");
+            chat.Items.Add($"Випало: {diceResult}");
             switch (firstDice)
             {
                 case 1:
@@ -861,16 +861,16 @@ namespace Monopoly.Main
             {
                 panel7.BackColor = curBiz.Owner.Color;
             }
-            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
             labelInfo1.Text = $"* = {curBiz.Levels[1]}";
             labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
             labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
             labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
             labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
 
-            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
-            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
-            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
 
 
 
@@ -890,16 +890,16 @@ namespace Monopoly.Main
             {
                 panel7.BackColor = Color.LightGray;
             }
-            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
             labelInfo1.Text = $"* = {curBiz.Levels[1]}";
             labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
             labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
             labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
             labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
 
-            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
-            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
-            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
         } /// Бизнесы обычные
 
         private void panelStep7_MouseEnter(object sender, EventArgs e)
@@ -916,16 +916,16 @@ namespace Monopoly.Main
             {
                 panel7.BackColor = Color.LightGray;
             }
-            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
             labelInfo1.Text = $"* = {curBiz.Levels[1]}";
             labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
             labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
             labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
             labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
 
-            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
-            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
-            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
         }
 
         private void panelStep8_MouseEnter(object sender, EventArgs e)
@@ -942,16 +942,16 @@ namespace Monopoly.Main
             {
                 panel7.BackColor = Color.LightGray;
             }
-            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
             labelInfo1.Text = $"* = {curBiz.Levels[1]}";
             labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
             labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
             labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
             labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
 
-            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
-            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
-            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
         }
 
 
@@ -969,16 +969,16 @@ namespace Monopoly.Main
             {
                 panel7.BackColor = Color.LightGray;
             }
-            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
             labelInfo1.Text = $"* = {curBiz.Levels[1]}";
             labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
             labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
             labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
             labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
 
-            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
-            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
-            labelInfoFillial.Text = $"Цена филиала: {curBiz.UpgradePrice.ToString()}";
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
         }
 
         private void panelStep6_MouseEnter(object sender, EventArgs e)
@@ -995,19 +995,589 @@ namespace Monopoly.Main
             {
                 panel7.BackColor = Color.LightGray;
             }
-            labelInfoBase.Text = $"Базовая рента: {curBiz.Levels[0].ToString()}";
-            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
-            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
-            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* * = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * * = {curBiz.Levels[3]}";
             labelInfo4.Text = " ";
             labelInfo5.Text = " ";
 
-            labelInfoPrice.Text = $"Стоимость поля: {curBiz.PurchasePrice.ToString()}";
-            labelInfoSellPrice.Text = $"Залог поля: {curBiz.SellPrice.ToString()}";
-            labelInfoFillial.Text = $"Цена филиала: Этот бизнес пасивный, не требует прокачки";
-        }  ///Машины
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: Цей бізнес пасивний";
+        }
 
-        /// Для игр не сделал еще
-        /// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+        private void panelStep12_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(11);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep14_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(13);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep15_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(14);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep17_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(16);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep18_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(17);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep20_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(19);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep22_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(21);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep24_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(23);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep25_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(24);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep27_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(26);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep28_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(27);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep30_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(29);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep32_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(31);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep34_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(33);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep35_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(34);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep38_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(37);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep40_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(39);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Базова рента: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = $"* * * * = {curBiz.Levels[4]}";
+            labelInfo5.Text = $"* * * * * = {curBiz.Levels[5]}";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
+        }
+
+        private void panelStep16_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(15);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* * = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = " ";
+            labelInfo5.Text = " ";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: Цей бізнес пасивний";
+        }
+
+        private void panelStep26_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(25);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* * = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = " ";
+            labelInfo5.Text = " ";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: Цей бізнес пасивний";
+        }
+
+        private void panelStep36_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(35);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"* * = {curBiz.Levels[1]}";
+            labelInfo2.Text = $"* * * = {curBiz.Levels[2]}";
+            labelInfo3.Text = $"* * * * = {curBiz.Levels[3]}";
+            labelInfo4.Text = " ";
+            labelInfo5.Text = " ";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: Цей бізнес пасивний";
+        }
+
+        private void panelStep19_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(18);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"*  = 100x";
+            labelInfo2.Text = $"* *  = 200x";
+            labelInfo3.Text = " ";
+            labelInfo4.Text = " ";
+            labelInfo5.Text = " ";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: Цей бізнес пасивний";
+        }
+
+        private void panelStep39_MouseEnter(object sender, EventArgs e)
+        {
+            Business curBiz = board.GetBusiness(38);
+            labelNameInfo.Text = curBiz.Name.ToString();
+            labelInfoType.Text = curBiz.Type.ToString();
+            labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
+            if (curBiz.Owner != null)
+            {
+                panel7.BackColor = curBiz.Owner.Color;
+            }
+            else
+            {
+                panel7.BackColor = Color.LightGray;
+            }
+            labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
+            labelInfo1.Text = $"*  = 100x";
+            labelInfo2.Text = $"* *  = 200x";
+            labelInfo3.Text = " ";
+            labelInfo4.Text = " ";
+            labelInfo5.Text = " ";
+
+            labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
+            labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
+            labelInfoFillial.Text = $"Ціна філії: Цей бізнес пасивний";
+        }
     }
 }
+

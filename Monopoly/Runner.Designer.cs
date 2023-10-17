@@ -55,21 +55,21 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 19);
+            label1.Location = new Point(24, 20);
             label1.Name = "label1";
-            label1.Size = new Size(219, 15);
+            label1.Size = new Size(197, 15);
             label1.TabIndex = 1;
-            label1.Text = "Сколько игроков будут играть? ( 3 - 4 )";
+            label1.Text = "Скільки гравців гратимуть? ( 3 - 4 )";
             // 
             // radioButton1
             // 
             radioButton1.AutoSize = true;
             radioButton1.Location = new Point(12, 146);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(89, 19);
+            radioButton1.Size = new Size(85, 19);
             radioButton1.TabIndex = 2;
             radioButton1.TabStop = true;
-            radioButton1.Text = "Украинская";
+            radioButton1.Text = "Українська";
             radioButton1.UseVisualStyleBackColor = true;
             radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
@@ -81,7 +81,7 @@
             radioButton2.Size = new Size(105, 19);
             radioButton2.TabIndex = 3;
             radioButton2.TabStop = true;
-            radioButton2.Text = "Американская";
+            radioButton2.Text = "Американська";
             radioButton2.UseVisualStyleBackColor = true;
             radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
@@ -129,11 +129,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(49, 174);
+            label3.Location = new Point(63, 174);
             label3.Name = "label3";
-            label3.Size = new Size(138, 15);
+            label3.Size = new Size(123, 15);
             label3.TabIndex = 10;
-            label3.Text = "Введите Имена игроков";
+            label3.Text = "Введіть Імена гравців";
             // 
             // textBox4
             // 
