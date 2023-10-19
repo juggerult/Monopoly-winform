@@ -3587,6 +3587,7 @@
             this.buttonSell.Text = ("button3");
             this.buttonSell.UseVisualStyleBackColor = (true);
             this.buttonSell.Visible = (false);
+            this.buttonSell.Click += (this.buttonSell_Click);
             // 
             // buttonUpgrade
             // 
