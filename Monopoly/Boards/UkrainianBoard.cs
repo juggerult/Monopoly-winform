@@ -878,6 +878,7 @@ namespace Monopoly.Main
                                          /// Метод в котором будет выводиться информация о карточках. А так же возможность прокачать филию если одним типом бизнесса владеет один и тот же человек
         private void panelStep2_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(1);
             if (board.GetBusiness(1).Owner == board.GetBusiness(3).Owner && board.GetBusiness(1).Owner != null)
             {
@@ -909,6 +910,7 @@ namespace Monopoly.Main
 
         private void panelStep4_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(3);
             if (board.GetBusiness(1).Owner == board.GetBusiness(3).Owner && board.GetBusiness(3).Owner != null)
             {
@@ -940,6 +942,7 @@ namespace Monopoly.Main
 
         private void panelStep7_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(6);
             if (((board.GetBusiness(6).Owner == board.GetBusiness(7).Owner) && (board.GetBusiness(7).Owner == board.GetBusiness(9).Owner)) && board.GetBusiness(6).Owner != null)
             {
@@ -971,6 +974,7 @@ namespace Monopoly.Main
 
         private void panelStep8_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(7);
             if (((board.GetBusiness(6).Owner == board.GetBusiness(7).Owner) && (board.GetBusiness(7).Owner == board.GetBusiness(9).Owner)) && board.GetBusiness(7).Owner != null)
             {
@@ -1000,9 +1004,9 @@ namespace Monopoly.Main
             labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
         }
 
-
         private void panelStep10_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(9);
             if (((board.GetBusiness(6).Owner == board.GetBusiness(7).Owner) && (board.GetBusiness(7).Owner == board.GetBusiness(9).Owner)) && board.GetBusiness(9).Owner != null)
             {
@@ -1034,6 +1038,7 @@ namespace Monopoly.Main
 
         private void panelStep6_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(5);
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1060,6 +1065,7 @@ namespace Monopoly.Main
 
         private void panelStep12_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(11);
             if (((board.GetBusiness(11).Owner == board.GetBusiness(13).Owner) && (board.GetBusiness(13).Owner == board.GetBusiness(14).Owner)) && board.GetBusiness(11).Owner != null)
             {
@@ -1091,6 +1097,7 @@ namespace Monopoly.Main
 
         private void panelStep14_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(13);
             if (((board.GetBusiness(11).Owner == board.GetBusiness(13).Owner) && (board.GetBusiness(13).Owner == board.GetBusiness(14).Owner)) && board.GetBusiness(13).Owner != null)
             {
@@ -1122,6 +1129,7 @@ namespace Monopoly.Main
 
         private void panelStep15_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(14);
             if (((board.GetBusiness(11).Owner == board.GetBusiness(13).Owner) && (board.GetBusiness(13).Owner == board.GetBusiness(14).Owner)) && board.GetBusiness(14).Owner != null)
             {
@@ -1153,6 +1161,7 @@ namespace Monopoly.Main
 
         private void panelStep17_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(16);
             if (((board.GetBusiness(16).Owner == board.GetBusiness(17).Owner) && (board.GetBusiness(17).Owner == board.GetBusiness(19).Owner)) && board.GetBusiness(16).Owner != null)
             {
@@ -1184,6 +1193,7 @@ namespace Monopoly.Main
 
         private void panelStep18_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(17);
             if (((board.GetBusiness(16).Owner == board.GetBusiness(17).Owner) && (board.GetBusiness(17).Owner == board.GetBusiness(19).Owner)) && board.GetBusiness(17).Owner != null)
             {
@@ -1215,6 +1225,7 @@ namespace Monopoly.Main
 
         private void panelStep20_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(19);
             if (((board.GetBusiness(16).Owner == board.GetBusiness(17).Owner) && (board.GetBusiness(17).Owner == board.GetBusiness(19).Owner)) && board.GetBusiness(19).Owner != null)
             {
@@ -1246,6 +1257,7 @@ namespace Monopoly.Main
 
         private void panelStep22_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(21);
             if (((board.GetBusiness(21).Owner == board.GetBusiness(23).Owner) && (board.GetBusiness(23).Owner == board.GetBusiness(24).Owner)) && board.GetBusiness(21).Owner != null)
             {
@@ -1277,6 +1289,7 @@ namespace Monopoly.Main
 
         private void panelStep24_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(23);
             if (((board.GetBusiness(21).Owner == board.GetBusiness(23).Owner) && (board.GetBusiness(23).Owner == board.GetBusiness(24).Owner)) && board.GetBusiness(23).Owner != null)
             {
@@ -1308,6 +1321,7 @@ namespace Monopoly.Main
 
         private void panelStep25_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(24);
             if (((board.GetBusiness(21).Owner == board.GetBusiness(23).Owner) && (board.GetBusiness(23).Owner == board.GetBusiness(24).Owner)) && board.GetBusiness(24).Owner != null)
             {
@@ -1339,6 +1353,7 @@ namespace Monopoly.Main
 
         private void panelStep27_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(26);
             if (((board.GetBusiness(26).Owner == board.GetBusiness(27).Owner) && (board.GetBusiness(27).Owner == board.GetBusiness(29).Owner)) && board.GetBusiness(26).Owner != null)
             {
@@ -1370,6 +1385,7 @@ namespace Monopoly.Main
 
         private void panelStep28_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(27);
             if (((board.GetBusiness(26).Owner == board.GetBusiness(27).Owner) && (board.GetBusiness(27).Owner == board.GetBusiness(29).Owner)) && board.GetBusiness(27).Owner != null)
             {
@@ -1401,6 +1417,7 @@ namespace Monopoly.Main
 
         private void panelStep30_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(29);
             if (((board.GetBusiness(26).Owner == board.GetBusiness(27).Owner) && (board.GetBusiness(27).Owner == board.GetBusiness(29).Owner)) && board.GetBusiness(29).Owner != null)
             {
@@ -1432,6 +1449,7 @@ namespace Monopoly.Main
 
         private void panelStep32_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(31);
             if (((board.GetBusiness(31).Owner == board.GetBusiness(33).Owner) && (board.GetBusiness(33).Owner == board.GetBusiness(34).Owner)) && board.GetBusiness(31).Owner != null)
             {
@@ -1463,6 +1481,7 @@ namespace Monopoly.Main
 
         private void panelStep34_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(33);
             if (((board.GetBusiness(31).Owner == board.GetBusiness(33).Owner) && (board.GetBusiness(33).Owner == board.GetBusiness(34).Owner)) && board.GetBusiness(33).Owner != null)
             {
@@ -1494,6 +1513,7 @@ namespace Monopoly.Main
 
         private void panelStep35_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(34);
             if (((board.GetBusiness(31).Owner == board.GetBusiness(33).Owner) && (board.GetBusiness(33).Owner == board.GetBusiness(34).Owner)) && board.GetBusiness(34).Owner != null)
             {
@@ -1525,6 +1545,7 @@ namespace Monopoly.Main
 
         private void panelStep38_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(37);
             if (board.GetBusiness(37).Owner == board.GetBusiness(39).Owner && board.GetBusiness(37).Owner != null)
             {
@@ -1556,6 +1577,7 @@ namespace Monopoly.Main
 
         private void panelStep40_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(39);
             if (board.GetBusiness(37).Owner == board.GetBusiness(39).Owner && board.GetBusiness(39).Owner != null)
             {
@@ -1587,6 +1609,7 @@ namespace Monopoly.Main
 
         private void panelStep16_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(15);
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1613,6 +1636,7 @@ namespace Monopoly.Main
 
         private void panelStep26_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(25);
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1639,6 +1663,7 @@ namespace Monopoly.Main
 
         private void panelStep36_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(35);
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1665,6 +1690,7 @@ namespace Monopoly.Main
 
         private void panelStep19_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(18);
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1691,6 +1717,7 @@ namespace Monopoly.Main
 
         private void panelStep39_MouseEnter(object sender, EventArgs e)
         {
+            buttonUpgrade.Visible = false;
             Business curBiz = board.GetBusiness(38);
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
