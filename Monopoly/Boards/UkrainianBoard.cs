@@ -712,7 +712,7 @@ namespace Monopoly.Main
             else
             {
                 label3.Text = "200,000";
-                panelStep6.BackColor= Color.LightGray;
+                panelStep6.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(6).Owner != null)
             {
@@ -928,7 +928,7 @@ namespace Monopoly.Main
         {
             if (CurrentBussines.Owner == null)
             {
-                MessageBox.Show("У вас невистачаэ грошей для покращення цього бiзнесу", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Цей бізнес не куплений, ви не можете його продати", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -1869,8 +1869,8 @@ namespace Monopoly.Main
                 panel7.BackColor = Color.LightGray;
             }
             labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
-            labelInfo1.Text = $"*  = 100x";
-            labelInfo2.Text = $"* *  = 200x";
+            labelInfo1.Text = $"*  = 10000x";
+            labelInfo2.Text = $"* *  = 25000x";
             labelInfo3.Text = " ";
             labelInfo4.Text = " ";
             labelInfo5.Text = " ";
@@ -1898,8 +1898,8 @@ namespace Monopoly.Main
                 panel7.BackColor = Color.LightGray;
             }
             labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
-            labelInfo1.Text = $"*  = 100x";
-            labelInfo2.Text = $"* *  = 200x";
+            labelInfo1.Text = $"*  = 10000x";
+            labelInfo2.Text = $"* *  = 25000x";
             labelInfo3.Text = " ";
             labelInfo4.Text = " ";
             labelInfo5.Text = " ";
