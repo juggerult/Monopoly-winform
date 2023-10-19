@@ -687,11 +687,21 @@ namespace Monopoly.Main
                 label1.Text = board.GetBusiness(1).Rent.ToString();
                 panelStep2.BackColor = board.GetBusiness(1).Owner.Color;
             }
+            else
+            {
+                label1.Text = "60,000";
+                panelStep2.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(3).Owner != null)
             {
                 board.GetBusiness(3).Rent = board.GetBusiness(3).Levels[board.GetBusiness(3).CurrentLevel];
                 label2.Text = board.GetBusiness(3).Rent.ToString();
                 panelStep4.BackColor = board.GetBusiness(3).Owner.Color;
+            }
+            else
+            {
+                label2.Text = "85,000";
+                panelStep4.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(5).Owner != null)
             {
@@ -699,11 +709,21 @@ namespace Monopoly.Main
                 label3.Text = board.GetBusiness(5).Rent.ToString();
                 panelStep6.BackColor = board.GetBusiness(5).Owner.Color;
             }
+            else
+            {
+                label3.Text = "200,000";
+                panelStep6.BackColor= Color.LightGray;
+            }
             if (board.GetBusiness(6).Owner != null)
             {
                 board.GetBusiness(6).Rent = board.GetBusiness(6).Levels[board.GetBusiness(6).CurrentLevel];
                 label4.Text = board.GetBusiness(6).Rent.ToString();
                 panelStep7.BackColor = board.GetBusiness(6).Owner.Color;
+            }
+            else
+            {
+                label4.Text = "100,000";
+                panelStep7.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(7).Owner != null)
             {
@@ -711,11 +731,21 @@ namespace Monopoly.Main
                 label5.Text = board.GetBusiness(7).Rent.ToString();
                 panelStep8.BackColor = board.GetBusiness(7).Owner.Color;
             }
+            else
+            {
+                label5.Text = "110,000";
+                panelStep8.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(9).Owner != null)
             {
                 board.GetBusiness(9).Rent = board.GetBusiness(9).Levels[board.GetBusiness(9).CurrentLevel];
                 label6.Text = board.GetBusiness(9).Rent.ToString();
                 panelStep10.BackColor = board.GetBusiness(9).Owner.Color;
+            }
+            else
+            {
+                label6.Text = "120,00";
+                panelStep10.BackColor = Color.LightGray;
             }
 
             if (board.GetBusiness(11).Owner != null)
@@ -896,15 +926,22 @@ namespace Monopoly.Main
         }
         private void buttonSell_Click(object sender, EventArgs e)
         {
-            if(CurrentBussines.CurrentLevel == 0)
+            if (CurrentBussines.Owner == null)
             {
-                CurrentBussines.Owner.Money += CurrentBussines.SellPrice;
-                CurrentBussines.Owner = null;
+                MessageBox.Show("У вас невистачаэ грошей для покращення цього бiзнесу", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                CurrentBussines.Owner.Money += CurrentBussines.UpgradePrice;
-                CurrentBussines.CurrentLevel--;
+                if (CurrentBussines.CurrentLevel == 0)
+                {
+                    CurrentBussines.Owner.Money += CurrentBussines.SellPrice;
+                    CurrentBussines.Owner = null;
+                }
+                else
+                {
+                    CurrentBussines.Owner.Money += CurrentBussines.UpgradePrice;
+                    CurrentBussines.CurrentLevel--;
+                }
             }
         }
 
