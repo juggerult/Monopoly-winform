@@ -392,7 +392,7 @@ namespace Monopoly.Main
                     }
                     chat.Items.Add($"Гравцю {players[currentPlayerIndex].Name} випав дубль, i тому вiн может зробити ще один хiд");
                     players[currentPlayerIndex].IsDouble = false;
-                    RollDiceButton_Click(sender, e);
+                    RollDiceButton.Visible = true;
                     return;
                 }
                 currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
@@ -653,6 +653,7 @@ namespace Monopoly.Main
         private void timer2_Tick(object sender, EventArgs e)
         {
             UpdateMoney();
+            
             if (((board.GetBusiness(18).Owner == board.GetBusiness(38).Owner) && (board.GetBusiness(38).Owner != null && board.GetBusiness(18).Owner != null) && (board.GetBusiness(38).CurrentLevel != 1 || board.GetBusiness(18).CurrentLevel != 1)))
             {
                 board.GetBusiness(18).CurrentLevel++;
@@ -754,11 +755,21 @@ namespace Monopoly.Main
                 label7.Text = board.GetBusiness(11).Rent.ToString();
                 panelStep12.BackColor = board.GetBusiness(11).Owner.Color;
             }
+            else
+            {
+                label7.Text = "150,000";
+                panelStep12.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(13).Owner != null)
             {
                 board.GetBusiness(13).Rent = board.GetBusiness(13).Levels[board.GetBusiness(13).CurrentLevel];
                 label8.Text = board.GetBusiness(13).Rent.ToString();
                 panelStep14.BackColor = board.GetBusiness(13).Owner.Color;
+            }
+            else
+            {
+                label8.Text = "150,000";
+                panelStep14.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(14).Owner != null)
             {
@@ -766,11 +777,21 @@ namespace Monopoly.Main
                 label9.Text = board.GetBusiness(14).Rent.ToString();
                 panelStep15.BackColor = board.GetBusiness(14).Owner.Color;
             }
+            else
+            {
+                label9.Text = "160,000";
+                panelStep15.BackColor= Color.LightGray;
+            }
             if (board.GetBusiness(15).Owner != null)
             {
                 board.GetBusiness(15).Rent = board.GetBusiness(15).Levels[board.GetBusiness(15).CurrentLevel];
                 label10.Text = board.GetBusiness(15).Rent.ToString();
                 panelStep16.BackColor = board.GetBusiness(15).Owner.Color;
+            }
+            else
+            {
+                label10.Text = "200,000";
+                panelStep16.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(16).Owner != null)
             {
@@ -778,17 +799,32 @@ namespace Monopoly.Main
                 label11.Text = board.GetBusiness(16).Rent.ToString();
                 panelStep17.BackColor = board.GetBusiness(16).Owner.Color;
             }
+            else
+            {
+                label11.Text = "180,000";
+                panelStep17.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(17).Owner != null)
             {
                 board.GetBusiness(17).Rent = board.GetBusiness(17).Levels[board.GetBusiness(17).CurrentLevel];
                 label12.Text = board.GetBusiness(17).Rent.ToString();
                 panelStep18.BackColor = board.GetBusiness(17).Owner.Color;
             }
+            else
+            {
+                label12.Text = "180,000";
+                panelStep18.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(18).Owner != null)
             {
                 board.GetBusiness(18).Rent = board.GetBusiness(18).Levels[board.GetBusiness(18).CurrentLevel];
-                label13.Text = board.GetBusiness(18).Rent.ToString();
+                label13.Text = $"{board.GetBusiness(18).Rent.ToString()}X";
                 panelStep19.BackColor = board.GetBusiness(18).Owner.Color;
+            }
+            else
+            {
+                label13.Text = "175,000";
+                panelStep19.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(19).Owner != null)
             {
@@ -796,11 +832,21 @@ namespace Monopoly.Main
                 label14.Text = board.GetBusiness(19).Rent.ToString();
                 panelStep20.BackColor = board.GetBusiness(19).Owner.Color;
             }
+            else
+            {
+                label14.Text = "200,000";
+                panelStep20.BackColor= Color.LightGray;
+            }
             if (board.GetBusiness(21).Owner != null)
             {
                 board.GetBusiness(21).Rent = board.GetBusiness(21).Levels[board.GetBusiness(21).CurrentLevel];
                 label15.Text = board.GetBusiness(21).Rent.ToString();
                 panelStep22.BackColor = board.GetBusiness(21).Owner.Color;
+            }
+            else
+            {
+                label15.Text = "220,000";
+                panelStep22.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(23).Owner != null)
             {
@@ -808,11 +854,21 @@ namespace Monopoly.Main
                 label16.Text = board.GetBusiness(23).Rent.ToString();
                 panelStep24.BackColor = board.GetBusiness(23).Owner.Color;
             }
+            else
+            {
+                label16.Text = "220,000";
+                panelStep24.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(24).Owner != null)
             {
                 board.GetBusiness(24).Rent = board.GetBusiness(24).Levels[board.GetBusiness(24).CurrentLevel];
                 label17.Text = board.GetBusiness(24).Rent.ToString();
                 panelStep25.BackColor = board.GetBusiness(24).Owner.Color;
+            }
+            else
+            {
+                label17.Text = "240,000";
+                panelStep25.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(25).Owner != null)
             {
@@ -820,11 +876,21 @@ namespace Monopoly.Main
                 label18.Text = board.GetBusiness(25).Rent.ToString();
                 panelStep26.BackColor = board.GetBusiness(25).Owner.Color;
             }
+            else
+            {
+                label18.Text = "200,000";
+                panelStep26.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(26).Owner != null)
             {
                 board.GetBusiness(26).Rent = board.GetBusiness(26).Levels[board.GetBusiness(26).CurrentLevel];
                 label19.Text = board.GetBusiness(26).Rent.ToString();
                 panelStep27.BackColor = board.GetBusiness(26).Owner.Color;
+            }
+            else
+            {
+                label19.Text = "260,000";
+                panelStep27.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(27).Owner != null)
             {
@@ -832,11 +898,21 @@ namespace Monopoly.Main
                 label20.Text = board.GetBusiness(27).Rent.ToString();
                 panelStep28.BackColor = board.GetBusiness(27).Owner.Color;
             }
+            else
+            {
+                label20.Text = "260,000";
+                panelStep28.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(29).Owner != null)
             {
                 board.GetBusiness(29).Rent = board.GetBusiness(29).Levels[board.GetBusiness(29).CurrentLevel];
                 label21.Text = board.GetBusiness(29).Rent.ToString();
                 panelStep30.BackColor = board.GetBusiness(29).Owner.Color;
+            }
+            else
+            {
+                label21.Text = "280,000";
+                panelStep30.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(31).Owner != null)
             {
@@ -844,11 +920,21 @@ namespace Monopoly.Main
                 label22.Text = board.GetBusiness(31).Rent.ToString();
                 panelStep32.BackColor = board.GetBusiness(31).Owner.Color;
             }
+            else
+            {
+                label22.Text = "300,000";
+                panelStep32.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(33).Owner != null)
             {
                 board.GetBusiness(33).Rent = board.GetBusiness(33).Levels[board.GetBusiness(33).CurrentLevel];
                 label23.Text = board.GetBusiness(33).Rent.ToString();
                 panelStep34.BackColor = board.GetBusiness(33).Owner.Color;
+            }
+            else
+            {
+                label23.Text = "300,000";
+                panelStep34.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(34).Owner != null)
             {
@@ -856,11 +942,21 @@ namespace Monopoly.Main
                 label24.Text = board.GetBusiness(34).Rent.ToString();
                 panelStep35.BackColor = board.GetBusiness(34).Owner.Color;
             }
+            else
+            {
+                label24.Text = "320,000";
+                panelStep35.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(35).Owner != null)
             {
                 board.GetBusiness(35).Rent = board.GetBusiness(35).Levels[board.GetBusiness(35).CurrentLevel];
                 label25.Text = board.GetBusiness(35).Rent.ToString();
                 panelStep36.BackColor = board.GetBusiness(35).Owner.Color;
+            }
+            else
+            {
+                label25.Text = "200,000";
+                panelStep36.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(37).Owner != null)
             {
@@ -868,17 +964,32 @@ namespace Monopoly.Main
                 label26.Text = board.GetBusiness(37).Rent.ToString();
                 panelStep38.BackColor = board.GetBusiness(37).Owner.Color;
             }
+            else
+            {
+                label26.Text = "350,000";
+                panelStep38.BackColor = Color.LightGray;
+            }
             if (board.GetBusiness(38).Owner != null)
             {
                 board.GetBusiness(38).Rent = board.GetBusiness(38).Levels[board.GetBusiness(38).CurrentLevel];
-                label27.Text = board.GetBusiness(38).Rent.ToString();
+                label27.Text = $"{board.GetBusiness(38).Rent.ToString()}X";
                 panelStep39.BackColor = board.GetBusiness(38).Owner.Color;
+            }
+            else
+            {
+                label27.Text = "175,000";
+                panelStep39.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(39).Owner != null)
             {
                 board.GetBusiness(39).Rent = board.GetBusiness(39).Levels[board.GetBusiness(39).CurrentLevel];
                 label28.Text = board.GetBusiness(39).Rent.ToString();
                 panelStep40.BackColor = board.GetBusiness(39).Owner.Color;
+            }
+            else
+            {
+                label28.Text = "400,000";
+                panelStep40.BackColor = Color.LightGray;
             }
         }
         private void payButton_Click(object sender, EventArgs e)
@@ -968,10 +1079,17 @@ namespace Monopoly.Main
         private void panelStep2_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(1);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (board.GetBusiness(1).Owner == board.GetBusiness(3).Owner && board.GetBusiness(1).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1003,10 +1121,17 @@ namespace Monopoly.Main
         private void panelStep4_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(3);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (board.GetBusiness(1).Owner == board.GetBusiness(3).Owner && board.GetBusiness(3).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1033,15 +1158,22 @@ namespace Monopoly.Main
             labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
             labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
             labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
-        } /// Бизнесы обычные
+        } 
 
         private void panelStep7_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(6);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(6).Owner == board.GetBusiness(7).Owner) && (board.GetBusiness(7).Owner == board.GetBusiness(9).Owner)) && board.GetBusiness(6).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1073,10 +1205,17 @@ namespace Monopoly.Main
         private void panelStep8_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(7);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(6).Owner == board.GetBusiness(7).Owner) && (board.GetBusiness(7).Owner == board.GetBusiness(9).Owner)) && board.GetBusiness(7).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1108,10 +1247,17 @@ namespace Monopoly.Main
         private void panelStep10_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(9);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(6).Owner == board.GetBusiness(7).Owner) && (board.GetBusiness(7).Owner == board.GetBusiness(9).Owner)) && board.GetBusiness(9).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1146,6 +1292,14 @@ namespace Monopoly.Main
             buttonSell.Visible = true;
             Business curBiz = board.GetBusiness(5);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1172,10 +1326,17 @@ namespace Monopoly.Main
         private void panelStep12_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(11);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(11).Owner == board.GetBusiness(13).Owner) && (board.GetBusiness(13).Owner == board.GetBusiness(14).Owner)) && board.GetBusiness(11).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1207,10 +1368,17 @@ namespace Monopoly.Main
         private void panelStep14_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(13);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(11).Owner == board.GetBusiness(13).Owner) && (board.GetBusiness(13).Owner == board.GetBusiness(14).Owner)) && board.GetBusiness(13).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1242,10 +1410,17 @@ namespace Monopoly.Main
         private void panelStep15_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(14);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(11).Owner == board.GetBusiness(13).Owner) && (board.GetBusiness(13).Owner == board.GetBusiness(14).Owner)) && board.GetBusiness(14).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1277,10 +1452,17 @@ namespace Monopoly.Main
         private void panelStep17_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(16);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(16).Owner == board.GetBusiness(17).Owner) && (board.GetBusiness(17).Owner == board.GetBusiness(19).Owner)) && board.GetBusiness(16).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1312,10 +1494,17 @@ namespace Monopoly.Main
         private void panelStep18_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(17);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(16).Owner == board.GetBusiness(17).Owner) && (board.GetBusiness(17).Owner == board.GetBusiness(19).Owner)) && board.GetBusiness(17).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1347,10 +1536,17 @@ namespace Monopoly.Main
         private void panelStep20_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(19);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(16).Owner == board.GetBusiness(17).Owner) && (board.GetBusiness(17).Owner == board.GetBusiness(19).Owner)) && board.GetBusiness(19).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1382,10 +1578,17 @@ namespace Monopoly.Main
         private void panelStep22_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(21);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(21).Owner == board.GetBusiness(23).Owner) && (board.GetBusiness(23).Owner == board.GetBusiness(24).Owner)) && board.GetBusiness(21).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1417,10 +1620,17 @@ namespace Monopoly.Main
         private void panelStep24_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(23);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(21).Owner == board.GetBusiness(23).Owner) && (board.GetBusiness(23).Owner == board.GetBusiness(24).Owner)) && board.GetBusiness(23).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1452,10 +1662,17 @@ namespace Monopoly.Main
         private void panelStep25_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(24);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(21).Owner == board.GetBusiness(23).Owner) && (board.GetBusiness(23).Owner == board.GetBusiness(24).Owner)) && board.GetBusiness(24).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1487,10 +1704,17 @@ namespace Monopoly.Main
         private void panelStep27_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(26);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(26).Owner == board.GetBusiness(27).Owner) && (board.GetBusiness(27).Owner == board.GetBusiness(29).Owner)) && board.GetBusiness(26).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1522,10 +1746,17 @@ namespace Monopoly.Main
         private void panelStep28_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(27);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(26).Owner == board.GetBusiness(27).Owner) && (board.GetBusiness(27).Owner == board.GetBusiness(29).Owner)) && board.GetBusiness(27).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1557,10 +1788,17 @@ namespace Monopoly.Main
         private void panelStep30_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(29);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(26).Owner == board.GetBusiness(27).Owner) && (board.GetBusiness(27).Owner == board.GetBusiness(29).Owner)) && board.GetBusiness(29).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1592,10 +1830,17 @@ namespace Monopoly.Main
         private void panelStep32_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(31);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(31).Owner == board.GetBusiness(33).Owner) && (board.GetBusiness(33).Owner == board.GetBusiness(34).Owner)) && board.GetBusiness(31).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1627,10 +1872,17 @@ namespace Monopoly.Main
         private void panelStep34_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(33);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(31).Owner == board.GetBusiness(33).Owner) && (board.GetBusiness(33).Owner == board.GetBusiness(34).Owner)) && board.GetBusiness(33).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1662,10 +1914,17 @@ namespace Monopoly.Main
         private void panelStep35_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(34);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (((board.GetBusiness(31).Owner == board.GetBusiness(33).Owner) && (board.GetBusiness(33).Owner == board.GetBusiness(34).Owner)) && board.GetBusiness(34).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1697,10 +1956,17 @@ namespace Monopoly.Main
         private void panelStep38_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(37);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (board.GetBusiness(37).Owner == board.GetBusiness(39).Owner && board.GetBusiness(37).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1732,10 +1998,17 @@ namespace Monopoly.Main
         private void panelStep40_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             isFull = false;
             Business curBiz = board.GetBusiness(39);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             if (board.GetBusiness(37).Owner == board.GetBusiness(39).Owner && board.GetBusiness(39).Owner != null)
             {
                 buttonUpgrade.Visible = true;
@@ -1767,7 +2040,6 @@ namespace Monopoly.Main
         private void panelStep16_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             Business curBiz = board.GetBusiness(15);
             CurrentBussines = curBiz;
             labelNameInfo.Text = curBiz.Name.ToString();
@@ -1796,9 +2068,16 @@ namespace Monopoly.Main
         private void panelStep26_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             Business curBiz = board.GetBusiness(25);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1825,9 +2104,16 @@ namespace Monopoly.Main
         private void panelStep36_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             Business curBiz = board.GetBusiness(35);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1854,9 +2140,16 @@ namespace Monopoly.Main
         private void panelStep19_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             Business curBiz = board.GetBusiness(18);
             CurrentBussines = curBiz;
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1883,8 +2176,15 @@ namespace Monopoly.Main
         private void panelStep39_MouseEnter(object sender, EventArgs e)
         {
             buttonUpgrade.Visible = false;
-            buttonSell.Visible = true;
             Business curBiz = board.GetBusiness(38);
+            if (CurrentBussines != null && CurrentBussines.Owner != null)
+            {
+                buttonSell.Visible = true;
+            }
+            else
+            {
+                buttonSell.Visible = false;
+            }
             CurrentBussines = curBiz;
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
