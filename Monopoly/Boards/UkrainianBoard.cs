@@ -437,10 +437,10 @@ namespace Monopoly.Main
                     players[currentPlayerIndex].Money -= 150000;
                     UkraineCasino ukraineCasino = new UkraineCasino();
                     ukraineCasino.ShowDialog();
-                    if(Money != players[currentPlayerIndex].Money)
+                    if (Money != players[currentPlayerIndex].Money)
                     {
                         players[currentPlayerIndex].Money = Money;
-                    } 
+                    }
                     return;
                 }
                 else
@@ -661,7 +661,7 @@ namespace Monopoly.Main
         private void timer2_Tick(object sender, EventArgs e)
         {
             UpdateMoney();
-            
+
             if (((board.GetBusiness(18).Owner == board.GetBusiness(38).Owner) && (board.GetBusiness(38).Owner != null && board.GetBusiness(18).Owner != null) && (board.GetBusiness(38).CurrentLevel != 1 || board.GetBusiness(18).CurrentLevel != 1)))
             {
                 board.GetBusiness(18).CurrentLevel++;
@@ -788,7 +788,7 @@ namespace Monopoly.Main
             else
             {
                 label9.Text = "160,000";
-                panelStep15.BackColor= Color.LightGray;
+                panelStep15.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(15).Owner != null)
             {
@@ -843,7 +843,7 @@ namespace Monopoly.Main
             else
             {
                 label14.Text = "200,000";
-                panelStep20.BackColor= Color.LightGray;
+                panelStep20.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(21).Owner != null)
             {
@@ -1166,7 +1166,7 @@ namespace Monopoly.Main
             labelInfoPrice.Text = $"Вартість поля: {curBiz.PurchasePrice.ToString()}";
             labelInfoSellPrice.Text = $"Застава поля: {curBiz.SellPrice.ToString()}";
             labelInfoFillial.Text = $"Ціна філії: {curBiz.UpgradePrice.ToString()}";
-        } 
+        }
 
         private void panelStep7_MouseEnter(object sender, EventArgs e)
         {
@@ -2217,6 +2217,12 @@ namespace Monopoly.Main
             labelInfoFillial.Text = $"Ціна філії: Цей бізнес пасивний";
         }
 
+        private void label30_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Runner runner = new Runner();
+            runner.Show();
+        }
     }
 }
 
