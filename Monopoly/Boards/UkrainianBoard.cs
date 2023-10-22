@@ -417,11 +417,18 @@ namespace Monopoly.Main
                 timer3.Start();
                 return;
             }
-            else if (currentPosition == 12 || currentPosition == 8 || currentPosition == 22 || currentPosition == 36) //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\
+            else if (currentPosition == 12 )
             {
                 players[currentPlayerIndex].Money += 200000;
                 chat.Items.Add("НАБУ видав премiю за сдачу корупцiонера");
                 return;
+            }
+            if(currentPosition == 8 || currentPosition == 22 || currentPosition == 36)
+            {
+                int randomPrize = random.Next(1, 18);
+                Prize(randomPrize);
+                return;
+
             }
 
             if (currentPosition == 10 || currentPosition == 0) //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\\
@@ -494,7 +501,140 @@ namespace Monopoly.Main
             }
 
         }
+        public void Prize(int number)
+        {
+            switch (number)
+            {
+                case 1:
+                    chat.Items.Add("Ви виграли конкурс і отримуєте приз від банку - отримайте 50.000");
+                    players[currentPlayerIndex].Money += 50000;
+                    break;
+                case 2:
+                    chat.Items.Add("Ваша стара бабуся залишила вам спадок - отримайте 150.000 ");
+                    players[currentPlayerIndex].Money += 50000;
+                    break;
+                case 3:
+                    chat.Items.Add("У вас день народження, кожен гравець дарує вам по 100.000");
+                    players[currentPlayerIndex].Money += 100000 * numberOfPlayers - 1;
+                    for (int i = 0; i < numberOfPlayers; i++)
+                    {
+                        if (i != currentPlayerIndex)
+                        {
+                            if (players[i].Money < 100000)
+                            {
+                                players[i].Money = 0;
+                            }
+                            else
+                            {
+                                players[i].Money -= 100000;
+                            }
+                        }
 
+                    }
+                    break;
+                case 4:
+                    chat.Items.Add("Ви виграли в лотереї - отримайте 220.000 ");
+                    players[currentPlayerIndex].Money += 220000;
+                    break;
+                case 5:
+                    chat.Items.Add("Заплатіть банку податок на нерухомість - 70.000");
+                    moneyRent = 70000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+                case 6:
+                    chat.Items.Add("Ваш автомобіль пройшов технічний огляд - заплатіть 100.000 за ремонт.");
+                    moneyRent = 100000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+               case 7:
+                    chat.Items.Add("Заплатіть штраф за перевищення швидкості - 50.000.");
+                    moneyRent = 50000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+                case 8:
+                    chat.Items.Add("Ваша квартира потребує ремонту. Платіть 80.000 за ремонт");
+                    moneyRent = 80000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+                case 9:
+                    chat.Items.Add("Ви знайшли коштовну антикварну річ - отримайте 75.000");
+                    players[currentPlayerIndex].Money += 75000;
+                    break;
+                case 10:
+                    chat.Items.Add("Банк помилився в вашу користь. Отримайте 90.000.");
+                    players[currentPlayerIndex].Money += 90000;
+                    break;
+                case 11:
+                    chat.Items.Add("Ви виграли конкурс краси. Отримайте 100.000 ");
+                    players[currentPlayerIndex].Money += 100000;
+                    break;
+                case 12:
+                    chat.Items.Add("Ви програли на біржі. Платіть 100.000 гривень в банк");
+                    moneyRent = 100000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+                case 13:
+                    chat.Items.Add("Ви захворіли і повинні оплатити лікарняні. Заплатіть 75.000");
+                    moneyRent = 75000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+                case 14:
+                    chat.Items.Add("Ви отримали штраф за паркування. Заплатіть 20.000 штрафу");
+                    moneyRent = 20000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+                case 15:
+                    chat.Items.Add("Вам знадобилася юридична консультація. Заплатіть 50.000 за послуги юриста.");
+                    moneyRent = 50000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+                case 16:
+                    chat.Items.Add("Ваше майно пошкоджено під час бунту на вулицях. Заплатіть 50.000 за ремонт");
+                    moneyRent = 50000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+                case 17:
+                    chat.Items.Add("Ваші діти потребують дорогий навчання. Заплатіть 80.000 за їхню освіту.");
+                    moneyRent = 80000;
+                    payButton.Visible = true;
+                    button2.Visible = true;
+                    RollDiceButton.Visible = false;
+                    timer3.Start();
+                    break;
+                case 18:
+                    chat.Items.Add("Ви зробили успішну інвестицію. Отримайте додаткові 50.000");
+                    players[currentPlayerIndex].Money += 50000;
+                    break;
+            }
+            return;
+        }
         public void Teleportation()
         {
             int stepMove = random.Next(1, 6);
