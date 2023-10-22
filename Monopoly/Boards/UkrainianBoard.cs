@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Numerics;
@@ -135,7 +136,7 @@ namespace Monopoly.Main
             chat.Items.Add($"Хід гравця: {players[currentPlayerIndex].Name} Його позиція: {players[currentPlayerIndex].CurrentPosition}");
             RollDiceButton.Visible = true;
         }
-        private void UpdateMoney()
+        public void UpdateMoney()
         {
             moneyLabel1.Text = players[0].Money.ToString();
             moneyLabel2.Text = players[1].Money.ToString();
@@ -403,6 +404,7 @@ namespace Monopoly.Main
             }
         }
         private double moneyRent = 0;
+        public static double Money { get; set; } = 0;
         public async void BusinessActivity(int coutLastSteps)
         {
             int currentPosition = players[currentPlayerIndex].CurrentPosition;
@@ -431,8 +433,14 @@ namespace Monopoly.Main
                 DialogResult result = MessageBox.Show($"Ви стали на поле казино, чи будете грати? ", "Запрошення в казино", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
+                    Money = players[currentPlayerIndex].Money;
+                    players[currentPlayerIndex].Money -= 150000;
                     UkraineCasino ukraineCasino = new UkraineCasino();
-                    ukraineCasino.Show();
+                    ukraineCasino.ShowDialog();
+                    if(Money != players[currentPlayerIndex].Money)
+                    {
+                        players[currentPlayerIndex].Money = Money;
+                    } 
                     return;
                 }
                 else
