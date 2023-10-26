@@ -902,6 +902,7 @@
             this.button2.Text = ("Здатися");
             this.button2.UseVisualStyleBackColor = (true);
             this.button2.Visible = (false);
+            this.button2.Click += (this.button2_Click);
             // 
             // payButton
             // 

@@ -417,13 +417,13 @@ namespace Monopoly.Main
                 timer3.Start();
                 return;
             }
-            else if (currentPosition == 12 )
+            else if (currentPosition == 12)
             {
                 players[currentPlayerIndex].Money += 200000;
                 chat.Items.Add("НАБУ видав премiю за сдачу корупцiонера");
                 return;
             }
-            if(currentPosition == 8 || currentPosition == 22 || currentPosition == 36)
+            if (currentPosition == 8 || currentPosition == 22 || currentPosition == 36)
             {
                 int randomPrize = random.Next(1, 18);
                 Prize(randomPrize);
@@ -552,7 +552,7 @@ namespace Monopoly.Main
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
-               case 7:
+                case 7:
                     chat.Items.Add("Заплатіть штраф за перевищення швидкості - 50.000.");
                     moneyRent = 50000;
                     payButton.Visible = true;
@@ -681,6 +681,7 @@ namespace Monopoly.Main
 
         private void RollDiceButton_Click(object sender, EventArgs e)
         {
+            if (players[currentPlayerIndex].IsActive) { } else { currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers; }
             countOfUpgrade = 0;
             int firstDice = random.Next(1, 6);
             int secondDice = random.Next(1, 6);
@@ -746,6 +747,14 @@ namespace Monopoly.Main
         dalshe:
             MovePlayers(diceResult);
             UpdateMoney();
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            players[currentPlayerIndex].IsActive = false;
+            payButton.Visible = false;
+            button2.Visible = false;
+            RollDiceButton.Visible = true;
+            return;
         }
 
 
@@ -2363,6 +2372,7 @@ namespace Monopoly.Main
             Runner runner = new Runner();
             runner.Show();
         }
+
     }
 }
 
