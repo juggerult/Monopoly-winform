@@ -751,6 +751,11 @@ namespace Monopoly.Main
         private void button2_Click(object sender, EventArgs e)
         {
             players[currentPlayerIndex].IsActive = false;
+            foreach(Business busines in players[currentPlayerIndex].OwnedBusinesses)
+            {
+                busines.Owner = null;
+                busines.CurrentLevel = 0;
+            }
             payButton.Visible = false;
             button2.Visible = false;
             RollDiceButton.Visible = true;
