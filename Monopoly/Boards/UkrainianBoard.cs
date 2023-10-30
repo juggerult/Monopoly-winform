@@ -1434,6 +1434,12 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(6).CurrentLevel = 0;
+                board.GetBusiness(7).CurrentLevel = 0;
+                board.GetBusiness(9).CurrentLevel = 0;
+            }
 
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1476,6 +1482,12 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+            if (!isFull)
+            {
+                board.GetBusiness(6).CurrentLevel = 0;
+                board.GetBusiness(7).CurrentLevel = 0;
+                board.GetBusiness(9).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1556,6 +1568,12 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(11).CurrentLevel = 0;
+                board.GetBusiness(13).CurrentLevel = 0;
+                board.GetBusiness(14).CurrentLevel = 0;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1597,6 +1615,12 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+            if (!isFull)
+            {
+                board.GetBusiness(11).CurrentLevel = 0;
+                board.GetBusiness(13).CurrentLevel = 0;
+                board.GetBusiness(14).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1640,6 +1664,12 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(11).CurrentLevel = 0;
+                board.GetBusiness(13).CurrentLevel = 0;
+                board.GetBusiness(14).CurrentLevel = 0;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1681,6 +1711,12 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+            if (!isFull)
+            {
+                board.GetBusiness(16).CurrentLevel = 0;
+                board.GetBusiness(17).CurrentLevel = 0;
+                board.GetBusiness(19).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1724,6 +1760,12 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(16).CurrentLevel = 0;
+                board.GetBusiness(17).CurrentLevel = 0;
+                board.GetBusiness(19).CurrentLevel = 0;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1765,6 +1807,12 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+            if (!isFull)
+            {
+                board.GetBusiness(16).CurrentLevel = 0;
+                board.GetBusiness(17).CurrentLevel = 0;
+                board.GetBusiness(19).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1808,6 +1856,12 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(21).CurrentLevel = 0;
+                board.GetBusiness(23).CurrentLevel = 0;
+                board.GetBusiness(24).CurrentLevel = 0;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1849,6 +1903,12 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+            if (!isFull)
+            {
+                board.GetBusiness(21).CurrentLevel = 0;
+                board.GetBusiness(23).CurrentLevel = 0;
+                board.GetBusiness(24).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1892,6 +1952,12 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(21).CurrentLevel = 0;
+                board.GetBusiness(23).CurrentLevel = 0;
+                board.GetBusiness(24).CurrentLevel = 0;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1933,6 +1999,12 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+            if (!isFull)
+            {
+                board.GetBusiness(26).CurrentLevel = 0;
+                board.GetBusiness(27).CurrentLevel = 0;
+                board.GetBusiness(29).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1976,6 +2048,12 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(26).CurrentLevel = 0;
+                board.GetBusiness(27).CurrentLevel = 0;
+                board.GetBusiness(29).CurrentLevel = 0;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -2017,6 +2095,12 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+            if (!isFull)
+            {
+                board.GetBusiness(26).CurrentLevel = 0;
+                board.GetBusiness(27).CurrentLevel = 0;
+                board.GetBusiness(29).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -2060,6 +2144,12 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(31).CurrentLevel = 0;
+                board.GetBusiness(33).CurrentLevel = 0;
+                board.GetBusiness(34).CurrentLevel = 0;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -2101,6 +2191,12 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+            if (!isFull)
+            {
+                board.GetBusiness(31).CurrentLevel = 0;
+                board.GetBusiness(33).CurrentLevel = 0;
+                board.GetBusiness(34).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -2144,6 +2240,12 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(31).CurrentLevel = 0;
+                board.GetBusiness(33).CurrentLevel = 0;
+                board.GetBusiness(34).CurrentLevel = 0;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -2186,6 +2288,11 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(37).CurrentLevel = 0;
+                board.GetBusiness(39).CurrentLevel = 0;
+            }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -2227,6 +2334,11 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+            if (!isFull)
+            {
+                board.GetBusiness(37).CurrentLevel = 0;
+                board.GetBusiness(39).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();

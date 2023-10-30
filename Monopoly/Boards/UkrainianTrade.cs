@@ -52,24 +52,24 @@ namespace Monopoly.Boards
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(comboBox1.SelectedItem.ToString() != "Нiчого")
+            if (comboBox1.SelectedItem.ToString() != "Нiчого")
             {
                 Main.UkrainianBoard.Business biz = LeftBiz[comboBox1.SelectedIndex - 1];
                 LeftBiz.Remove(biz);
                 RightBiz.Add(biz);
             }
-            if(comboBox2.SelectedItem.ToString() != "Нiчого")
+            if (comboBox2.SelectedItem.ToString() != "Нiчого")
             {
                 Main.UkrainianBoard.Business biz = RightBiz[comboBox2.SelectedIndex - 1];
                 RightBiz.Remove(biz);
                 LeftBiz.Add(biz);
             }
-            if(trackBar1.Value != null)
+            if (trackBar1.Value != null)
             {
                 moneyRight += trackBar1.Value;
                 moneyLeft -= trackBar1.Value;
             }
-            if(trackBar2.Value != null)
+            if (trackBar2.Value != null)
             {
                 moneyRight -= trackBar2.Value;
                 moneyLeft += trackBar2.Value;
@@ -81,6 +81,11 @@ namespace Monopoly.Boards
             UkrainianBoard.BizRightTrade = RightBiz;
             comboBox1.Items.Clear();
             comboBox2.Items.Clear();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }

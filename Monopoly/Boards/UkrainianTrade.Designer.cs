@@ -74,40 +74,41 @@
             // 
             // button1
             // 
-            button1.Location = new Point(111, 217);
+            button1.Location = new Point(276, 219);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 4;
-            button1.Text = "button1";
+            button1.Text = "Обмінятися";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(243, 217);
+            button2.Location = new Point(91, 219);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 5;
-            button2.Text = "button2";
+            button2.Text = "Вихiд";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Location = new Point(86, 31);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(41, 15);
             label1.TabIndex = 6;
-            label1.Text = "label1";
+            label1.Text = "Грошi";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Location = new Point(321, 31);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(41, 15);
             label2.TabIndex = 7;
-            label2.Text = "label2";
+            label2.Text = "Грошi";
             // 
             // UkrainianTrade
             // 
