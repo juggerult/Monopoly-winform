@@ -47,6 +47,7 @@
             this.moneyLabel4 = (new global::System.Windows.Forms.Label());
             this.pictureBox4 = (new global::System.Windows.Forms.PictureBox());
             this.panel6 = (new global::System.Windows.Forms.Panel());
+            this.comboBox1 = (new global::System.Windows.Forms.ComboBox());
             this.panel5 = (new global::System.Windows.Forms.Panel());
             this.buttonSell = (new global::System.Windows.Forms.Button());
             this.buttonUpgrade = (new global::System.Windows.Forms.Button());
@@ -301,6 +302,7 @@
             this.timer2 = (new global::System.Windows.Forms.Timer(this.components));
             this.timer3 = (new global::System.Windows.Forms.Timer(this.components));
             this.label30 = (new global::System.Windows.Forms.Label());
+            this.tradeButton = (new global::System.Windows.Forms.Button());
             this.panel1.SuspendLayout();
             ((global::System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -678,6 +680,8 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.tradeButton);
+            this.panel6.Controls.Add(this.comboBox1);
             this.panel6.Controls.Add(this.panel5);
             this.panel6.Controls.Add(this.button2);
             this.panel6.Controls.Add(this.payButton);
@@ -726,6 +730,14 @@
             this.panel6.Name = ("panel6");
             this.panel6.Size = (new global::System.Drawing.Size(1344, 960));
             this.panel6.TabIndex = (3);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = (true);
+            this.comboBox1.Location = (new global::System.Drawing.Point(882, 327));
+            this.comboBox1.Name = ("comboBox1");
+            this.comboBox1.Size = (new global::System.Drawing.Size(121, 23));
+            this.comboBox1.TabIndex = (47);
             // 
             // panel5
             // 
@@ -3720,7 +3732,7 @@
             // 
             // timer2
             // 
-            this.timer2.Interval = (500);
+            this.timer2.Interval = (150);
             this.timer2.Tick += (this.timer2_Tick);
             // 
             // timer3
@@ -3736,6 +3748,16 @@
             this.label30.TabIndex = (4);
             this.label30.Text = ("<--");
             this.label30.Click += (this.label30_Click);
+            // 
+            // tradeButton
+            // 
+            this.tradeButton.Location = (new global::System.Drawing.Point(908, 297));
+            this.tradeButton.Name = ("tradeButton");
+            this.tradeButton.Size = (new global::System.Drawing.Size(75, 23));
+            this.tradeButton.TabIndex = (48);
+            this.tradeButton.Text = ("button1");
+            this.tradeButton.UseVisualStyleBackColor = (true);
+            this.tradeButton.Click += (this.tradeButton_Click);
             // 
             // UkrainianBoard
             // 
@@ -4278,5 +4300,7 @@
         private Label labelInfoType;
         private Label labelNameInfo;
         private global::System.Windows.Forms.Label label30;
+        private global::System.Windows.Forms.ComboBox comboBox1;
+        private global::System.Windows.Forms.Button tradeButton;
     }
 }

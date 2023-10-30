@@ -751,7 +751,7 @@ namespace Monopoly.Main
         private void button2_Click(object sender, EventArgs e)
         {
             players[currentPlayerIndex].IsActive = false;
-            foreach(Business busines in players[currentPlayerIndex].OwnedBusinesses)
+            foreach (Business busines in players[currentPlayerIndex].OwnedBusinesses)
             {
                 busines.Owner = null;
                 busines.CurrentLevel = 0;
@@ -840,6 +840,38 @@ namespace Monopoly.Main
                 {
                     business.CurrentLevel = countOfPassiveBusinesses - 1;
                     business.Rent = business.Levels[business.CurrentLevel];
+                }
+            }
+
+            for (int i = 0; i < numberOfPlayers; i++)
+            {
+                string playerName = players[i].Name;
+                if (players[i].IsActive)
+                {
+                    bool playerExistsInComboBox = false;
+
+                    foreach (object item in comboBox1.Items)
+                    {
+                        if (item.ToString() == playerName)
+                        {
+                            playerExistsInComboBox = true; break;
+                        }
+                    }
+
+                    if (!playerExistsInComboBox)
+                    {
+                        comboBox1.Items.Add(playerName);
+                    }
+                }
+                else
+                {
+                    for (int j = 0; j < comboBox1.Items.Count; j++)
+                    {
+                        if (comboBox1.Items[j].ToString() == playerName)
+                        {
+                            comboBox1.Items.RemoveAt(j); break;
+                        }
+                    }
                 }
             }
 
@@ -1257,6 +1289,11 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+            if (!isFull)
+            {
+                board.GetBusiness(1).CurrentLevel = 0;
+                board.GetBusiness(3).CurrentLevel = 0;
+            }
 
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1298,6 +1335,12 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+
+            if (!isFull)
+            {
+                board.GetBusiness(1).CurrentLevel = 0;
+                board.GetBusiness(3).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -2378,6 +2421,48 @@ namespace Monopoly.Main
             runner.Show();
         }
 
+        public static double MoneyLeftTrade { get; set; } = 0;
+        public static double MoneyRightTrade { get; set; } = 0;
+        public static List<Business> BizLeftTrade { get; set; } = new List<Business>();
+        public static List<Business> BizRightTrade { get; set; } = new List<Business>();
+        private void tradeButton_Click(object sender, EventArgs e)
+        {
+            if (players[currentPlayerIndex].Name == comboBox1.SelectedItem.ToString())
+            {
+                MessageBox.Show("Ви не можете обмiнюватися з самим собою", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            int I = 0;
+            for(int i = 0; i < numberOfPlayers; i++)
+            {
+                if (players[i].Name == comboBox1.SelectedItem.ToString())
+                {
+                    MoneyRightTrade = players[i].Money;
+                    BizRightTrade.AddRange(players[i].OwnedBusinesses);
+                    I = i;
+                }
+            }
+
+            MoneyLeftTrade = players[currentPlayerIndex].Money;
+            BizLeftTrade.AddRange(players[currentPlayerIndex].OwnedBusinesses);
+
+            UkrainianTrade trade = new UkrainianTrade(MoneyLeftTrade, MoneyRightTrade, BizLeftTrade, BizRightTrade);
+            trade.ShowDialog();
+
+            players[I].Money = MoneyRightTrade;
+            players[I].OwnedBusinesses = BizRightTrade;
+
+            players[currentPlayerIndex].Money = MoneyLeftTrade;
+            players[currentPlayerIndex].OwnedBusinesses = BizLeftTrade;
+
+            for (int i = 0; i < numberOfPlayers; i++) {
+                foreach (Business biz in players[i].OwnedBusinesses)
+                {
+                    biz.Owner = players[i];
+                }
+            
+            }
+        }
     }
 }
 
