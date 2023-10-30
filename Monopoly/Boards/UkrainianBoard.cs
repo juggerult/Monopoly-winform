@@ -1342,6 +1342,7 @@ namespace Monopoly.Main
                 board.GetBusiness(1).CurrentLevel = 0;
                 board.GetBusiness(3).CurrentLevel = 0;
             }
+
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
@@ -1383,6 +1384,13 @@ namespace Monopoly.Main
             {
                 buttonUpgrade.Visible = true;
                 isFull = true;
+            }
+
+            if (!isFull)
+            {
+                board.GetBusiness(6).CurrentLevel = 0;
+                board.GetBusiness(7).CurrentLevel = 0;
+                board.GetBusiness(9).CurrentLevel = 0;
             }
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
@@ -1426,6 +1434,7 @@ namespace Monopoly.Main
                 buttonUpgrade.Visible = true;
                 isFull = true;
             }
+
             labelNameInfo.Text = curBiz.Name.ToString();
             labelInfoType.Text = curBiz.Type.ToString();
             labelInfoLevel.Text = curBiz.CurrentLevel.ToString();
