@@ -2554,7 +2554,7 @@ namespace Monopoly.Main
                 return;
             }
             int I = 0;
-            for(int i = 0; i < numberOfPlayers; i++)
+            for (int i = 0; i < numberOfPlayers; i++)
             {
                 if (players[i].Name == comboBox1.SelectedItem.ToString())
                 {
@@ -2576,12 +2576,13 @@ namespace Monopoly.Main
             players[currentPlayerIndex].Money = MoneyLeftTrade;
             players[currentPlayerIndex].OwnedBusinesses = BizLeftTrade;
 
-            for (int i = 0; i < numberOfPlayers; i++) {
+            for (int i = 0; i < numberOfPlayers; i++)
+            {
                 foreach (Business biz in players[i].OwnedBusinesses)
                 {
                     biz.Owner = players[i];
                 }
-            
+
             }
         }
     }

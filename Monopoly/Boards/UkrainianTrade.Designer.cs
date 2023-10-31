@@ -74,9 +74,9 @@
             // 
             // button1
             // 
-            button1.Location = new Point(276, 219);
+            button1.Location = new Point(115, 193);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(209, 29);
             button1.TabIndex = 4;
             button1.Text = "Обмінятися";
             button1.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(91, 219);
+            button2.Location = new Point(12, 254);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 5;
@@ -114,7 +114,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(448, 296);
+            ClientSize = new Size(423, 289);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button2);

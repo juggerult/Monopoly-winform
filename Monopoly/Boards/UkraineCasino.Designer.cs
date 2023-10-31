@@ -44,9 +44,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(190, 40);
             label1.Name = "label1";
-            label1.Size = new Size(208, 15);
+            label1.Size = new Size(211, 15);
             label1.TabIndex = 0;
-            label1.Text = "Выбери три цифры и получи деньги";
+            label1.Text = "Вибери три цифри та отримай гроші";
             // 
             // comboBox1
             // 
@@ -70,14 +70,14 @@
             // 
             comboBox3.FormattingEnabled = true;
             comboBox3.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6" });
-            comboBox3.Location = new Point(371, 71);
+            comboBox3.Location = new Point(380, 71);
             comboBox3.Name = "comboBox3";
             comboBox3.Size = new Size(121, 23);
             comboBox3.TabIndex = 3;
             // 
             // button1
             // 
-            button1.Location = new Point(227, 201);
+            button1.Location = new Point(227, 204);
             button1.Name = "button1";
             button1.Size = new Size(121, 23);
             button1.TabIndex = 4;
@@ -90,42 +90,42 @@
             label2.AutoSize = true;
             label2.Location = new Point(259, 109);
             label2.Name = "label2";
-            label2.Size = new Size(53, 15);
+            label2.Size = new Size(51, 15);
             label2.TabIndex = 5;
-            label2.Text = "Выпало:";
+            label2.Text = "Випало:";
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Location = new Point(90, 140);
             label3.Name = "label3";
-            label3.Size = new Size(102, 15);
+            label3.Size = new Size(100, 15);
             label3.TabIndex = 6;
-            label3.Text = "Первое значение";
+            label3.Text = "Перше значення";
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Location = new Point(236, 140);
             label4.Name = "label4";
-            label4.Size = new Size(100, 15);
+            label4.Size = new Size(93, 15);
             label4.TabIndex = 7;
-            label4.Text = "Второе значение";
+            label4.Text = "Друге значення";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Location = new Point(380, 140);
             label5.Name = "label5";
-            label5.Size = new Size(97, 15);
+            label5.Size = new Size(91, 15);
             label5.TabIndex = 8;
-            label5.Text = "Третье значение";
+            label5.Text = "Третє значення";
             // 
             // UkraineCasino
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(686, 268);
+            ClientSize = new Size(584, 261);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -136,7 +136,7 @@
             Controls.Add(comboBox1);
             Controls.Add(label1);
             Name = "UkraineCasino";
-            Text = "UkraineCasino";
+            Text = "Казино";
             ResumeLayout(false);
             PerformLayout();
         }

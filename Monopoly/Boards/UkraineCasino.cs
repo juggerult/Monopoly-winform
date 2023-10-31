@@ -34,7 +34,7 @@ namespace Monopoly.Boards
                 label3.Text = random.Next(1, 6).ToString();
                 label4.Text = random.Next(1, 6).ToString();
                 label5.Text = random.Next(1, 6).ToString();
-                if(comboBox1.SelectedItem.ToString() == label3.Text)
+                if (comboBox1.SelectedItem.ToString() == label3.Text)
                 {
                     countOfWin++;
                 }
@@ -46,20 +46,20 @@ namespace Monopoly.Boards
                 {
                     countOfWin++;
                 }
-                switch(countOfWin)
+                switch (countOfWin)
                 {
                     case 0:
                         MessageBox.Show("Вы не выиграли ничего");
                         break;
-                        case 1:
+                    case 1:
                         MessageBox.Show("Вы выиграли x2");
                         winMoney = 300000;
                         break;
-                        case 2:
+                    case 2:
                         MessageBox.Show("Вы выиграли x4");
                         winMoney = 600000;
                         break;
-                        case 3:
+                    case 3:
                         MessageBox.Show("Вы выиграли x10");
                         winMoney = 1500000;
                         break;
@@ -68,7 +68,7 @@ namespace Monopoly.Boards
                 Thread.Sleep(1000);
                 this.Close();
             }
-            
+
         }
     }
 }

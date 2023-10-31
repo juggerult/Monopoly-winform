@@ -39,14 +39,16 @@
             textBox3 = new TextBox();
             label3 = new Label();
             textBox4 = new TextBox();
+            button2 = new Button();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)trackBar1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(79, 262);
+            button1.Location = new Point(63, 250);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(123, 29);
             button1.TabIndex = 0;
             button1.Text = "Старт";
             button1.UseVisualStyleBackColor = true;
@@ -55,7 +57,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(24, 20);
+            label1.Location = new Point(23, 24);
             label1.Name = "label1";
             label1.Size = new Size(197, 15);
             label1.TabIndex = 1;
@@ -87,7 +89,7 @@
             // 
             // trackBar1
             // 
-            trackBar1.Location = new Point(63, 70);
+            trackBar1.Location = new Point(63, 84);
             trackBar1.Maximum = 4;
             trackBar1.Minimum = 3;
             trackBar1.Name = "trackBar1";
@@ -99,7 +101,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(111, 52);
+            label2.Location = new Point(111, 66);
             label2.Name = "label2";
             label2.Size = new Size(13, 15);
             label2.TabIndex = 6;
@@ -143,11 +145,33 @@
             textBox4.TabIndex = 11;
             textBox4.Visible = false;
             // 
+            // button2
+            // 
+            button2.Location = new Point(165, 285);
+            button2.Name = "button2";
+            button2.Size = new Size(71, 26);
+            button2.TabIndex = 12;
+            button2.Text = "Правила";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(12, 285);
+            button3.Name = "button3";
+            button3.Size = new Size(71, 26);
+            button3.TabIndex = 13;
+            button3.Text = "Вихiд";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Runner
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(243, 331);
+            ClientSize = new Size(248, 322);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(textBox4);
             Controls.Add(label3);
             Controls.Add(textBox3);
@@ -161,7 +185,7 @@
             Controls.Add(button1);
             Name = "Runner";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Players";
+            Text = "Меню";
             ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -180,5 +204,7 @@
         private TextBox textBox3;
         private Label label3;
         private TextBox textBox4;
+        private Button button2;
+        private Button button3;
     }
 }

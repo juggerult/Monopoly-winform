@@ -233,6 +233,16 @@ namespace Monopoly.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LUKAS {
+            get {
+                object obj = ResourceManager.GetObject("LUKAS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap monopoly_1_652x467 {
             get {
                 object obj = ResourceManager.GetObject("monopoly-1-652x467", resourceCulture);
@@ -246,6 +256,16 @@ namespace Monopoly.Properties {
         internal static System.Drawing.Bitmap yellowBishop {
             get {
                 object obj = ResourceManager.GetObject("yellowBishop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Пузата_Хата {
+            get {
+                object obj = ResourceManager.GetObject("Пузата Хата", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
