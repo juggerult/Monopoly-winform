@@ -42,6 +42,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Location = new Point(190, 40);
             label1.Name = "label1";
             label1.Size = new Size(211, 15);
@@ -88,6 +89,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Location = new Point(259, 109);
             label2.Name = "label2";
             label2.Size = new Size(51, 15);
@@ -97,6 +99,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Location = new Point(90, 140);
             label3.Name = "label3";
             label3.Size = new Size(100, 15);
@@ -106,6 +109,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Location = new Point(236, 140);
             label4.Name = "label4";
             label4.Size = new Size(93, 15);
@@ -115,6 +119,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Location = new Point(380, 140);
             label5.Name = "label5";
             label5.Size = new Size(91, 15);
@@ -125,6 +130,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Без_имени_12;
             ClientSize = new Size(584, 261);
             Controls.Add(label5);
             Controls.Add(label4);

@@ -42,6 +42,7 @@
             // 
             // trackBar1
             // 
+            trackBar1.BackColor = Color.FromArgb(188, 188, 188);
             trackBar1.Location = new Point(62, 59);
             trackBar1.Name = "trackBar1";
             trackBar1.Size = new Size(104, 45);
@@ -50,6 +51,7 @@
             // 
             // trackBar2
             // 
+            trackBar2.BackColor = Color.FromArgb(188, 188, 188);
             trackBar2.Location = new Point(276, 59);
             trackBar2.Name = "trackBar2";
             trackBar2.Size = new Size(104, 45);
@@ -95,6 +97,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Location = new Point(86, 31);
             label1.Name = "label1";
             label1.Size = new Size(41, 15);
@@ -104,7 +107,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(321, 31);
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(310, 31);
             label2.Name = "label2";
             label2.Size = new Size(41, 15);
             label2.TabIndex = 7;
@@ -114,6 +118,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Без_имени_12;
+            BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(423, 289);
             Controls.Add(label2);
             Controls.Add(label1);

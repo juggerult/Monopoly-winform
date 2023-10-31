@@ -551,6 +551,9 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.BackgroundImage = Properties.Resources._9140ece3_75e682e329f1ecc7ddda754b356c6436;
+            pictureBox1.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox1.Location = new Point(39, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(139, 86);
@@ -591,6 +594,9 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.BackgroundImage = Properties.Resources._053ac98c_7811ff953ee7dc445ee44c014d70b054;
+            pictureBox2.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox2.Location = new Point(39, 3);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(139, 86);
@@ -631,6 +637,9 @@
             // 
             // pictureBox3
             // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.BackgroundImage = Properties.Resources.efeb4bc6_62e1e5563aee5a701e457871e538f6aa;
+            pictureBox3.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox3.Location = new Point(39, 3);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(139, 86);
@@ -671,6 +680,9 @@
             // 
             // pictureBox4
             // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.BackgroundImage = Properties.Resources.Без_имени_11;
+            pictureBox4.BackgroundImageLayout = ImageLayout.Zoom;
             pictureBox4.Location = new Point(39, 3);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(139, 86);
@@ -680,6 +692,7 @@
             // 
             // panel6
             // 
+            panel6.BackColor = Color.Transparent;
             panel6.Controls.Add(tradeButton);
             panel6.Controls.Add(comboBox1);
             panel6.Controls.Add(panel5);
@@ -1235,6 +1248,8 @@
             // panelStep29
             // 
             panelStep29.BackColor = Color.LightGray;
+            panelStep29.BackgroundImage = Properties.Resources.Moneymin;
+            panelStep29.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep29.Controls.Add(yellowBishopStep29);
             panelStep29.Controls.Add(redBishopStep29);
             panelStep29.Controls.Add(greenBishopStep29);
@@ -1295,7 +1310,7 @@
             // panelStep20
             // 
             panelStep20.BackColor = Color.LightGray;
-            panelStep20.BackgroundImage = Properties.Resources.Пузата_Хата;
+            panelStep20.BackgroundImage = Properties.Resources.Пузата_Хата1;
             panelStep20.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep20.Controls.Add(label14);
             panelStep20.Controls.Add(greenBishopStep20);
@@ -1385,7 +1400,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(71, 53);
+            label12.Location = new Point(71, 55);
             label12.Name = "label12";
             label12.Size = new Size(46, 15);
             label12.TabIndex = 55;
@@ -1451,6 +1466,7 @@
             // 
             // chat
             // 
+            chat.BackColor = SystemColors.Window;
             chat.FormattingEnabled = true;
             chat.ItemHeight = 15;
             chat.Location = new Point(247, 568);
@@ -1715,7 +1731,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(71, 56);
+            label8.Location = new Point(71, 53);
             label8.Name = "label8";
             label8.Size = new Size(46, 15);
             label8.TabIndex = 46;
@@ -1846,6 +1862,8 @@
             // panelStep13
             // 
             panelStep13.BackColor = Color.LightGray;
+            panelStep13.BackgroundImage = Properties.Resources.Moneyplus;
+            panelStep13.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep13.Controls.Add(redBishopStep13);
             panelStep13.Controls.Add(yellowBishopStep13);
             panelStep13.Controls.Add(blueBishopStep13);
@@ -2201,6 +2219,8 @@
             // panelStep37
             // 
             panelStep37.BackColor = Color.LightGray;
+            panelStep37.BackgroundImage = Properties.Resources.Surprise__2_;
+            panelStep37.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep37.Controls.Add(redBishopStep37);
             panelStep37.Controls.Add(yellowBishopStep37);
             panelStep37.Controls.Add(blueBishopStep37);
@@ -2335,6 +2355,8 @@
             // panelStep33
             // 
             panelStep33.BackColor = Color.LightGray;
+            panelStep33.BackgroundImage = Properties.Resources.Plane;
+            panelStep33.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep33.Controls.Add(redBishopStep33);
             panelStep33.Controls.Add(yellowBishopStep33);
             panelStep33.Controls.Add(greenBishopStep33);
@@ -2468,7 +2490,9 @@
             // 
             // panelStep31
             // 
-            panelStep31.BackColor = SystemColors.GrayText;
+            panelStep31.BackColor = Color.LightGray;
+            panelStep31.BackgroundImage = Properties.Resources.Police;
+            panelStep31.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep31.Controls.Add(blueBishopStep31);
             panelStep31.Controls.Add(redBishopStep31);
             panelStep31.Controls.Add(greenBishopStep31);
@@ -2480,6 +2504,7 @@
             // 
             // blueBishopStep31
             // 
+            blueBishopStep31.BackColor = Color.Transparent;
             blueBishopStep31.Image = (Image)resources.GetObject("blueBishopStep31.Image");
             blueBishopStep31.Location = new Point(93, 24);
             blueBishopStep31.Name = "blueBishopStep31";
@@ -2491,6 +2516,7 @@
             // 
             // redBishopStep31
             // 
+            redBishopStep31.BackColor = Color.Transparent;
             redBishopStep31.Image = (Image)resources.GetObject("redBishopStep31.Image");
             redBishopStep31.Location = new Point(16, 24);
             redBishopStep31.Name = "redBishopStep31";
@@ -2502,6 +2528,7 @@
             // 
             // greenBishopStep31
             // 
+            greenBishopStep31.BackColor = Color.Transparent;
             greenBishopStep31.Image = (Image)resources.GetObject("greenBishopStep31.Image");
             greenBishopStep31.Location = new Point(93, 77);
             greenBishopStep31.Name = "greenBishopStep31";
@@ -2513,6 +2540,7 @@
             // 
             // yellowBishopStep31
             // 
+            yellowBishopStep31.BackColor = Color.Transparent;
             yellowBishopStep31.Image = Properties.Resources.yellowBishop;
             yellowBishopStep31.Location = new Point(16, 77);
             yellowBishopStep31.Name = "yellowBishopStep31";
@@ -2747,6 +2775,8 @@
             // panelStep23
             // 
             panelStep23.BackColor = Color.LightGray;
+            panelStep23.BackgroundImage = Properties.Resources.Surprise__2_;
+            panelStep23.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep23.Controls.Add(redBishopStep23);
             panelStep23.Controls.Add(blueBishopStep23);
             panelStep23.Controls.Add(greenBishopStep23);
@@ -3101,6 +3131,9 @@
             // 
             // panelStep21
             // 
+            panelStep21.BackColor = Color.LightGray;
+            panelStep21.BackgroundImage = Properties.Resources.Casino;
+            panelStep21.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep21.Controls.Add(greenBishopStep21);
             panelStep21.Controls.Add(redBishopStep21);
             panelStep21.Controls.Add(yellowBishopStep21);
@@ -3112,6 +3145,7 @@
             // 
             // greenBishopStep21
             // 
+            greenBishopStep21.BackColor = Color.Transparent;
             greenBishopStep21.Image = (Image)resources.GetObject("greenBishopStep21.Image");
             greenBishopStep21.Location = new Point(111, 77);
             greenBishopStep21.Name = "greenBishopStep21";
@@ -3123,6 +3157,7 @@
             // 
             // redBishopStep21
             // 
+            redBishopStep21.BackColor = Color.Transparent;
             redBishopStep21.Image = (Image)resources.GetObject("redBishopStep21.Image");
             redBishopStep21.Location = new Point(29, 24);
             redBishopStep21.Name = "redBishopStep21";
@@ -3134,6 +3169,7 @@
             // 
             // yellowBishopStep21
             // 
+            yellowBishopStep21.BackColor = Color.Transparent;
             yellowBishopStep21.Image = Properties.Resources.yellowBishop;
             yellowBishopStep21.Location = new Point(29, 77);
             yellowBishopStep21.Name = "yellowBishopStep21";
@@ -3145,6 +3181,7 @@
             // 
             // blueBishopStep21
             // 
+            blueBishopStep21.BackColor = Color.Transparent;
             blueBishopStep21.Image = (Image)resources.GetObject("blueBishopStep21.Image");
             blueBishopStep21.Location = new Point(111, 24);
             blueBishopStep21.Name = "blueBishopStep21";
@@ -3156,6 +3193,9 @@
             // 
             // panelStep11
             // 
+            panelStep11.BackColor = Color.LightGray;
+            panelStep11.BackgroundImage = Properties.Resources.Prison1;
+            panelStep11.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep11.Controls.Add(yellowBishopStep11);
             panelStep11.Controls.Add(redBishopStep11);
             panelStep11.Controls.Add(greenBishopStep11);
@@ -3167,6 +3207,7 @@
             // 
             // yellowBishopStep11
             // 
+            yellowBishopStep11.BackColor = Color.Transparent;
             yellowBishopStep11.Image = Properties.Resources.yellowBishop;
             yellowBishopStep11.Location = new Point(17, 74);
             yellowBishopStep11.Name = "yellowBishopStep11";
@@ -3178,6 +3219,7 @@
             // 
             // redBishopStep11
             // 
+            redBishopStep11.BackColor = Color.Transparent;
             redBishopStep11.Image = (Image)resources.GetObject("redBishopStep11.Image");
             redBishopStep11.Location = new Point(17, 24);
             redBishopStep11.Name = "redBishopStep11";
@@ -3189,6 +3231,7 @@
             // 
             // greenBishopStep11
             // 
+            greenBishopStep11.BackColor = Color.Transparent;
             greenBishopStep11.Image = (Image)resources.GetObject("greenBishopStep11.Image");
             greenBishopStep11.Location = new Point(98, 74);
             greenBishopStep11.Name = "greenBishopStep11";
@@ -3200,6 +3243,7 @@
             // 
             // blueBishopStep11
             // 
+            blueBishopStep11.BackColor = Color.Transparent;
             blueBishopStep11.Image = (Image)resources.GetObject("blueBishopStep11.Image");
             blueBishopStep11.Location = new Point(98, 24);
             blueBishopStep11.Name = "blueBishopStep11";
@@ -3212,6 +3256,8 @@
             // panelStep9
             // 
             panelStep9.BackColor = Color.LightGray;
+            panelStep9.BackgroundImage = Properties.Resources.Surprise__2_;
+            panelStep9.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep9.Controls.Add(redBishopStep9);
             panelStep9.Controls.Add(blueBishopStep9);
             panelStep9.Controls.Add(greenBishopStep9);
@@ -3345,6 +3391,7 @@
             // panelStep5
             // 
             panelStep5.BackColor = Color.LightGray;
+            panelStep5.BackgroundImage = Properties.Resources.Moneymin;
             panelStep5.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep5.Controls.Add(redBishopStep5);
             panelStep5.Controls.Add(blueBishopStep5);
@@ -3406,6 +3453,8 @@
             // panelStep3
             // 
             panelStep3.BackColor = Color.LightGray;
+            panelStep3.BackgroundImage = Properties.Resources.Plane;
+            panelStep3.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep3.Controls.Add(redBishopStep3);
             panelStep3.Controls.Add(blueBishopStep3);
             panelStep3.Controls.Add(greenBishopStep3);
@@ -3465,6 +3514,9 @@
             // 
             // panelStep1
             // 
+            panelStep1.BackColor = Color.LightGray;
+            panelStep1.BackgroundImage = Properties.Resources.Start;
+            panelStep1.BackgroundImageLayout = ImageLayout.Zoom;
             panelStep1.Controls.Add(greenBishopStep1);
             panelStep1.Controls.Add(yellowBishopStep1);
             panelStep1.Controls.Add(blueBishopStep1);
@@ -3476,6 +3528,7 @@
             // 
             // greenBishopStep1
             // 
+            greenBishopStep1.BackColor = Color.Transparent;
             greenBishopStep1.Image = (Image)resources.GetObject("greenBishopStep1.Image");
             greenBishopStep1.Location = new Point(96, 74);
             greenBishopStep1.Name = "greenBishopStep1";
@@ -3487,6 +3540,7 @@
             // 
             // yellowBishopStep1
             // 
+            yellowBishopStep1.BackColor = Color.Transparent;
             yellowBishopStep1.Image = Properties.Resources.yellowBishop;
             yellowBishopStep1.Location = new Point(19, 74);
             yellowBishopStep1.Name = "yellowBishopStep1";
@@ -3497,6 +3551,7 @@
             // 
             // blueBishopStep1
             // 
+            blueBishopStep1.BackColor = Color.Transparent;
             blueBishopStep1.Image = (Image)resources.GetObject("blueBishopStep1.Image");
             blueBishopStep1.Location = new Point(96, 24);
             blueBishopStep1.Name = "blueBishopStep1";
@@ -3507,6 +3562,7 @@
             // 
             // redBishopStep1
             // 
+            redBishopStep1.BackColor = Color.Transparent;
             redBishopStep1.Image = (Image)resources.GetObject("redBishopStep1.Image");
             redBishopStep1.Location = new Point(19, 24);
             redBishopStep1.Name = "redBishopStep1";
@@ -3752,6 +3808,7 @@
             // label30
             // 
             label30.AutoSize = true;
+            label30.BackColor = Color.Transparent;
             label30.Location = new Point(12, 9);
             label30.Name = "label30";
             label30.Size = new Size(25, 15);
@@ -3763,6 +3820,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources._81;
             ClientSize = new Size(1958, 984);
             Controls.Add(label30);
             Controls.Add(panelStep8);

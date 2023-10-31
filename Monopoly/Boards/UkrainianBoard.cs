@@ -410,7 +410,7 @@ namespace Monopoly.Main
             int currentPosition = players[currentPlayerIndex].CurrentPosition;
             if (currentPosition == 4 || currentPosition == 28)
             {
-                moneyRent = 200000;
+                moneyRent = 100000;
                 payButton.Visible = true;
                 button2.Visible = true;
                 RollDiceButton.Visible = false;

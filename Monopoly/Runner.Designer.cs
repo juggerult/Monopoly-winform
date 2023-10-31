@@ -57,7 +57,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(23, 24);
+            label1.BackColor = Color.Transparent;
+            label1.Location = new Point(23, 51);
             label1.Name = "label1";
             label1.Size = new Size(197, 15);
             label1.TabIndex = 1;
@@ -66,30 +67,33 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
+            radioButton1.BackColor = Color.Transparent;
             radioButton1.Location = new Point(12, 146);
             radioButton1.Name = "radioButton1";
             radioButton1.Size = new Size(85, 19);
             radioButton1.TabIndex = 2;
             radioButton1.TabStop = true;
             radioButton1.Text = "Українська";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioButton1.UseVisualStyleBackColor = false;
             radioButton1.CheckedChanged += radioButton1_CheckedChanged;
             // 
             // radioButton2
             // 
             radioButton2.AutoSize = true;
+            radioButton2.BackColor = Color.Transparent;
             radioButton2.Location = new Point(131, 146);
             radioButton2.Name = "radioButton2";
             radioButton2.Size = new Size(105, 19);
             radioButton2.TabIndex = 3;
             radioButton2.TabStop = true;
             radioButton2.Text = "Американська";
-            radioButton2.UseVisualStyleBackColor = true;
+            radioButton2.UseVisualStyleBackColor = false;
             radioButton2.CheckedChanged += radioButton2_CheckedChanged;
             // 
             // trackBar1
             // 
-            trackBar1.Location = new Point(63, 84);
+            trackBar1.BackColor = Color.FromArgb(188, 188, 188);
+            trackBar1.Location = new Point(72, 95);
             trackBar1.Maximum = 4;
             trackBar1.Minimum = 3;
             trackBar1.Name = "trackBar1";
@@ -101,7 +105,8 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(111, 66);
+            label2.BackColor = Color.Transparent;
+            label2.Location = new Point(118, 77);
             label2.Name = "label2";
             label2.Size = new Size(13, 15);
             label2.TabIndex = 6;
@@ -131,6 +136,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Location = new Point(63, 174);
             label3.Name = "label3";
             label3.Size = new Size(123, 15);
@@ -169,6 +175,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.photo_2023_10_31_19_26_41;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(248, 322);
             Controls.Add(button3);
             Controls.Add(button2);
