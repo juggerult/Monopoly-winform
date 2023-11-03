@@ -2548,26 +2548,30 @@ namespace Monopoly.Main
         public static List<Business> BizRightTrade { get; set; } = new List<Business>();
         private void tradeButton_Click(object sender, EventArgs e)
         {
-            if (players[currentPlayerIndex].Name == comboBox1.SelectedItem.ToString())
+            if (comboBox1.SelectedItem == null)
+            {
+                return;
+            }else if(players[currentPlayerIndex].Name == comboBox1.SelectedItem.ToString())
             {
                 MessageBox.Show("Ви не можете обмiнюватися з самим собою", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
+
             int I = 0;
             for (int i = 0; i < numberOfPlayers; i++)
             {
                 if (players[i].Name == comboBox1.SelectedItem.ToString())
                 {
                     MoneyRightTrade = players[i].Money;
-                    BizRightTrade.AddRange(players[i].OwnedBusinesses);
+                    BizRightTrade = players[i].OwnedBusinesses;
                     I = i;
                 }
             }
 
             MoneyLeftTrade = players[currentPlayerIndex].Money;
-            BizLeftTrade.AddRange(players[currentPlayerIndex].OwnedBusinesses);
+            BizLeftTrade = players[currentPlayerIndex].OwnedBusinesses;
 
-            UkrainianTrade trade = new UkrainianTrade(MoneyLeftTrade, MoneyRightTrade, BizLeftTrade, BizRightTrade);
+            UkrainianTrade trade = new UkrainianTrade(MoneyLeftTrade, MoneyRightTrade, BizLeftTrade, BizRightTrade, players[currentPlayerIndex].Name, players[I].Name);
             trade.ShowDialog();
 
             players[I].Money = MoneyRightTrade;
