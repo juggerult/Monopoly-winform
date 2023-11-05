@@ -694,32 +694,32 @@ namespace Monopoly.Main
             switch (firstDice)
             {
                 case 1:
-                    kub1.Image = Properties.Resources._1; break;
+                    kub1.Image = Properties.Resources.firstKUB; break;
                 case 2:
-                    kub1.Image = Properties.Resources._2; break;
+                    kub1.Image = Properties.Resources.secondKub; break;
                 case 3:
-                    kub1.Image = Properties.Resources._3; break;
+                    kub1.Image = Properties.Resources.thirdKub; break;
                 case 4:
-                    kub1.Image = Properties.Resources._4; break;
+                    kub1.Image = Properties.Resources.fourthKub; break;
                 case 5:
-                    kub1.Image = Properties.Resources._5; break;
+                    kub1.Image = Properties.Resources.fiveKub; break;
                 case 6:
-                    kub1.Image = Properties.Resources._6; break;
+                    kub1.Image = Properties.Resources.sixKub; break;
             }
             switch (secondDice)
             {
                 case 1:
-                    kub2.Image = Properties.Resources._1; break;
+                    kub2.Image = Properties.Resources.firstKUB; break;
                 case 2:
-                    kub2.Image = Properties.Resources._2; break;
+                    kub2.Image = Properties.Resources.secondKub; break;
                 case 3:
-                    kub2.Image = Properties.Resources._3; break;
+                    kub2.Image = Properties.Resources.thirdKub; break;
                 case 4:
-                    kub2.Image = Properties.Resources._4; break;
+                    kub2.Image = Properties.Resources.fourthKub; break;
                 case 5:
-                    kub2.Image = Properties.Resources._5; break;
+                    kub2.Image = Properties.Resources.fiveKub; break;
                 case 6:
-                    kub2.Image = Properties.Resources._6; break;
+                    kub2.Image = Properties.Resources.sixKub; break;
             }
 
             if (players[currentPlayerIndex].IsJail)
@@ -750,6 +750,22 @@ namespace Monopoly.Main
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            chat.Items.Add($"Гравець {players[currentPlayerIndex].Name} сдався");
+            switch (currentPlayerIndex)
+            {
+                case 0:
+                    panel1.Visible = false;
+                    break;
+                case 1:
+                    panel2.Visible = false;
+                    break;
+                case 2:
+                    panel3.Visible = false;
+                    break;
+                case 3:
+                    panel4.Visible = false;
+                    break;
+            }
             players[currentPlayerIndex].IsActive = false;
             foreach (Business busines in players[currentPlayerIndex].OwnedBusinesses)
             {
@@ -2551,7 +2567,8 @@ namespace Monopoly.Main
             if (comboBox1.SelectedItem == null)
             {
                 return;
-            }else if(players[currentPlayerIndex].Name == comboBox1.SelectedItem.ToString())
+            }
+            else if (players[currentPlayerIndex].Name == comboBox1.SelectedItem.ToString())
             {
                 MessageBox.Show("Ви не можете обмiнюватися з самим собою", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

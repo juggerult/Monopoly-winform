@@ -94,19 +94,32 @@ namespace Monopoly.Boards
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length > 0 && Convert.ToInt32(textBox1.Text) < trackBar1.Maximum)
+            try
             {
-                trackBar1.Value = Convert.ToInt32(textBox1.Text);
-                label1.Text = trackBar1.Value.ToString();
+                if (textBox1.Text.Length > 0 && Convert.ToInt32(textBox1.Text) < trackBar1.Maximum)
+                {
+                    trackBar1.Value = Convert.ToInt32(textBox1.Text);
+                    label1.Text = trackBar1.Value.ToString();
+                }
+            }
+            catch {
+                return;
             }
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            if (textBox2.Text.Length > 0 && Convert.ToInt32(textBox2.Text) < trackBar2.Maximum)
+            try
             {
-                trackBar2.Value = Convert.ToInt32(textBox2.Text);
-                label2.Text = trackBar2.Value.ToString();
+                if (textBox2.Text.Length > 0 && Convert.ToInt32(textBox2.Text) < trackBar2.Maximum)
+                {
+                    trackBar2.Value = Convert.ToInt32(textBox2.Text);
+                    label2.Text = trackBar2.Value.ToString();
+                }
+            }
+            catch {
+                return;
+
             }
         }
     }

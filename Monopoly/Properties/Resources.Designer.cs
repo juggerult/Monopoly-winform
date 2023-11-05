@@ -313,6 +313,36 @@ namespace Monopoly.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap firstKUB {
+            get {
+                object obj = ResourceManager.GetObject("firstKUB", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fiveKub {
+            get {
+                object obj = ResourceManager.GetObject("fiveKub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fourthKub {
+            get {
+                object obj = ResourceManager.GetObject("fourthKub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_processing20200508_16898_omddko {
             get {
                 object obj = ResourceManager.GetObject("image_processing20200508-16898-omddko", resourceCulture);
@@ -443,6 +473,26 @@ namespace Monopoly.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap secondKub {
+            get {
+                object obj = ResourceManager.GetObject("secondKub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sixKub {
+            get {
+                object obj = ResourceManager.GetObject("sixKub", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Start {
             get {
                 object obj = ResourceManager.GetObject("Start", resourceCulture);
@@ -456,6 +506,16 @@ namespace Monopoly.Properties {
         internal static System.Drawing.Bitmap Surprise__2_ {
             get {
                 object obj = ResourceManager.GetObject("Surprise (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap thirdKub {
+            get {
+                object obj = ResourceManager.GetObject("thirdKub", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
