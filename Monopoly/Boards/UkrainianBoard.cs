@@ -133,7 +133,7 @@ namespace Monopoly.Main
 
         private void UpdateChat()
         {
-            chat.Items.Add($"Хід гравця: {players[currentPlayerIndex].Name} Його позиція: {players[currentPlayerIndex].CurrentPosition}");
+            chat.Items.Add($"Хід гравця: {players[currentPlayerIndex].Name}");
             RollDiceButton.Visible = true;
         }
         public void UpdateMoney()

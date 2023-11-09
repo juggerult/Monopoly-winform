@@ -68,7 +68,7 @@ namespace Monopoly
                         this.Hide();
                         break;
                     case 2:
-                        AmericanBoard board2 = new AmericanBoard(player);
+                        AmericanBoard board2 = new AmericanBoard(player, textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text);
                         board2.Show();
                         this.Hide();
                         break;
