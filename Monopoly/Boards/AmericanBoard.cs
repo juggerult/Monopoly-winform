@@ -53,6 +53,8 @@ namespace Monopoly.Main
                 panel4.Visible = false;
             }
             timer2.Start();
+
+
         }
         private void InitializePlayers()
         {
@@ -439,13 +441,9 @@ namespace Monopoly.Main
                 if (result == DialogResult.Yes)
                 {
                     Money = players[currentPlayerIndex].Money;
-                    players[currentPlayerIndex].Money -= 150000;
-                    UkraineCasino ukraineCasino = new UkraineCasino();
-                    ukraineCasino.ShowDialog();
-                    if (Money != players[currentPlayerIndex].Money)
-                    {
-                        players[currentPlayerIndex].Money = Money;
-                    }
+                    AmericanCasino americanCasino = new AmericanCasino(Money);
+                    americanCasino.ShowDialog();
+                    players[currentPlayerIndex].Money = Money;
                     return;
                 }
                 else
