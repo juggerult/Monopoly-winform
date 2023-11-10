@@ -74,7 +74,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(52, 50);
+            textBox1.Location = new Point(56, 50);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 20;
@@ -84,7 +84,7 @@
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
-            label2.Location = new Point(288, 91);
+            label2.Location = new Point(303, 91);
             label2.Name = "label2";
             label2.Size = new Size(41, 15);
             label2.TabIndex = 19;
@@ -123,7 +123,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(266, 178);
+            comboBox2.Location = new Point(253, 172);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(121, 23);
             comboBox2.TabIndex = 15;
@@ -131,7 +131,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(35, 178);
+            comboBox1.Location = new Point(35, 172);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(121, 23);
             comboBox1.TabIndex = 14;
@@ -139,7 +139,7 @@
             // trackBar2
             // 
             trackBar2.BackColor = Color.FromArgb(188, 188, 188);
-            trackBar2.Location = new Point(266, 127);
+            trackBar2.Location = new Point(270, 109);
             trackBar2.Name = "trackBar2";
             trackBar2.Size = new Size(104, 45);
             trackBar2.TabIndex = 13;
@@ -148,7 +148,7 @@
             // trackBar1
             // 
             trackBar1.BackColor = Color.FromArgb(188, 188, 188);
-            trackBar1.Location = new Point(52, 127);
+            trackBar1.Location = new Point(52, 109);
             trackBar1.Name = "trackBar1";
             trackBar1.Size = new Size(104, 45);
             trackBar1.TabIndex = 12;
@@ -158,6 +158,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Silver;
             ClientSize = new Size(423, 289);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -171,6 +172,7 @@
             Controls.Add(comboBox1);
             Controls.Add(trackBar2);
             Controls.Add(trackBar1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "AmericanTrade";
             Text = "AmericanTrade";
             ((System.ComponentModel.ISupportInitialize)trackBar2).EndInit();

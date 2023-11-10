@@ -79,7 +79,7 @@ namespace Monopoly.Main
                         color = Color.FromArgb(130, 255, 127); break;
 
                 }
-                players[i] = new Player(name, color, 1500000, 0);
+                players[i] = new Player(name, color, 15000, 0);
             }
         }
         public class Board
@@ -96,34 +96,34 @@ namespace Monopoly.Main
             {
                 businesses = new Business[40];
                 // Здесь инициализируйте все бизнесы на игровой доске
-                businesses[1] = new Business("Staff", 60000, 2000, "Одяг", new double[] { 2000, 10000, 30000, 90000, 160000, 250000 }, 50000, 30000, 0);
-                businesses[3] = new Business("VOVK", 85000, 4000, "Одяг", new double[] { 4000, 20000, 60000, 180000, 320000, 450000 }, 50000, 42500, 0);
-                businesses[5] = new Business("ЧАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[6] = new Business("АТБ", 100000, 6000, "Продуктовий магазин", new double[] { 6000, 30000, 90000, 270000, 400000, 550000 }, 60000, 50000, 0);
-                businesses[7] = new Business("Варус", 110000, 6000, "Продуктовий магазин", new double[] { 6000, 35000, 100000, 280000, 410000, 570000 }, 60000, 60000, 0);
-                businesses[9] = new Business("Сiльпо", 120000, 8000, "Продуктовий магазин", new double[] { 8000, 40000, 100000, 300000, 450000, 600000 }, 60000, 60000, 0);
-                businesses[11] = new Business("Roshen", 150000, 10000, "Кондитерська", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
-                businesses[13] = new Business("Lucas", 150000, 10000, "Кондитерська", new double[] { 10000, 50000, 150000, 450000, 625000, 750000 }, 75000, 75000, 0);
-                businesses[14] = new Business("АВК", 160000, 12000, "Кондитерська", new double[] { 12000, 60000, 180000, 500000, 700000, 900000 }, 75000, 80000, 0);
-                businesses[15] = new Business("Богдан", 200000, 40000, "Автосалоны", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[16] = new Business("Челентано", 180000, 14000, "Ресторан", new double[] { 14000, 70000, 200000, 550000, 750000, 950000 }, 100000, 90000, 0);
-                businesses[17] = new Business("МсФокси", 180000, 14000, "Ресторан", new double[] { 14000, 70000, 200000, 550000, 750000, 950000 }, 100000, 90000, 0);
-                businesses[18] = new Business("4A Games", 175000, 10000, "Ігри", new double[] { 10000, 25000 }, 0, 100000, 0);
-                businesses[19] = new Business("ПузатаХата", 200000, 16000, "Ресторан", new double[] { 16000, 80000, 220000, 600000, 800000, 1000000 }, 100000, 100000, 0);
-                businesses[21] = new Business("Vodafone", 220000, 18000, "Мобильный оператор", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000000, 110000000, 0);
-                businesses[23] = new Business("Lifecell", 220000, 18000, "Мобильный оператор", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000, 110000, 0);
-                businesses[24] = new Business("Kiyvstart", 240000, 20000, "Мобильный оператор", new double[] { 20000, 100000, 300000, 750000, 925000, 1100000 }, 125000, 120000, 0);
-                businesses[25] = new Business("ЗАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[26] = new Business("Hotel LVIV", 260000, 22000, "Готель", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
-                businesses[27] = new Business("Ibis", 260000, 22000, "Готель", new double[] { 22000, 110000, 330000, 800000, 975000, 1150000 }, 150000, 130000, 0);
-                businesses[29] = new Business("Senator", 280000, 24000, "Готель", new double[] { 24000, 120000, 360000, 850000, 1025000, 1200000 }, 150000, 140000, 0);
-                businesses[31] = new Business("SkyUp", 300000, 26000, "Авіалінії", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
-                businesses[33] = new Business("UIA", 300000, 26000, "Авіалінії", new double[] { 26000, 130000, 390000, 900000, 1100000, 1275000 }, 175000, 150000, 0);
-                businesses[34] = new Business("WindRise", 320000, 28000, "Авіалінії", new double[] { 28000, 150000, 450000, 1000000, 1200000, 1400000 }, 175000, 160000, 0);
-                businesses[35] = new Business("КРАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
-                businesses[37] = new Business("МоноБанк", 350000, 35000, "Банк", new double[] { 35000, 175000, 500000, 1100000, 1300000, 1500000 }, 200000, 175000, 0);
-                businesses[38] = new Business("GSC", 175000, 10000, "Ігри", new double[] { 10000, 25000 }, 0, 100000, 0);
-                businesses[39] = new Business("ПриватБанк", 400000, 50000, "Банк", new double[] { 50000, 200000, 600000, 1400000, 1700000, 2000000 }, 200000, 200000, 0);
+                businesses[1] = new Business("H&M", 600, 20, "Одяг", new double[] { 20, 100, 300, 900, 1600, 2500 }, 500, 300, 0);
+                businesses[3] = new Business("Louis Vuitton", 850, 40, "Одяг", new double[] { 40, 200, 600, 1800, 3200, 4500 }, 500, 425, 0);
+                businesses[5] = new Business("BMW", 2000, 400, "Автосалон", new double[] { 400, 800, 1600, 2000 }, 0, 1000, 0);
+                businesses[6] = new Business("Puma", 1000, 60, "Спортивний магазин", new double[] { 60, 300, 900, 2700, 4000, 5500 }, 600, 500, 0);
+                businesses[7] = new Business("Adidas", 1100, 60, "Спортивний магазин", new double[] { 60, 300, 1000, 2800, 4100, 5700 }, 600, 600, 0);
+                businesses[9] = new Business("Nike", 1200, 80, "Спортивний магазин", new double[] { 80, 400, 1000, 3000, 4500, 6000 }, 600, 600, 0);
+                businesses[11] = new Business("Coca-Cola", 1500, 100, "Напої", new double[] { 100, 500, 1500, 4500, 6250, 7500 }, 750, 750, 0);
+                businesses[13] = new Business("Pepsi", 1500, 100, "Напої", new double[] { 100, 500, 1500, 4500, 6250, 7500 }, 750, 750, 0);
+                businesses[14] = new Business("Red Bull", 1600, 120, "Напої", new double[] { 120, 600, 1800, 5000, 7000, 9000 }, 750, 800, 0);
+                businesses[15] = new Business("Volkswagen", 2000, 400, "Автосалоны", new double[] { 400, 800, 1600, 2000 }, 0, 1000, 0);
+                businesses[16] = new Business("Spotify", 1800, 140, "Музика", new double[] { 140, 700, 2000, 5500, 7500, 9500 }, 1000, 900, 0);
+                businesses[17] = new Business("Soundcloud", 1800, 140, "Музика", new double[] { 140, 700, 2000, 5500, 7500, 9500 }, 1000, 900, 0);
+                businesses[18] = new Business("EA Games", 1750, 100, "Ігри", new double[] { 100, 250 }, 0, 1000, 0);
+                businesses[19] = new Business("Shazam", 2000, 160, "Музика", new double[] { 160, 800, 2200, 6000, 8000, 10000 }, 1000, 1000, 0);
+                businesses[21] = new Business("McDonalds", 2200, 180, "Ресторани", new double[] { 180, 900, 2500, 7000, 8750, 10000 }, 12000, 11000, 0);
+                businesses[23] = new Business("KFC", 2200, 180, "Ресторани", new double[] { 180, 900, 2500, 7000, 8700, 10000 }, 12500, 11000, 0);
+                businesses[24] = new Business("Burger KING", 2400, 200, "Ресторани", new double[] { 200, 1000, 3000, 7500, 9250, 11000 }, 1250, 1200, 0);
+                businesses[25] = new Business("Tesla", 2000, 400, "Автосалон", new double[] { 400, 800, 1600, 2000 }, 0, 1000, 0);
+                businesses[26] = new Business("American Airlines", 2600, 220, "Авіалінії", new double[] { 220, 1100, 3300, 8000, 9750, 11500 }, 1500, 1300, 0);
+                businesses[27] = new Business("Etihad AIRWAYS", 2600, 220, "Авіалінії", new double[] { 220, 1100, 3300, 8000, 9750, 11500 }, 1500, 1300, 0);
+                businesses[29] = new Business("Qatar Airlines", 2800, 240, "Авіалінії", new double[] { 240, 1200, 3600, 8500, 10250, 12000 }, 1500, 1400, 0);
+                businesses[31] = new Business("Netflix", 3000, 260, "Кiно-компанії", new double[] { 260, 1300, 3900, 9000, 11000, 12750 }, 1750, 1500, 0);
+                businesses[33] = new Business("Universal Pictures", 3000, 260, "Кiно-компанії", new double[] { 260, 1300, 3900, 9000, 11000, 12750 }, 1750, 1500, 0);
+                businesses[34] = new Business("Warner Bros", 3200, 280, "Кiно-компанії", new double[] { 280, 1500, 4500, 10000, 12000, 14000 }, 1750, 1600, 0);
+                businesses[35] = new Business("Mercedes-Benz", 2000, 400, "Автосалон", new double[] { 400, 800, 1600, 2000 }, 0, 1000, 0);
+                businesses[37] = new Business("Samsung", 3500, 350, "IT-компанії", new double[] { 350, 1750, 5000, 11000, 13000, 15000 }, 2000, 1750, 0);
+                businesses[38] = new Business("Ubisoft", 1750, 100, "Ігри", new double[] { 100, 250 }, 0, 1000, 0);
+                businesses[39] = new Business("Apple", 4000, 500, "IT-компанії", new double[] { 500, 2000, 6000, 14000, 17000, 20000 }, 2000, 2000, 0);
             }
 
             public Business GetBusiness(int position)
@@ -341,7 +341,7 @@ namespace Monopoly.Main
 
             if (players[currentPlayerIndex].CurrentPosition == 40)
             {
-                players[currentPlayerIndex].Money += 200000;
+                players[currentPlayerIndex].Money += 2000;
                 players[currentPlayerIndex].CurrentPosition = players[currentPlayerIndex].CurrentPosition - 40;
                 UpdateMoney();
             }
@@ -419,8 +419,8 @@ namespace Monopoly.Main
             }
             else if (currentPosition == 12)
             {
-                players[currentPlayerIndex].Money += 200000;
-                chat.Items.Add("НАБУ видав премiю за сдачу корупцiонера");
+                players[currentPlayerIndex].Money += 2000;
+                chat.Items.Add("За видатний внесок у глобальні інновації, ви отримуєте відзнаку та премію від Міжнародного Союзу Інноваторів. Нові горизонти та успіхи чекають на вас!");
                 return;
             }
             if (currentPosition == 8 || currentPosition == 22 || currentPosition == 36)
@@ -437,7 +437,7 @@ namespace Monopoly.Main
             }
             if (currentPosition == 20)
             {
-                DialogResult result = MessageBox.Show($"Ви стали на поле казино, чи будете грати? ", "Запрошення в казино", MessageBoxButtons.YesNo);
+                DialogResult result = MessageBox.Show($"Ви стали на поле бiржi, чи будете грати? ", "Запрошення до бiржi", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
                     Money = players[currentPlayerIndex].Money;
@@ -448,7 +448,7 @@ namespace Monopoly.Main
                 }
                 else
                 {
-                    chat.Items.Add($"Гравець {players[currentPlayerIndex].Name} відмовився грати в казино");
+                    chat.Items.Add($"Гравець {players[currentPlayerIndex].Name} відмовився грати на бiржi");
                     return;
                 }
             }
@@ -502,16 +502,16 @@ namespace Monopoly.Main
             switch (number)
             {
                 case 1:
-                    chat.Items.Add("Ви виграли конкурс і отримуєте приз від банку - отримайте 50.000");
-                    players[currentPlayerIndex].Money += 50000;
+                    chat.Items.Add("Ви виграли конкурс і отримуєте приз від мiжнародного банку банку - отримайте 500");
+                    players[currentPlayerIndex].Money += 500;
                     break;
                 case 2:
-                    chat.Items.Add("Ваша стара бабуся залишила вам спадок - отримайте 150.000 ");
-                    players[currentPlayerIndex].Money += 50000;
+                    chat.Items.Add("За високі стандарти справедливості та праворучності, ви отримуєте глобальну визнаність та премію. Цей приз передбачається Міжнародним Комітетом за Захист Справедливості - отримайте 1500 ");
+                    players[currentPlayerIndex].Money += 1500;
                     break;
                 case 3:
-                    chat.Items.Add("У вас день народження, кожен гравець дарує вам по 100.000");
-                    players[currentPlayerIndex].Money += 100000 * numberOfPlayers - 1;
+                    chat.Items.Add("У вас день народження, кожен гравець дарує вам по 1000");
+                    players[currentPlayerIndex].Money += 1000 * numberOfPlayers - 1;
                     for (int i = 0; i < numberOfPlayers; i++)
                     {
                         if (i != currentPlayerIndex)
@@ -529,104 +529,104 @@ namespace Monopoly.Main
                     }
                     break;
                 case 4:
-                    chat.Items.Add("Ви виграли в лотереї - отримайте 220.000 ");
-                    players[currentPlayerIndex].Money += 220000;
+                    chat.Items.Add("Ви виграли в лотереї - отримайте 2200 ");
+                    players[currentPlayerIndex].Money += 2200;
                     break;
                 case 5:
-                    chat.Items.Add("Заплатіть банку податок на нерухомість - 70.000");
-                    moneyRent = 70000;
+                    chat.Items.Add("Заплатіть банку податок на нерухомість - 709");
+                    moneyRent = 700;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 6:
-                    chat.Items.Add("Ваш автомобіль пройшов технічний огляд - заплатіть 100.000 за ремонт.");
-                    moneyRent = 100000;
+                    chat.Items.Add("Ваш автомобіль пройшов міжнародний технічний огляд - заплатіть 1000 ");
+                    moneyRent = 1000;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 7:
-                    chat.Items.Add("Заплатіть штраф за перевищення швидкості - 50.000.");
-                    moneyRent = 50000;
+                    chat.Items.Add("Заплатіть штраф за перевищення швидкості - 500.");
+                    moneyRent = 500;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 8:
-                    chat.Items.Add("Ваша квартира потребує ремонту. Платіть 80.000 за ремонт");
-                    moneyRent = 80000;
+                    chat.Items.Add("Ваше місце проживання потребує оновлення. Витратте 800 на  ремонт та модернізацію.");
+                    moneyRent = 800;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 9:
-                    chat.Items.Add("Ви знайшли коштовну антикварну річ - отримайте 75.000");
-                    players[currentPlayerIndex].Money += 75000;
+                    chat.Items.Add("Ви знайшли коштовну антикварну річ - отримайте 750");
+                    players[currentPlayerIndex].Money += 750;
                     break;
                 case 10:
-                    chat.Items.Add("Банк помилився в вашу користь. Отримайте 90.000.");
-                    players[currentPlayerIndex].Money += 90000;
+                    chat.Items.Add("Банк помилився в вашу користь. Отримайте 900.");
+                    players[currentPlayerIndex].Money += 900;
                     break;
                 case 11:
-                    chat.Items.Add("Ви виграли конкурс краси. Отримайте 100.000 ");
-                    players[currentPlayerIndex].Money += 100000;
+                    chat.Items.Add("Ви виграли право на впровадження міжнародного інноваційного вдосконалення. Оновіть будь-який свій готівковий гаманець на сучасні електронні технології та отримайте додатковий прибуток 1000 ");
+                    players[currentPlayerIndex].Money += 1000;
                     break;
                 case 12:
-                    chat.Items.Add("Ви програли на біржі. Платіть 100.000 гривень в банк");
-                    moneyRent = 100000;
+                    chat.Items.Add("Ви програли у казино. Платіть 1000  ");
+                    moneyRent = 1000;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 13:
-                    chat.Items.Add("Ви захворіли і повинні оплатити лікарняні. Заплатіть 75.000");
-                    moneyRent = 75000;
+                    chat.Items.Add("Ви захворіли і повинні оплатити лікарняні. Заплатіть 750");
+                    moneyRent = 750;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 14:
-                    chat.Items.Add("Ви отримали штраф за паркування. Заплатіть 20.000 штрафу");
-                    moneyRent = 20000;
+                    chat.Items.Add("Ви отримали штраф за паркування. Заплатіть 200 штрафу");
+                    moneyRent = 200;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 15:
-                    chat.Items.Add("Вам знадобилася юридична консультація. Заплатіть 50.000 за послуги юриста.");
-                    moneyRent = 50000;
+                    chat.Items.Add("Вам знадобилася юридична консультація. Заплатіть 500 за послуги юриста.");
+                    moneyRent = 500;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 16:
-                    chat.Items.Add("Ваше майно пошкоджено під час бунту на вулицях. Заплатіть 50.000 за ремонт");
-                    moneyRent = 50000;
+                    chat.Items.Add("Ваше майно пошкоджено під час бунту на вулицях. Заплатіть 500 за ремонт");
+                    moneyRent = 500;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 17:
-                    chat.Items.Add("Ваші діти потребують дорогий навчання. Заплатіть 80.000 за їхню освіту.");
-                    moneyRent = 80000;
+                    chat.Items.Add("Ваші діти потребують дорогого навчання. Заплатіть 800 за їхню освіту.");
+                    moneyRent = 800;
                     payButton.Visible = true;
                     button2.Visible = true;
                     RollDiceButton.Visible = false;
                     timer3.Start();
                     break;
                 case 18:
-                    chat.Items.Add("Ви зробили успішну інвестицію. Отримайте додаткові 50.000");
-                    players[currentPlayerIndex].Money += 50000;
+                    chat.Items.Add("Ви зробили успішну інвестицію. Отримайте додаткові 500");
+                    players[currentPlayerIndex].Money += 500;
                     break;
             }
             return;
@@ -650,11 +650,11 @@ namespace Monopoly.Main
                 string jailReason = string.Empty;
                 if (randomJailReason == 1)
                 {
-                    jailReason = "за крадіжку державного майна";
+                    jailReason = "глобальне фінансове порушення";
                 }
                 else if (randomJailReason == 2)
                 {
-                    jailReason = " статтею №190.4";
+                    jailReason = "участь у глобальному інциденті безпеки";
                 }
                 else if (randomJailReason == 3)
                 {
@@ -662,7 +662,7 @@ namespace Monopoly.Main
                 }
                 else if (randomJailReason == 4)
                 {
-                    jailReason = "за те, що ви дуже багаті";
+                    jailReason = "участь у міжнародному кіберзлочині";
                 }
 
                 chat.Items.Add($"Гравець {players[currentPlayerIndex].Name} вирушаєте до в'язницi за {jailReason}");
@@ -677,7 +677,8 @@ namespace Monopoly.Main
 
         private void RollDiceButton_Click(object sender, EventArgs e)
         {
-            if (players[currentPlayerIndex].IsActive) { } else { currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers; }
+        a:
+            if (players[currentPlayerIndex].IsActive) { } else { currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers; goto a; }
             countOfUpgrade = 0;
             int firstDice = random.Next(1, 6);
             int secondDice = random.Next(1, 6);
@@ -727,11 +728,11 @@ namespace Monopoly.Main
                     players[currentPlayerIndex].IsDouble = false;
                     goto dalshe;
                 }
-                DialogResult jailResult = MessageBox.Show("Ви знаходитеся у тюрмi, ви можете вийти за 5000 або сидiти далi поки не випаде дубль", "Будете платити?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult jailResult = MessageBox.Show("Ви знаходитеся у тюрмi, ви можете вийти за 500 або сидiти далi поки не випаде дубль", "Будете платити?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (jailResult == DialogResult.Yes)
                 {
                     players[currentPlayerIndex].IsJail = false;
-                    players[currentPlayerIndex].Money = players[currentPlayerIndex].Money - 50000;
+                    players[currentPlayerIndex].Money = players[currentPlayerIndex].Money - 500;
                 }
                 else
                 {
@@ -895,7 +896,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label1.Text = "60,000";
+                label1.Text = "600";
                 panelStep2.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(3).Owner != null)
@@ -906,7 +907,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label2.Text = "85,000";
+                label2.Text = "850";
                 panelStep4.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(5).Owner != null)
@@ -917,7 +918,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label3.Text = "200,000";
+                label3.Text = "2000";
                 panelStep6.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(6).Owner != null)
@@ -928,7 +929,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label4.Text = "100,000";
+                label4.Text = "1000";
                 panelStep7.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(7).Owner != null)
@@ -939,7 +940,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label5.Text = "110,000";
+                label5.Text = "1100";
                 panelStep8.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(9).Owner != null)
@@ -950,7 +951,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label6.Text = "120,00";
+                label6.Text = "1200";
                 panelStep10.BackColor = Color.LightGray;
             }
 
@@ -962,7 +963,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label7.Text = "150,000";
+                label7.Text = "1500";
                 panelStep12.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(13).Owner != null)
@@ -973,7 +974,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label8.Text = "150,000";
+                label8.Text = "1500";
                 panelStep14.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(14).Owner != null)
@@ -984,7 +985,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label9.Text = "160,000";
+                label9.Text = "1600";
                 panelStep15.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(15).Owner != null)
@@ -995,7 +996,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label10.Text = "200,000";
+                label10.Text = "2000";
                 panelStep16.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(16).Owner != null)
@@ -1006,7 +1007,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label11.Text = "180,000";
+                label11.Text = "1800";
                 panelStep17.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(17).Owner != null)
@@ -1017,7 +1018,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label12.Text = "180,000";
+                label12.Text = "1800";
                 panelStep18.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(18).Owner != null)
@@ -1028,7 +1029,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label13.Text = "175,000";
+                label13.Text = "1750";
                 panelStep19.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(19).Owner != null)
@@ -1039,7 +1040,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label14.Text = "200,000";
+                label14.Text = "2000";
                 panelStep20.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(21).Owner != null)
@@ -1050,7 +1051,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label15.Text = "220,000";
+                label15.Text = "2200";
                 panelStep22.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(23).Owner != null)
@@ -1061,7 +1062,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label16.Text = "220,000";
+                label16.Text = "2200";
                 panelStep24.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(24).Owner != null)
@@ -1072,7 +1073,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label17.Text = "240,000";
+                label17.Text = "2400";
                 panelStep25.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(25).Owner != null)
@@ -1083,7 +1084,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label18.Text = "200,000";
+                label18.Text = "2000";
                 panelStep26.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(26).Owner != null)
@@ -1094,7 +1095,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label19.Text = "260,000";
+                label19.Text = "2600";
                 panelStep27.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(27).Owner != null)
@@ -1105,7 +1106,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label20.Text = "260,000";
+                label20.Text = "2600";
                 panelStep28.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(29).Owner != null)
@@ -1116,7 +1117,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label21.Text = "280,000";
+                label21.Text = "2800";
                 panelStep30.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(31).Owner != null)
@@ -1127,7 +1128,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label22.Text = "300,000";
+                label22.Text = "3000";
                 panelStep32.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(33).Owner != null)
@@ -1138,7 +1139,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label23.Text = "300,000";
+                label23.Text = "3000";
                 panelStep34.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(34).Owner != null)
@@ -1149,7 +1150,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label24.Text = "320,000";
+                label24.Text = "3200";
                 panelStep35.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(35).Owner != null)
@@ -1160,7 +1161,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label25.Text = "200,000";
+                label25.Text = "2000";
                 panelStep36.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(37).Owner != null)
@@ -1171,7 +1172,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label26.Text = "350,000";
+                label26.Text = "3500";
                 panelStep38.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(38).Owner != null)
@@ -1182,7 +1183,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label27.Text = "175,000";
+                label27.Text = "1750";
                 panelStep39.BackColor = Color.LightGray;
             }
             if (board.GetBusiness(39).Owner != null)
@@ -1193,7 +1194,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label28.Text = "400,000";
+                label28.Text = "4000";
                 panelStep40.BackColor = Color.LightGray;
             }
         }
@@ -1231,7 +1232,7 @@ namespace Monopoly.Main
                 {
                     if (CurrentBussines.Owner.Money < CurrentBussines.UpgradePrice)
                     {
-                        MessageBox.Show("У вас невистачаэ грошей для покращення цього бiзнесу", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("У вас невистачає грошей для покращення цього бiзнесу", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                 }
@@ -2499,8 +2500,8 @@ namespace Monopoly.Main
                 panel7.BackColor = Color.LightGray;
             }
             labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
-            labelInfo1.Text = $"*  = 10000x";
-            labelInfo2.Text = $"* *  = 25000x";
+            labelInfo1.Text = $"*  = 100x";
+            labelInfo2.Text = $"* *  = 250x";
             labelInfo3.Text = " ";
             labelInfo4.Text = " ";
             labelInfo5.Text = " ";
@@ -2535,8 +2536,8 @@ namespace Monopoly.Main
                 panel7.BackColor = Color.LightGray;
             }
             labelInfoBase.Text = $"Вартість поля: {curBiz.Levels[0].ToString()}";
-            labelInfo1.Text = $"*  = 10000x";
-            labelInfo2.Text = $"* *  = 25000x";
+            labelInfo1.Text = $"*  = 100x";
+            labelInfo2.Text = $"* *  = 250x";
             labelInfo3.Text = " ";
             labelInfo4.Text = " ";
             labelInfo5.Text = " ";

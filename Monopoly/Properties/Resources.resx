@@ -118,169 +118,391 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bishop-147059_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bishop-147059_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="yellowBishop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yellowBishop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="-Money2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\-Money2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="81" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="thirdKub" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\thirdKub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Plane" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Plane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Moneyplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Moneyplus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="3p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\3p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="monopoly-1-652x467" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\monopoly-1-652x467.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Без имени-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Без имени-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Prison" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Prison.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Без имени-13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Без имени-13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Пузата Хата" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Пузата Хата.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="secondKub" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\secondKub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Moneyplus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Moneyplus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Casino" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Casino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="firstKUB" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\firstKUB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="image_processing20200508-16898-omddko" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\image_processing20200508-16898-omddko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="-Money" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\-Money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="efeb4bc6-62e1e5563aee5a701e457871e538f6aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\efeb4bc6-62e1e5563aee5a701e457871e538f6aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="4p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="2p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Moneymin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Moneymin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1p" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="photo_2023-10-31_19-00-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\photo_2023-10-31_19-00-50.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fiveKub" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fiveKub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Prison1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Prison1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="-Money1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\-Money1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Blue_bishop.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blue_bishop.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Prison" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prison.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Без имени-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Без имени-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="-Money2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-Money2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Moneymin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Moneymin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jeff-Bezos-PNG-Background1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jeff-Bezos-PNG-Background1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shazam1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shazam1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shazam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shazam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BMW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BMW.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spotify1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spotify1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="American Airlines1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\American Airlines1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Без имени-13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Без имени-13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ethereum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ethereum.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EA.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Burger King" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Burger King.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="+Money" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\+Money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EA1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="9140ece3-75e682e329f1ecc7ddda754b356c6436" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9140ece3-75e682e329f1ecc7ddda754b356c6436.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Без имени-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Без имени-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="651f3ea1-804e15fc5c92a055e2ab8e71133a921e" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\651f3ea1-804e15fc5c92a055e2ab8e71133a921e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="fourthKub" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fourthKub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LUKAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LUKAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1024px-Green_bishop.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1024px-Green_bishop.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Blue_bishop.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blue_bishop.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="053ac98c-7811ff953ee7dc445ee44c014d70b054" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\053ac98c-7811ff953ee7dc445ee44c014d70b054.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="800px-Red_bishop.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\800px-Red_bishop.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Police" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Police.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Tesla" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tesla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="photo_2023-10-31_19-26-41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\photo_2023-10-31_19-26-41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Пузата Хата1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Пузата Хата1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Без имени-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Без имени-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Surprise (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Surprise (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bishop-147064_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bishop-147064_960_720.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RedBull1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedBull1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="9140ece3-75e682e329f1ecc7ddda754b356c6436" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\9140ece3-75e682e329f1ecc7ddda754b356c6436.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="American Airlines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\American Airlines.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Apple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Apple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="image_processing20200508-16898-omddko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_processing20200508-16898-omddko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Police" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Police.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warner Bros1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warner Bros1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="800px-Red_bishop.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\800px-Red_bishop.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Casino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Casino.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="efeb4bc6-62e1e5563aee5a701e457871e538f6aa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\efeb4bc6-62e1e5563aee5a701e457871e538f6aa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Apple2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Apple2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ubisoft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ubisoft.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkswagen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volkswagen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Пузата Хата" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Пузата Хата.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="651f3ea1-804e15fc5c92a055e2ab8e71133a921e" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\651f3ea1-804e15fc5c92a055e2ab8e71133a921e.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pepsi2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pepsi2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1541527546_person-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1541527546_person-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Universal Pictures1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Universal Pictures1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Без имени-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Без имени-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Coca Cola" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Coca Cola.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bill-Gates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bill-Gates.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warner Bros" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warner Bros.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ubisoft1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ubisoft1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Spotify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Spotify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mercedes2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mercedes2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adidas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adidas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Universal Pictures3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Universal Pictures3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="+Money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\+Money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Soundcloud11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Soundcloud11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="monopoly-1-652x467" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\monopoly-1-652x467.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Universal Pictures" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Universal Pictures.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sixKub" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sixKub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Etihad airways" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Etihad airways.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Без имени-12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Без имени-12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Пузата Хата1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Пузата Хата1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ubisoft2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ubisoft2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shazam2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shazam2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fourthKub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fourthKub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KFC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KFC.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo_2023-10-31_19-00-50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\photo_2023-10-31_19-00-50.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Louis Vuitton1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Louis Vuitton1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KFC1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KFC1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Puma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Puma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Soundcloud1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Soundcloud1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mercedes1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mercedes1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-warren-buffett-investor-berkshire-hathaway-stock-t-buffet-5abf0312be0d28.2176411915224676027785" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-warren-buffett-investor-berkshire-hathaway-stock-t-buffet-5abf0312be0d28.2176411915224676027785.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Prison1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Prison1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Netflix1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Netflix1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="H&amp;M1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\H&amp;M1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1200px-6_Full_Logo_S-21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1200px-6_Full_Logo_S-21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mcdonalds1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mcdonalds1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thirdKub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\thirdKub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Coca Cola1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Coca Cola1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Nike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dash_logo_2018_rgb_for_screens" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dash_logo_2018_rgb_for_screens.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EA2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EA2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LUKAS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LUKAS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RedBull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RedBull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kisspng-warren-buffett-investor-berkshire-hathaway-stock-t-buffet-5abf0312be0d281" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kisspng-warren-buffett-investor-berkshire-hathaway-stock-t-buffet-5abf0312be0d28.21764119152246760277851.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jeff-Bezos-PNG-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Jeff-Bezos-PNG-Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fiveKub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fiveKub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mercedes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mercedes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bishop-147059_1280" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bishop-147059_1280.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Биржа" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Биржа.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samsung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samsung.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="H&amp;M" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\H&amp;M.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="-Money" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\-Money.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Apple1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Apple1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samsung1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samsung1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elon mask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Elon mask.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pepsi1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pepsi1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Universal Pictures4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Universal Pictures4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1200px-6_Full_Logo_S-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1200px-6_Full_Logo_S-2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mcdonalds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mcdonalds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Netflix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Netflix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bishop-147064_960_720" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bishop-147064_960_720.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pepsi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pepsi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="secondKub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\secondKub.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Warner Bros2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warner Bros2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Universal Pictures2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Universal Pictures2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Burger King1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Burger King1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Qatar Airways" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Qatar Airways.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yellowBishop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yellowBishop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3p" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3p.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Moneyplus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Moneyplus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Moneyplus1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Moneyplus1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1024px-Green_bishop.svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1024px-Green_bishop.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="firstKUB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\firstKUB.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Louis Vuitton11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Louis Vuitton11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Louis Vuitton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Louis Vuitton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Soundcloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Soundcloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkswagen1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volkswagen1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tether" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tether.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -102,7 +102,8 @@ namespace Monopoly.Boards
                     label1.Text = trackBar1.Value.ToString();
                 }
             }
-            catch {
+            catch
+            {
                 return;
             }
         }
@@ -117,7 +118,8 @@ namespace Monopoly.Boards
                     label2.Text = trackBar2.Value.ToString();
                 }
             }
-            catch {
+            catch
+            {
                 return;
 
             }

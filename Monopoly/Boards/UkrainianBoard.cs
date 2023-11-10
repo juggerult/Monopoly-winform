@@ -109,7 +109,7 @@ namespace Monopoly.Main
                 businesses[17] = new Business("МсФокси", 180000, 14000, "Ресторан", new double[] { 14000, 70000, 200000, 550000, 750000, 950000 }, 100000, 90000, 0);
                 businesses[18] = new Business("4A Games", 175000, 10000, "Ігри", new double[] { 10000, 25000 }, 0, 100000, 0);
                 businesses[19] = new Business("ПузатаХата", 200000, 16000, "Ресторан", new double[] { 16000, 80000, 220000, 600000, 800000, 1000000 }, 100000, 100000, 0);
-                businesses[21] = new Business("Vodafone", 220000, 18000, "Мобильный оператор", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000000, 110000000, 0);
+                businesses[21] = new Business("Vodafone", 220000, 18000, "Мобильный оператор", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000, 110000, 0);
                 businesses[23] = new Business("Lifecell", 220000, 18000, "Мобильный оператор", new double[] { 18000, 90000, 250000, 700000, 875000, 1050000 }, 125000, 110000, 0);
                 businesses[24] = new Business("Kiyvstart", 240000, 20000, "Мобильный оператор", new double[] { 20000, 100000, 300000, 750000, 925000, 1100000 }, 125000, 120000, 0);
                 businesses[25] = new Business("ЗАЗ", 200000, 40000, "Автосалон", new double[] { 40000, 80000, 160000, 200000 }, 0, 100000, 0);
@@ -511,7 +511,7 @@ namespace Monopoly.Main
                     break;
                 case 2:
                     chat.Items.Add("Ваша стара бабуся залишила вам спадок - отримайте 150.000 ");
-                    players[currentPlayerIndex].Money += 50000;
+                    players[currentPlayerIndex].Money += 150000;
                     break;
                 case 3:
                     chat.Items.Add("У вас день народження, кожен гравець дарує вам по 100.000");
@@ -621,7 +621,7 @@ namespace Monopoly.Main
                     timer3.Start();
                     break;
                 case 17:
-                    chat.Items.Add("Ваші діти потребують дорогий навчання. Заплатіть 80.000 за їхню освіту.");
+                    chat.Items.Add("Ваші діти потребують дорогого навчання. Заплатіть 80.000 за їхню освіту.");
                     moneyRent = 80000;
                     payButton.Visible = true;
                     button2.Visible = true;
@@ -681,7 +681,8 @@ namespace Monopoly.Main
 
         private void RollDiceButton_Click(object sender, EventArgs e)
         {
-            if (players[currentPlayerIndex].IsActive) { } else { currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers; }
+        a:
+            if (players[currentPlayerIndex].IsActive) { } else { currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers; goto a; }
             countOfUpgrade = 0;
             int firstDice = random.Next(1, 6);
             int secondDice = random.Next(1, 6);
@@ -731,7 +732,7 @@ namespace Monopoly.Main
                     players[currentPlayerIndex].IsDouble = false;
                     goto dalshe;
                 }
-                DialogResult jailResult = MessageBox.Show("Ви знаходитеся у тюрмi, ви можете вийти за 5000 або сидiти далi поки не випаде дубль", "Будете платити?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult jailResult = MessageBox.Show("Ви знаходитеся у тюрмi, ви можете вийти за 50000 або сидiти далi поки не випаде дубль", "Будете платити?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (jailResult == DialogResult.Yes)
                 {
                     players[currentPlayerIndex].IsJail = false;
@@ -955,7 +956,7 @@ namespace Monopoly.Main
             }
             else
             {
-                label6.Text = "120,00";
+                label6.Text = "120,000";
                 panelStep10.BackColor = Color.LightGray;
             }
 
@@ -1236,7 +1237,7 @@ namespace Monopoly.Main
                 {
                     if (CurrentBussines.Owner.Money < CurrentBussines.UpgradePrice)
                     {
-                        MessageBox.Show("У вас невистачаэ грошей для покращення цього бiзнесу", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("У вас невистачає грошей для покращення цього бiзнесу", "Помилка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                 }

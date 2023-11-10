@@ -141,6 +141,7 @@
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "UkraineCasino";
             Text = "Казино";
             ResumeLayout(false);

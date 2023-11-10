@@ -173,6 +173,7 @@
             Controls.Add(comboBox1);
             Controls.Add(trackBar2);
             Controls.Add(trackBar1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "UkrainianTrade";
             Text = "UkrainianTrade";
             ((System.ComponentModel.ISupportInitialize)trackBar1).EndInit();

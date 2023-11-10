@@ -118,7 +118,7 @@ namespace Monopoly.Boards
                     if (value <= 60)
                     {
                         Money += Convert.ToDouble(textBox4.Text) * 1.25;
-                        MessageBox.Show($"Вы выиграли {Convert.ToDouble(textBox4.Text) * 1.25}");
+                        MessageBox.Show($"Вы выиграли {Convert.ToDouble(textBox4.Text) * 1.35}");
                     }
                     else
                     {
