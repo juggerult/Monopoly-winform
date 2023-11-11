@@ -134,7 +134,16 @@ namespace Monopoly.Main
 
         private void UpdateChat()
         {
-            chat.Items.Add($"Хід гравця: {players[currentPlayerIndex].Name}");
+            again:
+            if (players[currentPlayerIndex].IsActive)
+            {
+                chat.Items.Add($"Хід гравця: {players[currentPlayerIndex].Name}");
+            }
+            else
+            {
+                currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+                goto again;
+            }
             RollDiceButton.Visible = true;
         }
         public void UpdateMoney()
@@ -677,8 +686,10 @@ namespace Monopoly.Main
 
         private void RollDiceButton_Click(object sender, EventArgs e)
         {
-        a:
-            if (players[currentPlayerIndex].IsActive) { } else { currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers; goto a; }
+            if (!players[currentPlayerIndex].IsActive)
+            {
+                currentPlayerIndex = (currentPlayerIndex + 1) % numberOfPlayers;
+            }
             countOfUpgrade = 0;
             int firstDice = random.Next(1, 6);
             int secondDice = random.Next(1, 6);
@@ -769,6 +780,28 @@ namespace Monopoly.Main
                 busines.Owner = null;
                 busines.CurrentLevel = 0;
             }
+
+            int surrenderedCount = 0;
+            for (int i = 0; i < numberOfPlayers; i++)
+            {
+                if (!players[i].IsActive)
+                {
+                    surrenderedCount++;
+                    if (surrenderedCount == numberOfPlayers - 1)
+                    {
+                        for (int j = 0; j < numberOfPlayers; j++)
+                        {
+                            if (players[j].IsActive)
+                            {
+                                MessageBox.Show($"Гра закончилась. Победитель: {players[j].Name}, поздравляем!");
+                                Thread.Sleep(3000);
+                                Application.Exit();
+                            }
+                        }
+                    }
+                }
+            }
+
             payButton.Visible = false;
             button2.Visible = false;
             RollDiceButton.Visible = true;
