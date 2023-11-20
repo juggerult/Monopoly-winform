@@ -1238,7 +1238,14 @@ namespace Monopoly.Main
         }
         private void payButton_Click(object sender, EventArgs e)
         {
-            players[currentPlayerIndex].Money = players[currentPlayerIndex].Money - moneyRent;
+            if (players[currentPlayerIndex].Money > moneyRent)
+            {
+                players[currentPlayerIndex].Money = players[currentPlayerIndex].Money - moneyRent;
+            }
+            else
+            {
+                MessageBox.Show("У вас недостаточно денег"); ;
+            }
             payButton.Visible = false;
             button2.Visible = false;
             RollDiceButton.Visible = true;

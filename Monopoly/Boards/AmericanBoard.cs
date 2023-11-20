@@ -134,7 +134,7 @@ namespace Monopoly.Main
 
         private void UpdateChat()
         {
-            again:
+        again:
             if (players[currentPlayerIndex].IsActive)
             {
                 chat.Items.Add($"Хід гравця: {players[currentPlayerIndex].Name}");
@@ -525,13 +525,13 @@ namespace Monopoly.Main
                     {
                         if (i != currentPlayerIndex)
                         {
-                            if (players[i].Money < 100000)
+                            if (players[i].Money < 1000)
                             {
                                 players[i].Money = 0;
                             }
                             else
                             {
-                                players[i].Money -= 100000;
+                                players[i].Money -= 1000;
                             }
                         }
 
@@ -1233,7 +1233,14 @@ namespace Monopoly.Main
         }
         private void payButton_Click(object sender, EventArgs e)
         {
-            players[currentPlayerIndex].Money = players[currentPlayerIndex].Money - moneyRent;
+            if (players[currentPlayerIndex].Money > moneyRent)
+            {
+                players[currentPlayerIndex].Money = players[currentPlayerIndex].Money - moneyRent;
+            }
+            else
+            {
+                MessageBox.Show("У вас недостаточно денег");;
+            }
             payButton.Visible = false;
             button2.Visible = false;
             RollDiceButton.Visible = true;
