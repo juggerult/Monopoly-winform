@@ -1239,7 +1239,8 @@ namespace Monopoly.Main
             }
             else
             {
-                MessageBox.Show("У вас недостаточно денег");;
+                MessageBox.Show("У вас недостаточно денег");
+                return;
             }
             payButton.Visible = false;
             button2.Visible = false;
